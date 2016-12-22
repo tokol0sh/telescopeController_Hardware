@@ -1,0 +1,2440 @@
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    1
+
+       1              ;***************************************************************
+       2              ;* TMS320C2000 C/C++ Codegen                        PC v6.4.11 *
+       3              ;* Date/Time created: Thu Aug 11 16:06:12 2016                 *
+       4              ;***************************************************************
+       5                      .compiler_opts --float_support=softlib --hll_source=on --mem_model:code=flat --mem_model:data=large -
+       6        0002  FP      .set    XAR2
+       7              
+       8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.11 Copyright (c) 1996-2015 Tex
+      11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\ti\motorware\motorware_1_01_00_16\sw\solutions\instaspin_foc\boa
+      13              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\\18232
+      14              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp\\1823
+      15 00000000               .sect   ".text"
+      16                      .clink
+      17                      .global _GPIO_toggle
+      18              
+      19              $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_toggle")
+      20                      .dwattr $C$DW$1, DW_AT_low_pc(_GPIO_toggle)
+      21                      .dwattr $C$DW$1, DW_AT_high_pc(0x00)
+      22                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_GPIO_toggle")
+      23                      .dwattr $C$DW$1, DW_AT_external
+      24                      .dwattr $C$DW$1, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f2
+      25                      .dwattr $C$DW$1, DW_AT_TI_begin_line(0x193)
+      26                      .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
+      27                      .dwattr $C$DW$1, DW_AT_TI_max_frame_size(-2)
+      28                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 4
+      29              
+      30                      .dwfde $C$DW$CIE, _GPIO_toggle
+      31              $C$DW$2 .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+      32                      .dwattr $C$DW$2, DW_AT_TI_symbol_name("_gpioHandle")
+      33                      .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$53)
+      34                      .dwattr $C$DW$2, DW_AT_location[DW_OP_reg12]
+      35              $C$DW$3 .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+      36                      .dwattr $C$DW$3, DW_AT_TI_symbol_name("_gpioNumber")
+      37                      .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$32)
+      38                      .dwattr $C$DW$3, DW_AT_location[DW_OP_reg0]
+      39              
+      40              ;***************************************************************
+      41              ;* FNAME: _GPIO_toggle                  FR SIZE:   0           *
+      42              ;*                                                             *
+      43              ;* FUNCTION ENVIRONMENT                                        *
+      44              ;*                                                             *
+      45              ;* FUNCTION PROPERTIES                                         *
+      46              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+      47              ;***************************************************************
+      48              
+      49              _GPIO_toggle:
+      50              ;* T     assigned to _gpioNumber
+      51              $C$DW$4 .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+      52                      .dwattr $C$DW$4, DW_AT_TI_symbol_name("_gpioNumber")
+      53                      .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$32)
+      54                      .dwattr $C$DW$4, DW_AT_location[DW_OP_reg22]
+      55              ;* AR4   assigned to _gpioHandle
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    2
+
+      56              $C$DW$5 .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+      57                      .dwattr $C$DW$5, DW_AT_TI_symbol_name("_gpioHandle")
+      58                      .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$54)
+      59                      .dwattr $C$DW$5, DW_AT_location[DW_OP_reg12]
+      60                      .dwcfi  cfa_offset, -2
+      61                      .dwcfi  save_reg_to_mem, 26, 0
+      62 00000000 2DA9          MOV       T,AL                  ; [CPU_] |404| 
+      63 00000001 7622   EALLOW
+      64                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 4
+      65 00000002 5220          CMPB      AL,#32                ; [CPU_] |410| 
+      66 00000003 56C8          BF        $C$L1,LO              ; [CPU_] |410| 
+         00000004 0007 
+      67                      ; branchcc occurs ; [] |410| 
+      68                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 4
+      69 00000005 5DAC          MOVZ      AR5,T                 ; [CPU_] |416| 
+      70 00000006 D04E          MOVB      XAR0,#78              ; [CPU_] |416| 
+      71 00000007 DDA0          SUBB      XAR5,#32              ; [CPU_U] |416| 
+      72 00000008 2DA5          MOV       T,AR5                 ; [CPU_] |416| 
+      73 00000009 6F02          B         $C$L2,UNC             ; [CPU_] |416| 
+      74                      ; branch occurs ; [] |416| 
+      75 0000000a       $C$L1:    
+      76                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 4
+      77 0000000a D046          MOVB      XAR0,#70              ; [CPU_] |412| 
+      78 0000000b       $C$L2:    
+      79 0000000b 0201          MOVB      ACC,#1                ; [CPU_] |412| 
+      80 0000000c 563B          LSLL      ACC,T                 ; [CPU_] |412| 
+      81 0000000d 1E94          MOVL      *+XAR4[AR0],ACC       ; [CPU_] |412| 
+      82 0000000e 761A   EDIS
+      83 0000000f FF69          SPM       #0                    ; [CPU_] 
+      84              $C$DW$6 .dwtag  DW_TAG_TI_branch
+      85                      .dwattr $C$DW$6, DW_AT_low_pc(0x00)
+      86                      .dwattr $C$DW$6, DW_AT_TI_return
+      87 00000010 0006          LRETR     ; [CPU_] 
+      88                      ; return occurs ; [] 
+      89                      .dwattr $C$DW$1, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x
+      90                      .dwattr $C$DW$1, DW_AT_TI_end_line(0x1a6)
+      91                      .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
+      92                      .dwendentry
+      93                      .dwendtag $C$DW$1
+      94              
+      95 00000011               .sect   ".text"
+      96                      .clink
+      97                      .global _GPIO_setQualificationPeriod
+      98              
+      99              $C$DW$7 .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setQualificationPeriod")
+     100                      .dwattr $C$DW$7, DW_AT_low_pc(_GPIO_setQualificationPeriod)
+     101                      .dwattr $C$DW$7, DW_AT_high_pc(0x00)
+     102                      .dwattr $C$DW$7, DW_AT_TI_symbol_name("_GPIO_setQualificationPeriod")
+     103                      .dwattr $C$DW$7, DW_AT_external
+     104                      .dwattr $C$DW$7, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f2
+     105                      .dwattr $C$DW$7, DW_AT_TI_begin_line(0x168)
+     106                      .dwattr $C$DW$7, DW_AT_TI_begin_column(0x06)
+     107                      .dwattr $C$DW$7, DW_AT_TI_max_frame_size(-2)
+     108                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     109              
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    3
+
+     110                      .dwfde $C$DW$CIE, _GPIO_setQualificationPeriod
+     111              $C$DW$8 .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     112                      .dwattr $C$DW$8, DW_AT_TI_symbol_name("_gpioHandle")
+     113                      .dwattr $C$DW$8, DW_AT_type(*$C$DW$T$53)
+     114                      .dwattr $C$DW$8, DW_AT_location[DW_OP_reg12]
+     115              $C$DW$9 .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     116                      .dwattr $C$DW$9, DW_AT_TI_symbol_name("_gpioNumber")
+     117                      .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$32)
+     118                      .dwattr $C$DW$9, DW_AT_location[DW_OP_reg0]
+     119              $C$DW$10        .dwtag  DW_TAG_formal_parameter, DW_AT_name("period")
+     120                      .dwattr $C$DW$10, DW_AT_TI_symbol_name("_period")
+     121                      .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$70)
+     122                      .dwattr $C$DW$10, DW_AT_location[DW_OP_reg1]
+     123              
+     124              ;***************************************************************
+     125              ;* FNAME: _GPIO_setQualificationPeriod  FR SIZE:   0           *
+     126              ;*                                                             *
+     127              ;* FUNCTION ENVIRONMENT                                        *
+     128              ;*                                                             *
+     129              ;* FUNCTION PROPERTIES                                         *
+     130              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     131              ;***************************************************************
+     132              
+     133              _GPIO_setQualificationPeriod:
+     134              ;* AH    assigned to _period
+     135              $C$DW$11        .dwtag  DW_TAG_variable, DW_AT_name("period")
+     136                      .dwattr $C$DW$11, DW_AT_TI_symbol_name("_period")
+     137                      .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$70)
+     138                      .dwattr $C$DW$11, DW_AT_location[DW_OP_reg1]
+     139              ;* AL    assigned to _gpioNumber
+     140              $C$DW$12        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     141                      .dwattr $C$DW$12, DW_AT_TI_symbol_name("_gpioNumber")
+     142                      .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$32)
+     143                      .dwattr $C$DW$12, DW_AT_location[DW_OP_reg0]
+     144              ;* AR4   assigned to _gpioHandle
+     145              $C$DW$13        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     146                      .dwattr $C$DW$13, DW_AT_TI_symbol_name("_gpioHandle")
+     147                      .dwattr $C$DW$13, DW_AT_type(*$C$DW$T$54)
+     148                      .dwattr $C$DW$13, DW_AT_location[DW_OP_reg12]
+     149                      .dwcfi  cfa_offset, -2
+     150                      .dwcfi  save_reg_to_mem, 26, 0
+     151 00000011 7622   EALLOW
+     152                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     153 00000012 5207          CMPB      AL,#7                 ; [CPU_] |366| 
+     154 00000013 56C9          BF        $C$L6,LOS             ; [CPU_] |366| 
+         00000014 0026 
+     155                      ; branchcc occurs ; [] |366| 
+     156                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     157 00000015 520F          CMPB      AL,#15                ; [CPU_] |372| 
+     158 00000016 56C9          BF        $C$L5,LOS             ; [CPU_] |372| 
+         00000017 001D 
+     159                      ; branchcc occurs ; [] |372| 
+     160                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     161 00000018 5217          CMPB      AL,#23                ; [CPU_] |378| 
+     162 00000019 56C9          BF        $C$L4,LOS             ; [CPU_] |378| 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    4
+
+         0000001a 0015 
+     163                      ; branchcc occurs ; [] |378| 
+     164                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     165 0000001b 521F          CMPB      AL,#31                ; [CPU_] |384| 
+     166 0000001c 56C9          BF        $C$L3,LOS             ; [CPU_] |384| 
+         0000001d 000B 
+     167                      ; branchcc occurs ; [] |384| 
+     168                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     169 0000001e 5227          CMPB      AL,#39                ; [CPU_] |390| 
+     170 0000001f 56C6          BF        $C$L9,HI              ; [CPU_] |390| 
+         00000020 001F 
+     171                      ; branchcc occurs ; [] |390| 
+     172                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     173 00000021 83A4          MOVL      XAR5,XAR4             ; [CPU_] |393| 
+     174                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     175 00000022 DC10          ADDB      XAR4,#16              ; [CPU_] |394| 
+     176                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     177 00000023 DD10          ADDB      XAR5,#16              ; [CPU_] |393| 
+     178 00000024 18C5          AND       *+XAR5[0],#65280      ; [CPU_] |393| 
+         00000025 FF00 
+     179                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     180 00000026 6F15          B         $C$L7,UNC             ; [CPU_] |394| 
+     181                      ; branch occurs ; [] |394| 
+     182 00000027       $C$L3:    
+     183                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     184 00000027 0EA8          MOVU      ACC,AH                ; [CPU_] |388| 
+     185 00000028 28AC          MOV       T,#24                 ; [CPU_] |388| 
+         00000029 0018 
+     186                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     187 0000002a 18CC          AND       *+XAR4[1],#255        ; [CPU_] |387| 
+         0000002b 00FF 
+     188                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     189 0000002c 563B          LSLL      ACC,T                 ; [CPU_] |388| 
+     190                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     191 0000002d 6F0F          B         $C$L8,UNC             ; [CPU_] |389| 
+     192                      ; branch occurs ; [] |389| 
+     193 0000002e       $C$L4:    
+     194 0000002e 2901          CLRC      SXM                   ; [CPU_] 
+     195                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     196 0000002f 18CC          AND       *+XAR4[1],#65280      ; [CPU_] |381| 
+         00000030 FF00 
+     197                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     198 00000031 25A8          MOV       ACC,AH << 16          ; [CPU_] |382| 
+     199                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     200 00000032 6F0A          B         $C$L8,UNC             ; [CPU_] |383| 
+     201                      ; branch occurs ; [] |383| 
+     202 00000033       $C$L5:    
+     203 00000033 2901          CLRC      SXM                   ; [CPU_] 
+     204                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     205 00000034 18C4          AND       *+XAR4[0],#255        ; [CPU_] |375| 
+         00000035 00FF 
+     206                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     207 00000036 5603          MOV       ACC,AH << 8           ; [CPU_] |376| 
+         00000037 08A8 
+     208                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    5
+
+     209 00000038 6F04          B         $C$L8,UNC             ; [CPU_] |377| 
+     210                      ; branch occurs ; [] |377| 
+     211 00000039       $C$L6:    
+     212                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     213 00000039 18C4          AND       *+XAR4[0],#65280      ; [CPU_] |369| 
+         0000003a FF00 
+     214 0000003b       $C$L7:    
+     215                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     216 0000003b 0EA8          MOVU      ACC,AH                ; [CPU_] |370| 
+     217 0000003c       $C$L8:    
+     218 0000003c 98C4          OR        *+XAR4[0],AL          ; [CPU_] |370| 
+     219 0000003d 99CC          OR        *+XAR4[1],AH          ; [CPU_] |370| 
+     220 0000003e       $C$L9:    
+     221 0000003e 761A   EDIS
+     222 0000003f FF69          SPM       #0                    ; [CPU_] 
+     223              $C$DW$14        .dwtag  DW_TAG_TI_branch
+     224                      .dwattr $C$DW$14, DW_AT_low_pc(0x00)
+     225                      .dwattr $C$DW$14, DW_AT_TI_return
+     226 00000040 0006          LRETR     ; [CPU_] 
+     227                      ; return occurs ; [] 
+     228                      .dwattr $C$DW$7, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x
+     229                      .dwattr $C$DW$7, DW_AT_TI_end_line(0x190)
+     230                      .dwattr $C$DW$7, DW_AT_TI_end_column(0x01)
+     231                      .dwendentry
+     232                      .dwendtag $C$DW$7
+     233              
+     234 00000041               .sect   ".text"
+     235                      .clink
+     236                      .global _GPIO_setQualification
+     237              
+     238              $C$DW$15        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setQualification")
+     239                      .dwattr $C$DW$15, DW_AT_low_pc(_GPIO_setQualification)
+     240                      .dwattr $C$DW$15, DW_AT_high_pc(0x00)
+     241                      .dwattr $C$DW$15, DW_AT_TI_symbol_name("_GPIO_setQualification")
+     242                      .dwattr $C$DW$15, DW_AT_external
+     243                      .dwattr $C$DW$15, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     244                      .dwattr $C$DW$15, DW_AT_TI_begin_line(0x149)
+     245                      .dwattr $C$DW$15, DW_AT_TI_begin_column(0x06)
+     246                      .dwattr $C$DW$15, DW_AT_TI_max_frame_size(-2)
+     247                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     248              
+     249                      .dwfde $C$DW$CIE, _GPIO_setQualification
+     250              $C$DW$16        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     251                      .dwattr $C$DW$16, DW_AT_TI_symbol_name("_gpioHandle")
+     252                      .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$53)
+     253                      .dwattr $C$DW$16, DW_AT_location[DW_OP_reg12]
+     254              $C$DW$17        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     255                      .dwattr $C$DW$17, DW_AT_TI_symbol_name("_gpioNumber")
+     256                      .dwattr $C$DW$17, DW_AT_type(*$C$DW$T$32)
+     257                      .dwattr $C$DW$17, DW_AT_location[DW_OP_reg0]
+     258              $C$DW$18        .dwtag  DW_TAG_formal_parameter, DW_AT_name("qualification")
+     259                      .dwattr $C$DW$18, DW_AT_TI_symbol_name("_qualification")
+     260                      .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$50)
+     261                      .dwattr $C$DW$18, DW_AT_location[DW_OP_reg1]
+     262              
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    6
+
+     263              ;***************************************************************
+     264              ;* FNAME: _GPIO_setQualification        FR SIZE:   0           *
+     265              ;*                                                             *
+     266              ;* FUNCTION ENVIRONMENT                                        *
+     267              ;*                                                             *
+     268              ;* FUNCTION PROPERTIES                                         *
+     269              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     270              ;***************************************************************
+     271              
+     272              _GPIO_setQualification:
+     273              ;* T     assigned to $O$C1
+     274              ;* T     assigned to $O$C2
+     275              ;* T     assigned to $O$C3
+     276              ;* AR6   assigned to _qualification
+     277              $C$DW$19        .dwtag  DW_TAG_variable, DW_AT_name("qualification")
+     278                      .dwattr $C$DW$19, DW_AT_TI_symbol_name("_qualification")
+     279                      .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$50)
+     280                      .dwattr $C$DW$19, DW_AT_location[DW_OP_reg16]
+     281              ;* AL    assigned to _gpioNumber
+     282              $C$DW$20        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     283                      .dwattr $C$DW$20, DW_AT_TI_symbol_name("_gpioNumber")
+     284                      .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$32)
+     285                      .dwattr $C$DW$20, DW_AT_location[DW_OP_reg0]
+     286              ;* AR4   assigned to _gpioHandle
+     287              $C$DW$21        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     288                      .dwattr $C$DW$21, DW_AT_TI_symbol_name("_gpioHandle")
+     289                      .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$54)
+     290                      .dwattr $C$DW$21, DW_AT_location[DW_OP_reg12]
+     291                      .dwcfi  cfa_offset, -2
+     292                      .dwcfi  save_reg_to_mem, 26, 0
+     293 00000041 88A8          MOVZ      AR6,AH                ; [CPU_] |330| 
+     294 00000042 7622   EALLOW
+     295                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     296 00000043 520F          CMPB      AL,#15                ; [CPU_] |336| 
+     297 00000044 56C9          BF        $C$L11,LOS            ; [CPU_] |336| 
+         00000045 002B 
+     298                      ; branchcc occurs ; [] |336| 
+     299                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     300 00000046 521F          CMPB      AL,#31                ; [CPU_] |342| 
+     301 00000047 56C9          BF        $C$L10,LOS            ; [CPU_] |342| 
+         00000048 0018 
+     302                      ; branchcc occurs ; [] |342| 
+     303                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     304 00000049 522F          CMPB      AL,#47                ; [CPU_] |348| 
+     305 0000004a 56C6          BF        $C$L12,HI             ; [CPU_] |348| 
+         0000004b 0031 
+     306                      ; branchcc occurs ; [] |348| 
+     307                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     308 0000004c 28A8          MOV       AH,#32736             ; [CPU_] |351| 
+         0000004d 7FE0 
+     309 0000004e 83A4          MOVL      XAR5,XAR4             ; [CPU_] |351| 
+     310 0000004f 95A9          ADD       AH,AL                 ; [CPU_] |351| 
+     311 00000050 5603          MOV       ACC,AH << #1          ; [CPU_] |351| 
+         00000051 01A8 
+     312                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    7
+
+     313 00000052 DC12          ADDB      XAR4,#18              ; [CPU_] |352| 
+     314                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     315 00000053 2DA9          MOV       T,AL                  ; [CPU_] |351| 
+     316 00000054 0203          MOVB      ACC,#3                ; [CPU_] |351| 
+     317 00000055 DD12          ADDB      XAR5,#18              ; [CPU_] |351| 
+     318 00000056 563B          LSLL      ACC,T                 ; [CPU_] |351| 
+     319 00000057 FF55          NOT       ACC                   ; [CPU_] |351| 
+     320 00000058 C0C5          AND       *+XAR5[0],AL          ; [CPU_] |351| 
+     321 00000059 C1CD          AND       *+XAR5[1],AH          ; [CPU_] |351| 
+     322                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     323 0000005a 0EA6          MOVU      ACC,AR6               ; [CPU_] |352| 
+     324 0000005b 563B          LSLL      ACC,T                 ; [CPU_] |352| 
+     325 0000005c 98C4          OR        *+XAR4[0],AL          ; [CPU_] |352| 
+     326 0000005d 99CC          OR        *+XAR4[1],AH          ; [CPU_] |352| 
+     327 0000005e 6F1D          B         $C$L12,UNC            ; [CPU_] |352| 
+     328                      ; branch occurs ; [] |352| 
+     329 0000005f       $C$L10:    
+     330                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     331 0000005f 28A8          MOV       AH,#32752             ; [CPU_] |345| 
+         00000060 7FF0 
+     332 00000061 95A9          ADD       AH,AL                 ; [CPU_] |345| 
+     333 00000062 5603          MOV       ACC,AH << #1          ; [CPU_] |345| 
+         00000063 01A8 
+     334 00000064 2DA9          MOV       T,AL                  ; [CPU_] |345| 
+     335 00000065 0203          MOVB      ACC,#3                ; [CPU_] |345| 
+     336 00000066 563B          LSLL      ACC,T                 ; [CPU_] |345| 
+     337 00000067 FF55          NOT       ACC                   ; [CPU_] |345| 
+     338 00000068 C0E4          AND       *+XAR4[4],AL          ; [CPU_] |345| 
+     339 00000069 C1EC          AND       *+XAR4[5],AH          ; [CPU_] |345| 
+     340                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     341 0000006a 0EA6          MOVU      ACC,AR6               ; [CPU_] |346| 
+     342 0000006b 563B          LSLL      ACC,T                 ; [CPU_] |346| 
+     343 0000006c 98E4          OR        *+XAR4[4],AL          ; [CPU_] |346| 
+     344 0000006d 99EC          OR        *+XAR4[5],AH          ; [CPU_] |346| 
+     345                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     346 0000006e 6F0D          B         $C$L12,UNC            ; [CPU_] |347| 
+     347                      ; branch occurs ; [] |347| 
+     348 0000006f       $C$L11:    
+     349                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     350 0000006f 5603          MOV       ACC,AL << #1          ; [CPU_] |339| 
+         00000070 01A9 
+     351 00000071 2DA9          MOV       T,AL                  ; [CPU_] |339| 
+     352 00000072 0203          MOVB      ACC,#3                ; [CPU_] |339| 
+     353 00000073 563B          LSLL      ACC,T                 ; [CPU_] |339| 
+     354 00000074 FF55          NOT       ACC                   ; [CPU_] |339| 
+     355 00000075 C0D4          AND       *+XAR4[2],AL          ; [CPU_] |339| 
+     356 00000076 C1DC          AND       *+XAR4[3],AH          ; [CPU_] |339| 
+     357                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     358 00000077 0EA6          MOVU      ACC,AR6               ; [CPU_] |340| 
+     359 00000078 563B          LSLL      ACC,T                 ; [CPU_] |340| 
+     360 00000079 98D4          OR        *+XAR4[2],AL          ; [CPU_] |340| 
+     361 0000007a 99DC          OR        *+XAR4[3],AH          ; [CPU_] |340| 
+     362 0000007b       $C$L12:    
+     363 0000007b 761A   EDIS
+     364 0000007c FF69          SPM       #0                    ; [CPU_] 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    8
+
+     365              $C$DW$22        .dwtag  DW_TAG_TI_branch
+     366                      .dwattr $C$DW$22, DW_AT_low_pc(0x00)
+     367                      .dwattr $C$DW$22, DW_AT_TI_return
+     368 0000007d 0006          LRETR     ; [CPU_] 
+     369                      ; return occurs ; [] 
+     370                      .dwattr $C$DW$15, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     371                      .dwattr $C$DW$15, DW_AT_TI_end_line(0x166)
+     372                      .dwattr $C$DW$15, DW_AT_TI_end_column(0x01)
+     373                      .dwendentry
+     374                      .dwendtag $C$DW$15
+     375              
+     376 0000007e               .sect   ".text"
+     377                      .clink
+     378                      .global _GPIO_setPullUp
+     379              
+     380              $C$DW$23        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setPullUp")
+     381                      .dwattr $C$DW$23, DW_AT_low_pc(_GPIO_setPullUp)
+     382                      .dwattr $C$DW$23, DW_AT_high_pc(0x00)
+     383                      .dwattr $C$DW$23, DW_AT_TI_symbol_name("_GPIO_setPullUp")
+     384                      .dwattr $C$DW$23, DW_AT_external
+     385                      .dwattr $C$DW$23, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     386                      .dwattr $C$DW$23, DW_AT_TI_begin_line(0x8b)
+     387                      .dwattr $C$DW$23, DW_AT_TI_begin_column(0x06)
+     388                      .dwattr $C$DW$23, DW_AT_TI_max_frame_size(-2)
+     389                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     390              
+     391                      .dwfde $C$DW$CIE, _GPIO_setPullUp
+     392              $C$DW$24        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     393                      .dwattr $C$DW$24, DW_AT_TI_symbol_name("_gpioHandle")
+     394                      .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$53)
+     395                      .dwattr $C$DW$24, DW_AT_location[DW_OP_reg12]
+     396              $C$DW$25        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     397                      .dwattr $C$DW$25, DW_AT_TI_symbol_name("_gpioNumber")
+     398                      .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$32)
+     399                      .dwattr $C$DW$25, DW_AT_location[DW_OP_reg0]
+     400              $C$DW$26        .dwtag  DW_TAG_formal_parameter, DW_AT_name("pullUp")
+     401                      .dwattr $C$DW$26, DW_AT_TI_symbol_name("_pullUp")
+     402                      .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$41)
+     403                      .dwattr $C$DW$26, DW_AT_location[DW_OP_reg1]
+     404              
+     405              ;***************************************************************
+     406              ;* FNAME: _GPIO_setPullUp               FR SIZE:   0           *
+     407              ;*                                                             *
+     408              ;* FUNCTION ENVIRONMENT                                        *
+     409              ;*                                                             *
+     410              ;* FUNCTION PROPERTIES                                         *
+     411              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     412              ;***************************************************************
+     413              
+     414              _GPIO_setPullUp:
+     415              ;* T     assigned to $O$C1
+     416              ;* AR6   assigned to _pullUp
+     417              $C$DW$27        .dwtag  DW_TAG_variable, DW_AT_name("pullUp")
+     418                      .dwattr $C$DW$27, DW_AT_TI_symbol_name("_pullUp")
+     419                      .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$41)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE    9
+
+     420                      .dwattr $C$DW$27, DW_AT_location[DW_OP_reg16]
+     421              ;* T     assigned to _gpioNumber
+     422              $C$DW$28        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     423                      .dwattr $C$DW$28, DW_AT_TI_symbol_name("_gpioNumber")
+     424                      .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$32)
+     425                      .dwattr $C$DW$28, DW_AT_location[DW_OP_reg22]
+     426              ;* AR4   assigned to _gpioHandle
+     427              $C$DW$29        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     428                      .dwattr $C$DW$29, DW_AT_TI_symbol_name("_gpioHandle")
+     429                      .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$54)
+     430                      .dwattr $C$DW$29, DW_AT_location[DW_OP_reg12]
+     431                      .dwcfi  cfa_offset, -2
+     432                      .dwcfi  save_reg_to_mem, 26, 0
+     433 0000007e 88A8          MOVZ      AR6,AH                ; [CPU_] |140| 
+     434 0000007f 2DA9          MOV       T,AL                  ; [CPU_] |140| 
+     435 00000080 7622   EALLOW
+     436                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     437 00000081 5220          CMPB      AL,#32                ; [CPU_] |146| 
+     438 00000082 56C8          BF        $C$L13,LO             ; [CPU_] |146| 
+         00000083 0008 
+     439                      ; branchcc occurs ; [] |146| 
+     440                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     441 00000084 83A4          MOVL      XAR5,XAR4             ; [CPU_] |157| 
+     442 00000085 9CE0          ADDB      AL,#-32               ; [CPU_] |157| 
+     443 00000086 2DA9          MOV       T,AL                  ; [CPU_] |157| 
+     444                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     445 00000087 DC1C          ADDB      XAR4,#28              ; [CPU_] |160| 
+     446                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     447 00000088 DD1C          ADDB      XAR5,#28              ; [CPU_] |157| 
+     448                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     449 00000089 6F04          B         $C$L14,UNC            ; [CPU_] |160| 
+     450                      ; branch occurs ; [] |160| 
+     451 0000008a       $C$L13:    
+     452                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     453 0000008a 83A4          MOVL      XAR5,XAR4             ; [CPU_] |149| 
+     454                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     455 0000008b DC0C          ADDB      XAR4,#12              ; [CPU_] |152| 
+     456                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     457 0000008c DD0C          ADDB      XAR5,#12              ; [CPU_] |149| 
+     458 0000008d       $C$L14:    
+     459 0000008d 0201          MOVB      ACC,#1                ; [CPU_] |149| 
+     460 0000008e 563B          LSLL      ACC,T                 ; [CPU_] |149| 
+     461 0000008f FF55          NOT       ACC                   ; [CPU_] |149| 
+     462 00000090 C0C5          AND       *+XAR5[0],AL          ; [CPU_] |149| 
+     463 00000091 C1CD          AND       *+XAR5[1],AH          ; [CPU_] |149| 
+     464                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     465 00000092 0EA6          MOVU      ACC,AR6               ; [CPU_] |152| 
+     466 00000093 563B          LSLL      ACC,T                 ; [CPU_] |152| 
+     467 00000094 98C4          OR        *+XAR4[0],AL          ; [CPU_] |152| 
+     468 00000095 99CC          OR        *+XAR4[1],AH          ; [CPU_] |152| 
+     469 00000096 761A   EDIS
+     470 00000097 FF69          SPM       #0                    ; [CPU_] 
+     471              $C$DW$30        .dwtag  DW_TAG_TI_branch
+     472                      .dwattr $C$DW$30, DW_AT_low_pc(0x00)
+     473                      .dwattr $C$DW$30, DW_AT_TI_return
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   10
+
+     474 00000098 0006          LRETR     ; [CPU_] 
+     475                      ; return occurs ; [] 
+     476                      .dwattr $C$DW$23, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     477                      .dwattr $C$DW$23, DW_AT_TI_end_line(0xa6)
+     478                      .dwattr $C$DW$23, DW_AT_TI_end_column(0x01)
+     479                      .dwendentry
+     480                      .dwendtag $C$DW$23
+     481              
+     482 00000099               .sect   ".text"
+     483                      .clink
+     484                      .global _GPIO_setPortData
+     485              
+     486              $C$DW$31        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setPortData")
+     487                      .dwattr $C$DW$31, DW_AT_low_pc(_GPIO_setPortData)
+     488                      .dwattr $C$DW$31, DW_AT_high_pc(0x00)
+     489                      .dwattr $C$DW$31, DW_AT_TI_symbol_name("_GPIO_setPortData")
+     490                      .dwattr $C$DW$31, DW_AT_external
+     491                      .dwattr $C$DW$31, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     492                      .dwattr $C$DW$31, DW_AT_TI_begin_line(0x135)
+     493                      .dwattr $C$DW$31, DW_AT_TI_begin_column(0x06)
+     494                      .dwattr $C$DW$31, DW_AT_TI_max_frame_size(-2)
+     495                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     496              
+     497                      .dwfde $C$DW$CIE, _GPIO_setPortData
+     498              $C$DW$32        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     499                      .dwattr $C$DW$32, DW_AT_TI_symbol_name("_gpioHandle")
+     500                      .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$53)
+     501                      .dwattr $C$DW$32, DW_AT_location[DW_OP_reg12]
+     502              $C$DW$33        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioPort")
+     503                      .dwattr $C$DW$33, DW_AT_TI_symbol_name("_gpioPort")
+     504                      .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$35)
+     505                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg0]
+     506              $C$DW$34        .dwtag  DW_TAG_formal_parameter, DW_AT_name("data")
+     507                      .dwattr $C$DW$34, DW_AT_TI_symbol_name("_data")
+     508                      .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$66)
+     509                      .dwattr $C$DW$34, DW_AT_location[DW_OP_reg1]
+     510              
+     511              ;***************************************************************
+     512              ;* FNAME: _GPIO_setPortData             FR SIZE:   0           *
+     513              ;*                                                             *
+     514              ;* FUNCTION ENVIRONMENT                                        *
+     515              ;*                                                             *
+     516              ;* FUNCTION PROPERTIES                                         *
+     517              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     518              ;***************************************************************
+     519              
+     520              _GPIO_setPortData:
+     521              ;* AH    assigned to _data
+     522              $C$DW$35        .dwtag  DW_TAG_variable, DW_AT_name("data")
+     523                      .dwattr $C$DW$35, DW_AT_TI_symbol_name("_data")
+     524                      .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$66)
+     525                      .dwattr $C$DW$35, DW_AT_location[DW_OP_reg1]
+     526              ;* AL    assigned to _gpioPort
+     527              $C$DW$36        .dwtag  DW_TAG_variable, DW_AT_name("gpioPort")
+     528                      .dwattr $C$DW$36, DW_AT_TI_symbol_name("_gpioPort")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   11
+
+     529                      .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$35)
+     530                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg0]
+     531              ;* AR4   assigned to _gpioHandle
+     532              $C$DW$37        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     533                      .dwattr $C$DW$37, DW_AT_TI_symbol_name("_gpioHandle")
+     534                      .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$54)
+     535                      .dwattr $C$DW$37, DW_AT_location[DW_OP_reg12]
+     536                      .dwcfi  cfa_offset, -2
+     537                      .dwcfi  save_reg_to_mem, 26, 0
+     538 00000099 7622   EALLOW
+     539                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     540 0000009a 5200          CMPB      AL,#0                 ; [CPU_] |315| 
+     541 0000009b EC05          BF        $C$L15,EQ             ; [CPU_] |315| 
+     542                      ; branchcc occurs ; [] |315| 
+     543                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     544 0000009c 5201          CMPB      AL,#1                 ; [CPU_] |319| 
+     545 0000009d ED06          BF        $C$L17,NEQ            ; [CPU_] |319| 
+     546                      ; branchcc occurs ; [] |319| 
+     547                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     548 0000009e D048          MOVB      XAR0,#72              ; [CPU_] |321| 
+     549 0000009f 6F02          B         $C$L16,UNC            ; [CPU_] |321| 
+     550                      ; branch occurs ; [] |321| 
+     551 000000a0       $C$L15:    
+     552                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     553 000000a0 D040          MOVB      XAR0,#64              ; [CPU_] |317| 
+     554 000000a1       $C$L16:    
+     555 000000a1 0EA8          MOVU      ACC,AH                ; [CPU_] |317| 
+     556 000000a2 1E94          MOVL      *+XAR4[AR0],ACC       ; [CPU_] |317| 
+     557 000000a3       $C$L17:    
+     558 000000a3 761A   EDIS
+     559 000000a4 FF69          SPM       #0                    ; [CPU_] 
+     560              $C$DW$38        .dwtag  DW_TAG_TI_branch
+     561                      .dwattr $C$DW$38, DW_AT_low_pc(0x00)
+     562                      .dwattr $C$DW$38, DW_AT_TI_return
+     563 000000a5 0006          LRETR     ; [CPU_] 
+     564                      ; return occurs ; [] 
+     565                      .dwattr $C$DW$31, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     566                      .dwattr $C$DW$31, DW_AT_TI_end_line(0x147)
+     567                      .dwattr $C$DW$31, DW_AT_TI_end_column(0x01)
+     568                      .dwendentry
+     569                      .dwendtag $C$DW$31
+     570              
+     571 000000a6               .sect   ".text"
+     572                      .clink
+     573                      .global _GPIO_setMode
+     574              
+     575              $C$DW$39        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setMode")
+     576                      .dwattr $C$DW$39, DW_AT_low_pc(_GPIO_setMode)
+     577                      .dwattr $C$DW$39, DW_AT_high_pc(0x00)
+     578                      .dwattr $C$DW$39, DW_AT_TI_symbol_name("_GPIO_setMode")
+     579                      .dwattr $C$DW$39, DW_AT_external
+     580                      .dwattr $C$DW$39, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     581                      .dwattr $C$DW$39, DW_AT_TI_begin_line(0x103)
+     582                      .dwattr $C$DW$39, DW_AT_TI_begin_column(0x06)
+     583                      .dwattr $C$DW$39, DW_AT_TI_max_frame_size(-2)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   12
+
+     584                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     585              
+     586                      .dwfde $C$DW$CIE, _GPIO_setMode
+     587              $C$DW$40        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     588                      .dwattr $C$DW$40, DW_AT_TI_symbol_name("_gpioHandle")
+     589                      .dwattr $C$DW$40, DW_AT_type(*$C$DW$T$53)
+     590                      .dwattr $C$DW$40, DW_AT_location[DW_OP_reg12]
+     591              $C$DW$41        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     592                      .dwattr $C$DW$41, DW_AT_TI_symbol_name("_gpioNumber")
+     593                      .dwattr $C$DW$41, DW_AT_type(*$C$DW$T$32)
+     594                      .dwattr $C$DW$41, DW_AT_location[DW_OP_reg0]
+     595              $C$DW$42        .dwtag  DW_TAG_formal_parameter, DW_AT_name("mode")
+     596                      .dwattr $C$DW$42, DW_AT_TI_symbol_name("_mode")
+     597                      .dwattr $C$DW$42, DW_AT_type(*$C$DW$T$47)
+     598                      .dwattr $C$DW$42, DW_AT_location[DW_OP_reg1]
+     599              
+     600              ;***************************************************************
+     601              ;* FNAME: _GPIO_setMode                 FR SIZE:   0           *
+     602              ;*                                                             *
+     603              ;* FUNCTION ENVIRONMENT                                        *
+     604              ;*                                                             *
+     605              ;* FUNCTION PROPERTIES                                         *
+     606              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     607              ;***************************************************************
+     608              
+     609              _GPIO_setMode:
+     610              ;* T     assigned to $O$C1
+     611              ;* T     assigned to $O$C2
+     612              ;* AR6   assigned to _mode
+     613              $C$DW$43        .dwtag  DW_TAG_variable, DW_AT_name("mode")
+     614                      .dwattr $C$DW$43, DW_AT_TI_symbol_name("_mode")
+     615                      .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$47)
+     616                      .dwattr $C$DW$43, DW_AT_location[DW_OP_reg16]
+     617              ;* AL    assigned to _gpioNumber
+     618              $C$DW$44        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     619                      .dwattr $C$DW$44, DW_AT_TI_symbol_name("_gpioNumber")
+     620                      .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$32)
+     621                      .dwattr $C$DW$44, DW_AT_location[DW_OP_reg0]
+     622              ;* AR4   assigned to _gpioHandle
+     623              $C$DW$45        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     624                      .dwattr $C$DW$45, DW_AT_TI_symbol_name("_gpioHandle")
+     625                      .dwattr $C$DW$45, DW_AT_type(*$C$DW$T$54)
+     626                      .dwattr $C$DW$45, DW_AT_location[DW_OP_reg12]
+     627                      .dwcfi  cfa_offset, -2
+     628                      .dwcfi  save_reg_to_mem, 26, 0
+     629 000000a6 88A8          MOVZ      AR6,AH                ; [CPU_] |260| 
+     630 000000a7 7622   EALLOW
+     631                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     632 000000a8 5210          CMPB      AL,#16                ; [CPU_] |266| 
+     633 000000a9 56C8          BF        $C$L20,LO             ; [CPU_] |266| 
+         000000aa 0021 
+     634                      ; branchcc occurs ; [] |266| 
+     635                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     636 000000ab 5220          CMPB      AL,#32                ; [CPU_] |278| 
+     637 000000ac 56C8          BF        $C$L18,LO             ; [CPU_] |278| 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   13
+
+         000000ad 000B 
+     638                      ; branchcc occurs ; [] |278| 
+     639                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     640 000000ae 5230          CMPB      AL,#48                ; [CPU_] |290| 
+     641 000000af 56C7          BF        $C$L21,HIS            ; [CPU_] |290| 
+         000000b0 0027 
+     642                      ; branchcc occurs ; [] |290| 
+     643                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     644 000000b1 83A4          MOVL      XAR5,XAR4             ; [CPU_] |297| 
+     645 000000b2 28A8          MOV       AH,#32736             ; [CPU_] |297| 
+         000000b3 7FE0 
+     646                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     647 000000b4 DC16          ADDB      XAR4,#22              ; [CPU_] |300| 
+     648                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     649 000000b5 DD16          ADDB      XAR5,#22              ; [CPU_] |297| 
+     650                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 3
+     651 000000b6 6F06          B         $C$L19,UNC            ; [CPU_] |300| 
+     652                      ; branch occurs ; [] |300| 
+     653 000000b7       $C$L18:    
+     654                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     655 000000b7 83A4          MOVL      XAR5,XAR4             ; [CPU_] |285| 
+     656 000000b8 28A8          MOV       AH,#32752             ; [CPU_] |285| 
+         000000b9 7FF0 
+     657                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     658 000000ba DC08          ADDB      XAR4,#8               ; [CPU_] |288| 
+     659                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     660 000000bb DD08          ADDB      XAR5,#8               ; [CPU_] |285| 
+     661 000000bc       $C$L19:    
+     662 000000bc 95A9          ADD       AH,AL                 ; [CPU_] |285| 
+     663 000000bd 5603          MOV       ACC,AH << #1          ; [CPU_] |285| 
+         000000be 01A8 
+     664 000000bf 2DA9          MOV       T,AL                  ; [CPU_] |285| 
+     665 000000c0 0203          MOVB      ACC,#3                ; [CPU_] |285| 
+     666 000000c1 563B          LSLL      ACC,T                 ; [CPU_] |285| 
+     667 000000c2 FF55          NOT       ACC                   ; [CPU_] |285| 
+     668 000000c3 C0C5          AND       *+XAR5[0],AL          ; [CPU_] |285| 
+     669 000000c4 C1CD          AND       *+XAR5[1],AH          ; [CPU_] |285| 
+     670                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     671 000000c5 0EA6          MOVU      ACC,AR6               ; [CPU_] |288| 
+     672 000000c6 563B          LSLL      ACC,T                 ; [CPU_] |288| 
+     673 000000c7 98C4          OR        *+XAR4[0],AL          ; [CPU_] |288| 
+     674 000000c8 99CC          OR        *+XAR4[1],AH          ; [CPU_] |288| 
+     675                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     676 000000c9 6F0D          B         $C$L21,UNC            ; [CPU_] |289| 
+     677                      ; branch occurs ; [] |289| 
+     678 000000ca       $C$L20:    
+     679                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     680 000000ca 5603          MOV       ACC,AL << #1          ; [CPU_] |273| 
+         000000cb 01A9 
+     681 000000cc 2DA9          MOV       T,AL                  ; [CPU_] |273| 
+     682 000000cd 0203          MOVB      ACC,#3                ; [CPU_] |273| 
+     683 000000ce 563B          LSLL      ACC,T                 ; [CPU_] |273| 
+     684 000000cf FF55          NOT       ACC                   ; [CPU_] |273| 
+     685 000000d0 C0F4          AND       *+XAR4[6],AL          ; [CPU_] |273| 
+     686 000000d1 C1FC          AND       *+XAR4[7],AH          ; [CPU_] |273| 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   14
+
+     687                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     688 000000d2 0EA6          MOVU      ACC,AR6               ; [CPU_] |276| 
+     689 000000d3 563B          LSLL      ACC,T                 ; [CPU_] |276| 
+     690 000000d4 98F4          OR        *+XAR4[6],AL          ; [CPU_] |276| 
+     691 000000d5 99FC          OR        *+XAR4[7],AH          ; [CPU_] |276| 
+     692 000000d6       $C$L21:    
+     693 000000d6 761A   EDIS
+     694 000000d7 FF69          SPM       #0                    ; [CPU_] 
+     695              $C$DW$46        .dwtag  DW_TAG_TI_branch
+     696                      .dwattr $C$DW$46, DW_AT_low_pc(0x00)
+     697                      .dwattr $C$DW$46, DW_AT_TI_return
+     698 000000d8 0006          LRETR     ; [CPU_] 
+     699                      ; return occurs ; [] 
+     700                      .dwattr $C$DW$39, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     701                      .dwattr $C$DW$39, DW_AT_TI_end_line(0x132)
+     702                      .dwattr $C$DW$39, DW_AT_TI_end_column(0x01)
+     703                      .dwendentry
+     704                      .dwendtag $C$DW$39
+     705              
+     706 000000d9               .sect   ".text"
+     707                      .clink
+     708                      .global _GPIO_setLow
+     709              
+     710              $C$DW$47        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setLow")
+     711                      .dwattr $C$DW$47, DW_AT_low_pc(_GPIO_setLow)
+     712                      .dwattr $C$DW$47, DW_AT_high_pc(0x00)
+     713                      .dwattr $C$DW$47, DW_AT_TI_symbol_name("_GPIO_setLow")
+     714                      .dwattr $C$DW$47, DW_AT_external
+     715                      .dwattr $C$DW$47, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     716                      .dwattr $C$DW$47, DW_AT_TI_begin_line(0xed)
+     717                      .dwattr $C$DW$47, DW_AT_TI_begin_column(0x06)
+     718                      .dwattr $C$DW$47, DW_AT_TI_max_frame_size(-2)
+     719                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     720              
+     721                      .dwfde $C$DW$CIE, _GPIO_setLow
+     722              $C$DW$48        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     723                      .dwattr $C$DW$48, DW_AT_TI_symbol_name("_gpioHandle")
+     724                      .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$53)
+     725                      .dwattr $C$DW$48, DW_AT_location[DW_OP_reg12]
+     726              $C$DW$49        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     727                      .dwattr $C$DW$49, DW_AT_TI_symbol_name("_gpioNumber")
+     728                      .dwattr $C$DW$49, DW_AT_type(*$C$DW$T$32)
+     729                      .dwattr $C$DW$49, DW_AT_location[DW_OP_reg0]
+     730              
+     731              ;***************************************************************
+     732              ;* FNAME: _GPIO_setLow                  FR SIZE:   0           *
+     733              ;*                                                             *
+     734              ;* FUNCTION ENVIRONMENT                                        *
+     735              ;*                                                             *
+     736              ;* FUNCTION PROPERTIES                                         *
+     737              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     738              ;***************************************************************
+     739              
+     740              _GPIO_setLow:
+     741              ;* T     assigned to _gpioNumber
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   15
+
+     742              $C$DW$50        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     743                      .dwattr $C$DW$50, DW_AT_TI_symbol_name("_gpioNumber")
+     744                      .dwattr $C$DW$50, DW_AT_type(*$C$DW$T$32)
+     745                      .dwattr $C$DW$50, DW_AT_location[DW_OP_reg22]
+     746              ;* AR4   assigned to _gpioHandle
+     747              $C$DW$51        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     748                      .dwattr $C$DW$51, DW_AT_TI_symbol_name("_gpioHandle")
+     749                      .dwattr $C$DW$51, DW_AT_type(*$C$DW$T$54)
+     750                      .dwattr $C$DW$51, DW_AT_location[DW_OP_reg12]
+     751                      .dwcfi  cfa_offset, -2
+     752                      .dwcfi  save_reg_to_mem, 26, 0
+     753 000000d9 2DA9          MOV       T,AL                  ; [CPU_] |238| 
+     754 000000da 7622   EALLOW
+     755                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     756 000000db 5220          CMPB      AL,#32                ; [CPU_] |244| 
+     757 000000dc 56C8          BF        $C$L22,LO             ; [CPU_] |244| 
+         000000dd 0007 
+     758                      ; branchcc occurs ; [] |244| 
+     759                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     760 000000de 5DAC          MOVZ      AR5,T                 ; [CPU_] |250| 
+     761 000000df D04C          MOVB      XAR0,#76              ; [CPU_] |250| 
+     762 000000e0 DDA0          SUBB      XAR5,#32              ; [CPU_U] |250| 
+     763 000000e1 2DA5          MOV       T,AR5                 ; [CPU_] |250| 
+     764 000000e2 6F02          B         $C$L23,UNC            ; [CPU_] |250| 
+     765                      ; branch occurs ; [] |250| 
+     766 000000e3       $C$L22:    
+     767                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     768 000000e3 D044          MOVB      XAR0,#68              ; [CPU_] |246| 
+     769 000000e4       $C$L23:    
+     770 000000e4 0201          MOVB      ACC,#1                ; [CPU_] |246| 
+     771 000000e5 563B          LSLL      ACC,T                 ; [CPU_] |246| 
+     772 000000e6 1E94          MOVL      *+XAR4[AR0],ACC       ; [CPU_] |246| 
+     773 000000e7 761A   EDIS
+     774 000000e8 FF69          SPM       #0                    ; [CPU_] 
+     775              $C$DW$52        .dwtag  DW_TAG_TI_branch
+     776                      .dwattr $C$DW$52, DW_AT_low_pc(0x00)
+     777                      .dwattr $C$DW$52, DW_AT_TI_return
+     778 000000e9 0006          LRETR     ; [CPU_] 
+     779                      ; return occurs ; [] 
+     780                      .dwattr $C$DW$47, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     781                      .dwattr $C$DW$47, DW_AT_TI_end_line(0x100)
+     782                      .dwattr $C$DW$47, DW_AT_TI_end_column(0x01)
+     783                      .dwendentry
+     784                      .dwendtag $C$DW$47
+     785              
+     786 000000ea               .sect   ".text"
+     787                      .clink
+     788                      .global _GPIO_setHigh
+     789              
+     790              $C$DW$53        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setHigh")
+     791                      .dwattr $C$DW$53, DW_AT_low_pc(_GPIO_setHigh)
+     792                      .dwattr $C$DW$53, DW_AT_high_pc(0x00)
+     793                      .dwattr $C$DW$53, DW_AT_TI_symbol_name("_GPIO_setHigh")
+     794                      .dwattr $C$DW$53, DW_AT_external
+     795                      .dwattr $C$DW$53, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   16
+
+     796                      .dwattr $C$DW$53, DW_AT_TI_begin_line(0xd7)
+     797                      .dwattr $C$DW$53, DW_AT_TI_begin_column(0x06)
+     798                      .dwattr $C$DW$53, DW_AT_TI_max_frame_size(-2)
+     799                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     800              
+     801                      .dwfde $C$DW$CIE, _GPIO_setHigh
+     802              $C$DW$54        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     803                      .dwattr $C$DW$54, DW_AT_TI_symbol_name("_gpioHandle")
+     804                      .dwattr $C$DW$54, DW_AT_type(*$C$DW$T$53)
+     805                      .dwattr $C$DW$54, DW_AT_location[DW_OP_reg12]
+     806              $C$DW$55        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     807                      .dwattr $C$DW$55, DW_AT_TI_symbol_name("_gpioNumber")
+     808                      .dwattr $C$DW$55, DW_AT_type(*$C$DW$T$32)
+     809                      .dwattr $C$DW$55, DW_AT_location[DW_OP_reg0]
+     810              
+     811              ;***************************************************************
+     812              ;* FNAME: _GPIO_setHigh                 FR SIZE:   0           *
+     813              ;*                                                             *
+     814              ;* FUNCTION ENVIRONMENT                                        *
+     815              ;*                                                             *
+     816              ;* FUNCTION PROPERTIES                                         *
+     817              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     818              ;***************************************************************
+     819              
+     820              _GPIO_setHigh:
+     821              ;* T     assigned to _gpioNumber
+     822              $C$DW$56        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     823                      .dwattr $C$DW$56, DW_AT_TI_symbol_name("_gpioNumber")
+     824                      .dwattr $C$DW$56, DW_AT_type(*$C$DW$T$32)
+     825                      .dwattr $C$DW$56, DW_AT_location[DW_OP_reg22]
+     826              ;* AR4   assigned to _gpioHandle
+     827              $C$DW$57        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     828                      .dwattr $C$DW$57, DW_AT_TI_symbol_name("_gpioHandle")
+     829                      .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$54)
+     830                      .dwattr $C$DW$57, DW_AT_location[DW_OP_reg12]
+     831                      .dwcfi  cfa_offset, -2
+     832                      .dwcfi  save_reg_to_mem, 26, 0
+     833 000000ea 2DA9          MOV       T,AL                  ; [CPU_] |216| 
+     834 000000eb 7622   EALLOW
+     835                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     836 000000ec 5220          CMPB      AL,#32                ; [CPU_] |222| 
+     837 000000ed 56C8          BF        $C$L24,LO             ; [CPU_] |222| 
+         000000ee 0007 
+     838                      ; branchcc occurs ; [] |222| 
+     839                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     840 000000ef 5DAC          MOVZ      AR5,T                 ; [CPU_] |228| 
+     841 000000f0 D04A          MOVB      XAR0,#74              ; [CPU_] |228| 
+     842 000000f1 DDA0          SUBB      XAR5,#32              ; [CPU_U] |228| 
+     843 000000f2 2DA5          MOV       T,AR5                 ; [CPU_] |228| 
+     844 000000f3 6F02          B         $C$L25,UNC            ; [CPU_] |228| 
+     845                      ; branch occurs ; [] |228| 
+     846 000000f4       $C$L24:    
+     847                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+     848 000000f4 D042          MOVB      XAR0,#66              ; [CPU_] |224| 
+     849 000000f5       $C$L25:    
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   17
+
+     850 000000f5 0201          MOVB      ACC,#1                ; [CPU_] |224| 
+     851 000000f6 563B          LSLL      ACC,T                 ; [CPU_] |224| 
+     852 000000f7 1E94          MOVL      *+XAR4[AR0],ACC       ; [CPU_] |224| 
+     853 000000f8 761A   EDIS
+     854 000000f9 FF69          SPM       #0                    ; [CPU_] 
+     855              $C$DW$58        .dwtag  DW_TAG_TI_branch
+     856                      .dwattr $C$DW$58, DW_AT_low_pc(0x00)
+     857                      .dwattr $C$DW$58, DW_AT_TI_return
+     858 000000fa 0006          LRETR     ; [CPU_] 
+     859                      ; return occurs ; [] 
+     860                      .dwattr $C$DW$53, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     861                      .dwattr $C$DW$53, DW_AT_TI_end_line(0xea)
+     862                      .dwattr $C$DW$53, DW_AT_TI_end_column(0x01)
+     863                      .dwendentry
+     864                      .dwendtag $C$DW$53
+     865              
+     866 000000fb               .sect   ".text"
+     867                      .clink
+     868                      .global _GPIO_setExtInt
+     869              
+     870              $C$DW$59        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setExtInt")
+     871                      .dwattr $C$DW$59, DW_AT_low_pc(_GPIO_setExtInt)
+     872                      .dwattr $C$DW$59, DW_AT_high_pc(0x00)
+     873                      .dwattr $C$DW$59, DW_AT_TI_symbol_name("_GPIO_setExtInt")
+     874                      .dwattr $C$DW$59, DW_AT_external
+     875                      .dwattr $C$DW$59, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     876                      .dwattr $C$DW$59, DW_AT_TI_begin_line(0xa9)
+     877                      .dwattr $C$DW$59, DW_AT_TI_begin_column(0x06)
+     878                      .dwattr $C$DW$59, DW_AT_TI_max_frame_size(-2)
+     879                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     880              
+     881                      .dwfde $C$DW$CIE, _GPIO_setExtInt
+     882              $C$DW$60        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     883                      .dwattr $C$DW$60, DW_AT_TI_symbol_name("_gpioHandle")
+     884                      .dwattr $C$DW$60, DW_AT_type(*$C$DW$T$53)
+     885                      .dwattr $C$DW$60, DW_AT_location[DW_OP_reg12]
+     886              $C$DW$61        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     887                      .dwattr $C$DW$61, DW_AT_TI_symbol_name("_gpioNumber")
+     888                      .dwattr $C$DW$61, DW_AT_type(*$C$DW$T$32)
+     889                      .dwattr $C$DW$61, DW_AT_location[DW_OP_reg0]
+     890              $C$DW$62        .dwtag  DW_TAG_formal_parameter, DW_AT_name("intNumber")
+     891                      .dwattr $C$DW$62, DW_AT_TI_symbol_name("_intNumber")
+     892                      .dwattr $C$DW$62, DW_AT_type(*$C$DW$T$44)
+     893                      .dwattr $C$DW$62, DW_AT_location[DW_OP_reg1]
+     894              
+     895              ;***************************************************************
+     896              ;* FNAME: _GPIO_setExtInt               FR SIZE:   0           *
+     897              ;*                                                             *
+     898              ;* FUNCTION ENVIRONMENT                                        *
+     899              ;*                                                             *
+     900              ;* FUNCTION PROPERTIES                                         *
+     901              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     902              ;***************************************************************
+     903              
+     904              _GPIO_setExtInt:
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   18
+
+     905              ;* AL    assigned to _gpioHandle
+     906              $C$DW$63        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     907                      .dwattr $C$DW$63, DW_AT_TI_symbol_name("_gpioHandle")
+     908                      .dwattr $C$DW$63, DW_AT_type(*$C$DW$T$54)
+     909                      .dwattr $C$DW$63, DW_AT_location[DW_OP_reg0]
+     910              ;* AR6   assigned to _gpioNumber
+     911              $C$DW$64        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     912                      .dwattr $C$DW$64, DW_AT_TI_symbol_name("_gpioNumber")
+     913                      .dwattr $C$DW$64, DW_AT_type(*$C$DW$T$32)
+     914                      .dwattr $C$DW$64, DW_AT_location[DW_OP_reg16]
+     915              ;* AR7   assigned to _intNumber
+     916              $C$DW$65        .dwtag  DW_TAG_variable, DW_AT_name("intNumber")
+     917                      .dwattr $C$DW$65, DW_AT_TI_symbol_name("_intNumber")
+     918                      .dwattr $C$DW$65, DW_AT_type(*$C$DW$T$44)
+     919                      .dwattr $C$DW$65, DW_AT_location[DW_OP_reg18]
+     920                      .dwcfi  cfa_offset, -2
+     921                      .dwcfi  save_reg_to_mem, 26, 0
+     922 000000fb 80A8          MOVZ      AR7,AH                ; [CPU_] |170| 
+     923 000000fc 88A9          MOVZ      AR6,AL                ; [CPU_] |170| 
+     924 000000fd A8A9          MOVL      ACC,XAR4              ; [CPU_] |170| 
+     925 000000fe 7622   EALLOW
+     926                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     927 000000ff 0DA7          ADDU      ACC,AR7               ; [CPU_] |177| 
+     928 00000100 8AA9          MOVL      XAR4,ACC              ; [CPU_] |177| 
+     929 00000101 D060          MOVB      XAR0,#96              ; [CPU_] |177| 
+     930 00000102 7E94          MOV       *+XAR4[AR0],AR6       ; [CPU_] |177| 
+     931 00000103 761A   EDIS
+     932 00000104 FF69          SPM       #0                    ; [CPU_] 
+     933              $C$DW$66        .dwtag  DW_TAG_TI_branch
+     934                      .dwattr $C$DW$66, DW_AT_low_pc(0x00)
+     935                      .dwattr $C$DW$66, DW_AT_TI_return
+     936 00000105 0006          LRETR     ; [CPU_] 
+     937                      ; return occurs ; [] 
+     938                      .dwattr $C$DW$59, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+     939                      .dwattr $C$DW$59, DW_AT_TI_end_line(0xb6)
+     940                      .dwattr $C$DW$59, DW_AT_TI_end_column(0x01)
+     941                      .dwendentry
+     942                      .dwendtag $C$DW$59
+     943              
+     944 00000106               .sect   ".text"
+     945                      .clink
+     946                      .global _GPIO_setDirection
+     947              
+     948              $C$DW$67        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_setDirection")
+     949                      .dwattr $C$DW$67, DW_AT_low_pc(_GPIO_setDirection)
+     950                      .dwattr $C$DW$67, DW_AT_high_pc(0x00)
+     951                      .dwattr $C$DW$67, DW_AT_TI_symbol_name("_GPIO_setDirection")
+     952                      .dwattr $C$DW$67, DW_AT_external
+     953                      .dwattr $C$DW$67, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+     954                      .dwattr $C$DW$67, DW_AT_TI_begin_line(0x6d)
+     955                      .dwattr $C$DW$67, DW_AT_TI_begin_column(0x06)
+     956                      .dwattr $C$DW$67, DW_AT_TI_max_frame_size(-2)
+     957                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+     958              
+     959                      .dwfde $C$DW$CIE, _GPIO_setDirection
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   19
+
+     960              $C$DW$68        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+     961                      .dwattr $C$DW$68, DW_AT_TI_symbol_name("_gpioHandle")
+     962                      .dwattr $C$DW$68, DW_AT_type(*$C$DW$T$53)
+     963                      .dwattr $C$DW$68, DW_AT_location[DW_OP_reg12]
+     964              $C$DW$69        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+     965                      .dwattr $C$DW$69, DW_AT_TI_symbol_name("_gpioNumber")
+     966                      .dwattr $C$DW$69, DW_AT_type(*$C$DW$T$32)
+     967                      .dwattr $C$DW$69, DW_AT_location[DW_OP_reg0]
+     968              $C$DW$70        .dwtag  DW_TAG_formal_parameter, DW_AT_name("direction")
+     969                      .dwattr $C$DW$70, DW_AT_TI_symbol_name("_direction")
+     970                      .dwattr $C$DW$70, DW_AT_type(*$C$DW$T$38)
+     971                      .dwattr $C$DW$70, DW_AT_location[DW_OP_reg1]
+     972              
+     973              ;***************************************************************
+     974              ;* FNAME: _GPIO_setDirection            FR SIZE:   0           *
+     975              ;*                                                             *
+     976              ;* FUNCTION ENVIRONMENT                                        *
+     977              ;*                                                             *
+     978              ;* FUNCTION PROPERTIES                                         *
+     979              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+     980              ;***************************************************************
+     981              
+     982              _GPIO_setDirection:
+     983              ;* T     assigned to $O$C1
+     984              ;* AR6   assigned to _direction
+     985              $C$DW$71        .dwtag  DW_TAG_variable, DW_AT_name("direction")
+     986                      .dwattr $C$DW$71, DW_AT_TI_symbol_name("_direction")
+     987                      .dwattr $C$DW$71, DW_AT_type(*$C$DW$T$38)
+     988                      .dwattr $C$DW$71, DW_AT_location[DW_OP_reg16]
+     989              ;* T     assigned to _gpioNumber
+     990              $C$DW$72        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+     991                      .dwattr $C$DW$72, DW_AT_TI_symbol_name("_gpioNumber")
+     992                      .dwattr $C$DW$72, DW_AT_type(*$C$DW$T$32)
+     993                      .dwattr $C$DW$72, DW_AT_location[DW_OP_reg22]
+     994              ;* AR4   assigned to _gpioHandle
+     995              $C$DW$73        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+     996                      .dwattr $C$DW$73, DW_AT_TI_symbol_name("_gpioHandle")
+     997                      .dwattr $C$DW$73, DW_AT_type(*$C$DW$T$54)
+     998                      .dwattr $C$DW$73, DW_AT_location[DW_OP_reg12]
+     999                      .dwcfi  cfa_offset, -2
+    1000                      .dwcfi  save_reg_to_mem, 26, 0
+    1001 00000106 88A8          MOVZ      AR6,AH                ; [CPU_] |110| 
+    1002 00000107 2DA9          MOV       T,AL                  ; [CPU_] |110| 
+    1003 00000108 7622   EALLOW
+    1004                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1005 00000109 5220          CMPB      AL,#32                ; [CPU_] |116| 
+    1006 0000010a 56C8          BF        $C$L26,LO             ; [CPU_] |116| 
+         0000010b 0008 
+    1007                      ; branchcc occurs ; [] |116| 
+    1008                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1009 0000010c 83A4          MOVL      XAR5,XAR4             ; [CPU_] |127| 
+    1010 0000010d 9CE0          ADDB      AL,#-32               ; [CPU_] |127| 
+    1011 0000010e 2DA9          MOV       T,AL                  ; [CPU_] |127| 
+    1012                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1013 0000010f DC1A          ADDB      XAR4,#26              ; [CPU_] |130| 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   20
+
+    1014                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1015 00000110 DD1A          ADDB      XAR5,#26              ; [CPU_] |127| 
+    1016                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1017 00000111 6F04          B         $C$L27,UNC            ; [CPU_] |130| 
+    1018                      ; branch occurs ; [] |130| 
+    1019 00000112       $C$L26:    
+    1020                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1021 00000112 83A4          MOVL      XAR5,XAR4             ; [CPU_] |119| 
+    1022                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1023 00000113 DC0A          ADDB      XAR4,#10              ; [CPU_] |122| 
+    1024                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1025 00000114 DD0A          ADDB      XAR5,#10              ; [CPU_] |119| 
+    1026 00000115       $C$L27:    
+    1027 00000115 0201          MOVB      ACC,#1                ; [CPU_] |119| 
+    1028 00000116 563B          LSLL      ACC,T                 ; [CPU_] |119| 
+    1029 00000117 FF55          NOT       ACC                   ; [CPU_] |119| 
+    1030 00000118 C0C5          AND       *+XAR5[0],AL          ; [CPU_] |119| 
+    1031 00000119 C1CD          AND       *+XAR5[1],AH          ; [CPU_] |119| 
+    1032                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1033 0000011a 0EA6          MOVU      ACC,AR6               ; [CPU_] |122| 
+    1034 0000011b 563B          LSLL      ACC,T                 ; [CPU_] |122| 
+    1035 0000011c 98C4          OR        *+XAR4[0],AL          ; [CPU_] |122| 
+    1036 0000011d 99CC          OR        *+XAR4[1],AH          ; [CPU_] |122| 
+    1037 0000011e 761A   EDIS
+    1038 0000011f FF69          SPM       #0                    ; [CPU_] 
+    1039              $C$DW$74        .dwtag  DW_TAG_TI_branch
+    1040                      .dwattr $C$DW$74, DW_AT_low_pc(0x00)
+    1041                      .dwattr $C$DW$74, DW_AT_TI_return
+    1042 00000120 0006          LRETR     ; [CPU_] 
+    1043                      ; return occurs ; [] 
+    1044                      .dwattr $C$DW$67, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+    1045                      .dwattr $C$DW$67, DW_AT_TI_end_line(0x88)
+    1046                      .dwattr $C$DW$67, DW_AT_TI_end_column(0x01)
+    1047                      .dwendentry
+    1048                      .dwendtag $C$DW$67
+    1049              
+    1050 00000121               .sect   ".text"
+    1051                      .clink
+    1052                      .global _GPIO_read
+    1053              
+    1054              $C$DW$75        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_read")
+    1055                      .dwattr $C$DW$75, DW_AT_low_pc(_GPIO_read)
+    1056                      .dwattr $C$DW$75, DW_AT_high_pc(0x00)
+    1057                      .dwattr $C$DW$75, DW_AT_TI_symbol_name("_GPIO_read")
+    1058                      .dwattr $C$DW$75, DW_AT_external
+    1059                      .dwattr $C$DW$75, DW_AT_type(*$C$DW$T$81)
+    1060                      .dwattr $C$DW$75, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+    1061                      .dwattr $C$DW$75, DW_AT_TI_begin_line(0xb9)
+    1062                      .dwattr $C$DW$75, DW_AT_TI_begin_column(0x06)
+    1063                      .dwattr $C$DW$75, DW_AT_TI_max_frame_size(-4)
+    1064                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1065              
+    1066                      .dwfde $C$DW$CIE, _GPIO_read
+    1067              $C$DW$76        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+    1068                      .dwattr $C$DW$76, DW_AT_TI_symbol_name("_gpioHandle")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   21
+
+    1069                      .dwattr $C$DW$76, DW_AT_type(*$C$DW$T$53)
+    1070                      .dwattr $C$DW$76, DW_AT_location[DW_OP_reg12]
+    1071              $C$DW$77        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+    1072                      .dwattr $C$DW$77, DW_AT_TI_symbol_name("_gpioNumber")
+    1073                      .dwattr $C$DW$77, DW_AT_type(*$C$DW$T$32)
+    1074                      .dwattr $C$DW$77, DW_AT_location[DW_OP_reg0]
+    1075              
+    1076              ;***************************************************************
+    1077              ;* FNAME: _GPIO_read                    FR SIZE:   2           *
+    1078              ;*                                                             *
+    1079              ;* FUNCTION ENVIRONMENT                                        *
+    1080              ;*                                                             *
+    1081              ;* FUNCTION PROPERTIES                                         *
+    1082              ;*                            0 Parameter,  2 Auto,  0 SOE     *
+    1083              ;***************************************************************
+    1084              
+    1085              _GPIO_read:
+    1086              ;* AL    assigned to _gpio_read
+    1087              $C$DW$78        .dwtag  DW_TAG_variable, DW_AT_name("gpio_read")
+    1088                      .dwattr $C$DW$78, DW_AT_TI_symbol_name("_gpio_read")
+    1089                      .dwattr $C$DW$78, DW_AT_type(*$C$DW$T$19)
+    1090                      .dwattr $C$DW$78, DW_AT_location[DW_OP_reg0]
+    1091              ;* AL    assigned to _gpio_status
+    1092              $C$DW$79        .dwtag  DW_TAG_variable, DW_AT_name("gpio_status")
+    1093                      .dwattr $C$DW$79, DW_AT_TI_symbol_name("_gpio_status")
+    1094                      .dwattr $C$DW$79, DW_AT_type(*$C$DW$T$81)
+    1095                      .dwattr $C$DW$79, DW_AT_location[DW_OP_reg0]
+    1096              ;* T     assigned to _gpioNumber
+    1097              $C$DW$80        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+    1098                      .dwattr $C$DW$80, DW_AT_TI_symbol_name("_gpioNumber")
+    1099                      .dwattr $C$DW$80, DW_AT_type(*$C$DW$T$32)
+    1100                      .dwattr $C$DW$80, DW_AT_location[DW_OP_reg22]
+    1101              ;* AR4   assigned to _gpioHandle
+    1102              $C$DW$81        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+    1103                      .dwattr $C$DW$81, DW_AT_TI_symbol_name("_gpioHandle")
+    1104                      .dwattr $C$DW$81, DW_AT_type(*$C$DW$T$54)
+    1105                      .dwattr $C$DW$81, DW_AT_location[DW_OP_reg12]
+    1106                      .dwcfi  cfa_offset, -2
+    1107                      .dwcfi  save_reg_to_mem, 26, 0
+    1108 00000121 FE02          ADDB      SP,#2                 ; [CPU_U] 
+    1109                      .dwcfi  cfa_offset, -4
+    1110                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1111 00000122 5220          CMPB      AL,#32                ; [CPU_] |194| 
+    1112                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1113 00000123 2DA9          MOV       T,AL                  ; [CPU_] |186| 
+    1114                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1115 00000124 56C7          BF        $C$L28,HIS            ; [CPU_] |194| 
+         00000125 0005 
+    1116                      ; branchcc occurs ; [] |194| 
+    1117 00000126 0201          MOVB      ACC,#1                ; [CPU_] |194| 
+    1118 00000127 D040          MOVB      XAR0,#64              ; [CPU_] |194| 
+    1119 00000128 6F07          B         $C$L29,UNC            ; [CPU_] |194| 
+    1120                      ; branch occurs ; [] |194| 
+    1121 00000129       $C$L28:    
+    1122 00000129 0201          MOVB      ACC,#1                ; [CPU_] |194| 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   22
+
+    1123 0000012a D048          MOVB      XAR0,#72              ; [CPU_] |194| 
+    1124 0000012b FF5A          MOVL      P,ACC                 ; [CPU_] |194| 
+    1125 0000012c 92AC          MOV       AL,T                  ; [CPU_] |194| 
+    1126 0000012d 9CE0          ADDB      AL,#-32               ; [CPU_] |194| 
+    1127 0000012e 16A9          MOVP      T,AL                  ; [CPU_] 
+    1128 0000012f       $C$L29:    
+    1129 0000012f 563B          LSLL      ACC,T                 ; [CPU_] |194| 
+    1130 00000130 FF5A          MOVL      P,ACC                 ; [CPU_] |194| 
+    1131                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+    1132 00000131 BE00          MOVB      XAR6,#0               ; [CPU_] |207| 
+    1133                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 1
+    1134 00000132 0694          MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |194| 
+    1135 00000133 1E42          MOVL      *-SP[2],ACC           ; [CPU_] |194| 
+    1136 00000134 9242          MOV       AL,*-SP[2]            ; [CPU_] |194| 
+    1137 00000135 CEAB          AND       AL,PL                 ; [CPU_] |194| 
+    1138 00000136 9642          MOV       *-SP[2],AL            ; [CPU_] |194| 
+    1139 00000137 9241          MOV       AL,*-SP[1]            ; [CPU_] |194| 
+    1140 00000138 CEAA          AND       AL,PH                 ; [CPU_] |194| 
+    1141 00000139 9641          MOV       *-SP[1],AL            ; [CPU_] |194| 
+    1142 0000013a 0642          MOVL      ACC,*-SP[2]           ; [CPU_] |194| 
+    1143                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 2
+    1144 0000013b FF58          TEST      ACC                   ; [CPU_] |207| 
+    1145 0000013c 56B0          MOVB      XAR6,#1,NEQ           ; [CPU_] |207| 
+         0000013d 01A6 
+    1146 0000013e 92A6          MOV       AL,AR6                ; [CPU_] |207| 
+    1147 0000013f FE82          SUBB      SP,#2                 ; [CPU_U] 
+    1148                      .dwcfi  cfa_offset, -2
+    1149              $C$DW$82        .dwtag  DW_TAG_TI_branch
+    1150                      .dwattr $C$DW$82, DW_AT_low_pc(0x00)
+    1151                      .dwattr $C$DW$82, DW_AT_TI_return
+    1152 00000140 0006          LRETR     ; [CPU_] 
+    1153                      ; return occurs ; [] 
+    1154                      .dwattr $C$DW$75, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+    1155                      .dwattr $C$DW$75, DW_AT_TI_end_line(0xd4)
+    1156                      .dwattr $C$DW$75, DW_AT_TI_end_column(0x01)
+    1157                      .dwendentry
+    1158                      .dwendtag $C$DW$75
+    1159              
+    1160 00000141               .sect   ".text"
+    1161                      .clink
+    1162                      .global _GPIO_lpmSelect
+    1163              
+    1164              $C$DW$83        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_lpmSelect")
+    1165                      .dwattr $C$DW$83, DW_AT_low_pc(_GPIO_lpmSelect)
+    1166                      .dwattr $C$DW$83, DW_AT_high_pc(0x00)
+    1167                      .dwattr $C$DW$83, DW_AT_TI_symbol_name("_GPIO_lpmSelect")
+    1168                      .dwattr $C$DW$83, DW_AT_external
+    1169                      .dwattr $C$DW$83, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+    1170                      .dwattr $C$DW$83, DW_AT_TI_begin_line(0x1a9)
+    1171                      .dwattr $C$DW$83, DW_AT_TI_begin_column(0x06)
+    1172                      .dwattr $C$DW$83, DW_AT_TI_max_frame_size(-2)
+    1173                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 4
+    1174              
+    1175                      .dwfde $C$DW$CIE, _GPIO_lpmSelect
+    1176              $C$DW$84        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   23
+
+    1177                      .dwattr $C$DW$84, DW_AT_TI_symbol_name("_gpioHandle")
+    1178                      .dwattr $C$DW$84, DW_AT_type(*$C$DW$T$53)
+    1179                      .dwattr $C$DW$84, DW_AT_location[DW_OP_reg12]
+    1180              $C$DW$85        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+    1181                      .dwattr $C$DW$85, DW_AT_TI_symbol_name("_gpioNumber")
+    1182                      .dwattr $C$DW$85, DW_AT_type(*$C$DW$T$32)
+    1183                      .dwattr $C$DW$85, DW_AT_location[DW_OP_reg0]
+    1184              
+    1185              ;***************************************************************
+    1186              ;* FNAME: _GPIO_lpmSelect               FR SIZE:   0           *
+    1187              ;*                                                             *
+    1188              ;* FUNCTION ENVIRONMENT                                        *
+    1189              ;*                                                             *
+    1190              ;* FUNCTION PROPERTIES                                         *
+    1191              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+    1192              ;***************************************************************
+    1193              
+    1194              _GPIO_lpmSelect:
+    1195              ;* T     assigned to _gpioNumber
+    1196              $C$DW$86        .dwtag  DW_TAG_variable, DW_AT_name("gpioNumber")
+    1197                      .dwattr $C$DW$86, DW_AT_TI_symbol_name("_gpioNumber")
+    1198                      .dwattr $C$DW$86, DW_AT_type(*$C$DW$T$32)
+    1199                      .dwattr $C$DW$86, DW_AT_location[DW_OP_reg22]
+    1200                      .dwcfi  cfa_offset, -2
+    1201                      .dwcfi  save_reg_to_mem, 26, 0
+    1202 00000141 2DA9          MOV       T,AL                  ; [CPU_] |426| 
+    1203 00000142 7622   EALLOW
+    1204                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 4
+    1205 00000143 DC68          ADDB      XAR4,#104             ; [CPU_] |431| 
+    1206 00000144 0201          MOVB      ACC,#1                ; [CPU_] |431| 
+    1207 00000145 563B          LSLL      ACC,T                 ; [CPU_] |431| 
+    1208 00000146 98C4          OR        *+XAR4[0],AL          ; [CPU_] |431| 
+    1209 00000147 99CC          OR        *+XAR4[1],AH          ; [CPU_] |431| 
+    1210 00000148 761A   EDIS
+    1211 00000149 FF69          SPM       #0                    ; [CPU_] 
+    1212              $C$DW$87        .dwtag  DW_TAG_TI_branch
+    1213                      .dwattr $C$DW$87, DW_AT_low_pc(0x00)
+    1214                      .dwattr $C$DW$87, DW_AT_TI_return
+    1215 0000014a 0006          LRETR     ; [CPU_] 
+    1216                      ; return occurs ; [] 
+    1217                      .dwattr $C$DW$83, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+    1218                      .dwattr $C$DW$83, DW_AT_TI_end_line(0x1b4)
+    1219                      .dwattr $C$DW$83, DW_AT_TI_end_column(0x01)
+    1220                      .dwendentry
+    1221                      .dwendtag $C$DW$83
+    1222              
+    1223 0000014b               .sect   ".text"
+    1224                      .clink
+    1225                      .global _GPIO_init
+    1226              
+    1227              $C$DW$88        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_init")
+    1228                      .dwattr $C$DW$88, DW_AT_low_pc(_GPIO_init)
+    1229                      .dwattr $C$DW$88, DW_AT_high_pc(0x00)
+    1230                      .dwattr $C$DW$88, DW_AT_TI_symbol_name("_GPIO_init")
+    1231                      .dwattr $C$DW$88, DW_AT_external
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   24
+
+    1232                      .dwattr $C$DW$88, DW_AT_type(*$C$DW$T$53)
+    1233                      .dwattr $C$DW$88, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+    1234                      .dwattr $C$DW$88, DW_AT_TI_begin_line(0x5c)
+    1235                      .dwattr $C$DW$88, DW_AT_TI_begin_column(0x0d)
+    1236                      .dwattr $C$DW$88, DW_AT_TI_max_frame_size(-2)
+    1237                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 9
+    1238              
+    1239                      .dwfde $C$DW$CIE, _GPIO_init
+    1240              $C$DW$89        .dwtag  DW_TAG_formal_parameter, DW_AT_name("pMemory")
+    1241                      .dwattr $C$DW$89, DW_AT_TI_symbol_name("_pMemory")
+    1242                      .dwattr $C$DW$89, DW_AT_type(*$C$DW$T$3)
+    1243                      .dwattr $C$DW$89, DW_AT_location[DW_OP_reg12]
+    1244              $C$DW$90        .dwtag  DW_TAG_formal_parameter, DW_AT_name("numBytes")
+    1245                      .dwattr $C$DW$90, DW_AT_TI_symbol_name("_numBytes")
+    1246                      .dwattr $C$DW$90, DW_AT_type(*$C$DW$T$56)
+    1247                      .dwattr $C$DW$90, DW_AT_location[DW_OP_reg0]
+    1248              
+    1249              ;***************************************************************
+    1250              ;* FNAME: _GPIO_init                    FR SIZE:   0           *
+    1251              ;*                                                             *
+    1252              ;* FUNCTION ENVIRONMENT                                        *
+    1253              ;*                                                             *
+    1254              ;* FUNCTION PROPERTIES                                         *
+    1255              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+    1256              ;***************************************************************
+    1257              
+    1258              _GPIO_init:
+    1259              ;* AR6   assigned to _numBytes
+    1260              $C$DW$91        .dwtag  DW_TAG_variable, DW_AT_name("numBytes")
+    1261                      .dwattr $C$DW$91, DW_AT_TI_symbol_name("_numBytes")
+    1262                      .dwattr $C$DW$91, DW_AT_type(*$C$DW$T$56)
+    1263                      .dwattr $C$DW$91, DW_AT_location[DW_OP_reg16]
+    1264                      .dwcfi  cfa_offset, -2
+    1265                      .dwcfi  save_reg_to_mem, 26, 0
+    1266 0000014b 1EA6          MOVL      XAR6,ACC              ; [CPU_] |93| 
+    1267                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 9
+    1268 0000014c 026A          MOVB      ACC,#106              ; [CPU_] |99| 
+    1269 0000014d 0FA6          CMPL      ACC,XAR6              ; [CPU_] |99| 
+    1270 0000014e 56C9          BF        $C$L30,LOS            ; [CPU_] |99| 
+         0000014f 0003 
+    1271                      ; branchcc occurs ; [] |99| 
+    1272 00000150 D400          MOVB      XAR4,#0               ; [CPU_] |99| 
+    1273              $C$L30:    
+    1274              $C$DW$92        .dwtag  DW_TAG_TI_branch
+    1275                      .dwattr $C$DW$92, DW_AT_low_pc(0x00)
+    1276                      .dwattr $C$DW$92, DW_AT_TI_return
+    1277 00000151 0006          LRETR     ; [CPU_] 
+    1278                      ; return occurs ; [] 
+    1279                      .dwattr $C$DW$88, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+    1280                      .dwattr $C$DW$88, DW_AT_TI_end_line(0x6a)
+    1281                      .dwattr $C$DW$88, DW_AT_TI_end_column(0x01)
+    1282                      .dwendentry
+    1283                      .dwendtag $C$DW$88
+    1284              
+    1285 00000152               .sect   ".text"
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   25
+
+    1286                      .clink
+    1287                      .global _GPIO_getPortData
+    1288              
+    1289              $C$DW$93        .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_getPortData")
+    1290                      .dwattr $C$DW$93, DW_AT_low_pc(_GPIO_getPortData)
+    1291                      .dwattr $C$DW$93, DW_AT_high_pc(0x00)
+    1292                      .dwattr $C$DW$93, DW_AT_TI_symbol_name("_GPIO_getPortData")
+    1293                      .dwattr $C$DW$93, DW_AT_external
+    1294                      .dwattr $C$DW$93, DW_AT_type(*$C$DW$T$21)
+    1295                      .dwattr $C$DW$93, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f
+    1296                      .dwattr $C$DW$93, DW_AT_TI_begin_line(0x4a)
+    1297                      .dwattr $C$DW$93, DW_AT_TI_begin_column(0x0a)
+    1298                      .dwattr $C$DW$93, DW_AT_TI_max_frame_size(-2)
+    1299                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 7
+    1300              
+    1301                      .dwfde $C$DW$CIE, _GPIO_getPortData
+    1302              $C$DW$94        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+    1303                      .dwattr $C$DW$94, DW_AT_TI_symbol_name("_gpioHandle")
+    1304                      .dwattr $C$DW$94, DW_AT_type(*$C$DW$T$53)
+    1305                      .dwattr $C$DW$94, DW_AT_location[DW_OP_reg12]
+    1306              $C$DW$95        .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioPort")
+    1307                      .dwattr $C$DW$95, DW_AT_TI_symbol_name("_gpioPort")
+    1308                      .dwattr $C$DW$95, DW_AT_type(*$C$DW$T$35)
+    1309                      .dwattr $C$DW$95, DW_AT_location[DW_OP_reg0]
+    1310              
+    1311              ;***************************************************************
+    1312              ;* FNAME: _GPIO_getPortData             FR SIZE:   0           *
+    1313              ;*                                                             *
+    1314              ;* FUNCTION ENVIRONMENT                                        *
+    1315              ;*                                                             *
+    1316              ;* FUNCTION PROPERTIES                                         *
+    1317              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+    1318              ;***************************************************************
+    1319              
+    1320              _GPIO_getPortData:
+    1321              ;* AL    assigned to _gpioPort
+    1322              $C$DW$96        .dwtag  DW_TAG_variable, DW_AT_name("gpioPort")
+    1323                      .dwattr $C$DW$96, DW_AT_TI_symbol_name("_gpioPort")
+    1324                      .dwattr $C$DW$96, DW_AT_type(*$C$DW$T$35)
+    1325                      .dwattr $C$DW$96, DW_AT_location[DW_OP_reg0]
+    1326              ;* AR4   assigned to _gpioHandle
+    1327              $C$DW$97        .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+    1328                      .dwattr $C$DW$97, DW_AT_TI_symbol_name("_gpioHandle")
+    1329                      .dwattr $C$DW$97, DW_AT_type(*$C$DW$T$54)
+    1330                      .dwattr $C$DW$97, DW_AT_location[DW_OP_reg12]
+    1331                      .dwcfi  cfa_offset, -2
+    1332                      .dwcfi  save_reg_to_mem, 26, 0
+    1333                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 8
+    1334 00000152 5200          CMPB      AL,#0                 ; [CPU_] |84| 
+    1335 00000153 EC07          BF        $C$L32,EQ             ; [CPU_] |84| 
+    1336                      ; branchcc occurs ; [] |84| 
+    1337 00000154 5201          CMPB      AL,#1                 ; [CPU_] |84| 
+    1338 00000155 ED03          BF        $C$L31,NEQ            ; [CPU_] |84| 
+    1339                      ; branchcc occurs ; [] |84| 
+    1340 00000156 D048          MOVB      XAR0,#72              ; [CPU_] |84| 
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   26
+
+    1341 00000157 6F04          B         $C$L33,UNC            ; [CPU_] |84| 
+    1342                      ; branch occurs ; [] |84| 
+    1343 00000158       $C$L31:    
+    1344                      .dwcfi  remember_state
+    1345 00000158 9A00          MOVB      AL,#0                 ; [CPU_] |84| 
+    1346              $C$DW$98        .dwtag  DW_TAG_TI_branch
+    1347                      .dwattr $C$DW$98, DW_AT_low_pc(0x00)
+    1348                      .dwattr $C$DW$98, DW_AT_TI_return
+    1349 00000159 0006          LRETR     ; [CPU_] 
+    1350                      ; return occurs ; [] 
+    1351                      .dwcfi  restore_state
+    1352 0000015a       $C$L32:    
+    1353 0000015a D040          MOVB      XAR0,#64              ; [CPU_] |84| 
+    1354 0000015b       $C$L33:    
+    1355 0000015b 0694          MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |84| 
+    1356              $C$DW$99        .dwtag  DW_TAG_TI_branch
+    1357                      .dwattr $C$DW$99, DW_AT_low_pc(0x00)
+    1358                      .dwattr $C$DW$99, DW_AT_TI_return
+    1359 0000015c 0006          LRETR     ; [CPU_] 
+    1360                      ; return occurs ; [] 
+    1361                      .dwattr $C$DW$93, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28
+    1362                      .dwattr $C$DW$93, DW_AT_TI_end_line(0x59)
+    1363                      .dwattr $C$DW$93, DW_AT_TI_end_column(0x01)
+    1364                      .dwendentry
+    1365                      .dwendtag $C$DW$93
+    1366              
+    1367 0000015d               .sect   ".text"
+    1368                      .clink
+    1369                      .global _GPIO_getData
+    1370              
+    1371              $C$DW$100       .dwtag  DW_TAG_subprogram, DW_AT_name("GPIO_getData")
+    1372                      .dwattr $C$DW$100, DW_AT_low_pc(_GPIO_getData)
+    1373                      .dwattr $C$DW$100, DW_AT_high_pc(0x00)
+    1374                      .dwattr $C$DW$100, DW_AT_TI_symbol_name("_GPIO_getData")
+    1375                      .dwattr $C$DW$100, DW_AT_external
+    1376                      .dwattr $C$DW$100, DW_AT_type(*$C$DW$T$81)
+    1377                      .dwattr $C$DW$100, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/
+    1378                      .dwattr $C$DW$100, DW_AT_TI_begin_line(0x39)
+    1379                      .dwattr $C$DW$100, DW_AT_TI_begin_column(0x06)
+    1380                      .dwattr $C$DW$100, DW_AT_TI_max_frame_size(-2)
+    1381                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 5
+    1382              
+    1383                      .dwfde $C$DW$CIE, _GPIO_getData
+    1384              $C$DW$101       .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioHandle")
+    1385                      .dwattr $C$DW$101, DW_AT_TI_symbol_name("_gpioHandle")
+    1386                      .dwattr $C$DW$101, DW_AT_type(*$C$DW$T$53)
+    1387                      .dwattr $C$DW$101, DW_AT_location[DW_OP_reg12]
+    1388              $C$DW$102       .dwtag  DW_TAG_formal_parameter, DW_AT_name("gpioNumber")
+    1389                      .dwattr $C$DW$102, DW_AT_TI_symbol_name("_gpioNumber")
+    1390                      .dwattr $C$DW$102, DW_AT_type(*$C$DW$T$32)
+    1391                      .dwattr $C$DW$102, DW_AT_location[DW_OP_reg0]
+    1392              
+    1393              ;***************************************************************
+    1394              ;* FNAME: _GPIO_getData                 FR SIZE:   0           *
+    1395              ;*                                                             *
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   27
+
+    1396              ;* FUNCTION ENVIRONMENT                                        *
+    1397              ;*                                                             *
+    1398              ;* FUNCTION PROPERTIES                                         *
+    1399              ;*                            0 Parameter,  0 Auto,  0 SOE     *
+    1400              ;***************************************************************
+    1401              
+    1402              _GPIO_getData:
+    1403              ;* AR4   assigned to _gpioHandle
+    1404              $C$DW$103       .dwtag  DW_TAG_variable, DW_AT_name("gpioHandle")
+    1405                      .dwattr $C$DW$103, DW_AT_TI_symbol_name("_gpioHandle")
+    1406                      .dwattr $C$DW$103, DW_AT_type(*$C$DW$T$54)
+    1407                      .dwattr $C$DW$103, DW_AT_location[DW_OP_reg12]
+    1408                      .dwcfi  cfa_offset, -2
+    1409                      .dwcfi  save_reg_to_mem, 26, 0
+    1410                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 6
+    1411 0000015d 5220          CMPB      AL,#32                ; [CPU_] |64| 
+    1412                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 5
+    1413 0000015e 2DA9          MOV       T,AL                  ; [CPU_] |58| 
+    1414                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f28x/f2802x/gpio.c",line 6
+    1415 0000015f 56C7          BF        $C$L34,HIS            ; [CPU_] |64| 
+         00000160 0005 
+    1416                      ; branchcc occurs ; [] |64| 
+    1417 00000161 D040          MOVB      XAR0,#64              ; [CPU_] |64| 
+    1418 00000162 0694          MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |64| 
+    1419 00000163 6F06          B         $C$L35,UNC            ; [CPU_] |64| 
+    1420                      ; branch occurs ; [] |64| 
+    1421 00000164       $C$L34:    
+    1422 00000164 D048          MOVB      XAR0,#72              ; [CPU_] |64| 
+    1423 00000165 0694          MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |64| 
+    1424 00000166 5CAC          MOVZ      AR4,T                 ; [CPU_] |64| 
+    1425 00000167 DCA0          SUBB      XAR4,#32              ; [CPU_U] |64| 
+    1426 00000168 2DA4          MOV       T,AR4                 ; [CPU_] |64| 
+    1427 00000169       $C$L35:    
+    1428 00000169 5622          LSRL      ACC,T                 ; [CPU_] |64| 
+    1429 0000016a 9001          ANDB      AL,#0x01              ; [CPU_] |64| 
+    1430              $C$DW$104       .dwtag  DW_TAG_TI_branch
+    1431                      .dwattr $C$DW$104, DW_AT_low_pc(0x00)
+    1432                      .dwattr $C$DW$104, DW_AT_TI_return
+    1433 0000016b 0006          LRETR     ; [CPU_] 
+    1434                      ; return occurs ; [] 
+    1435                      .dwattr $C$DW$100, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/gpio/src/32b/f2
+    1436                      .dwattr $C$DW$100, DW_AT_TI_end_line(0x47)
+    1437                      .dwattr $C$DW$100, DW_AT_TI_end_column(0x01)
+    1438                      .dwendentry
+    1439                      .dwendtag $C$DW$100
+    1440              
+    1441              
+    1442              ;***************************************************************
+    1443              ;* TYPE INFORMATION                                            *
+    1444              ;***************************************************************
+    1445              
+    1446              $C$DW$T$30      .dwtag  DW_TAG_enumeration_type
+    1447                      .dwattr $C$DW$T$30, DW_AT_byte_size(0x01)
+    1448              $C$DW$105       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_0"), DW_AT_const_value(0x00)
+    1449              $C$DW$106       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_1"), DW_AT_const_value(0x01)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   28
+
+    1450              $C$DW$107       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_2"), DW_AT_const_value(0x02)
+    1451              $C$DW$108       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_3"), DW_AT_const_value(0x03)
+    1452              $C$DW$109       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_4"), DW_AT_const_value(0x04)
+    1453              $C$DW$110       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_5"), DW_AT_const_value(0x05)
+    1454              $C$DW$111       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_6"), DW_AT_const_value(0x06)
+    1455              $C$DW$112       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_7"), DW_AT_const_value(0x07)
+    1456              $C$DW$113       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_8"), DW_AT_const_value(0x08)
+    1457              $C$DW$114       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_9"), DW_AT_const_value(0x09)
+    1458              $C$DW$115       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_10"), DW_AT_const_value(0x0a)
+    1459              $C$DW$116       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_11"), DW_AT_const_value(0x0b)
+    1460              $C$DW$117       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_12"), DW_AT_const_value(0x0c)
+    1461              $C$DW$118       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_13"), DW_AT_const_value(0x0d)
+    1462              $C$DW$119       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_14"), DW_AT_const_value(0x0e)
+    1463              $C$DW$120       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_15"), DW_AT_const_value(0x0f)
+    1464              $C$DW$121       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_16"), DW_AT_const_value(0x10)
+    1465              $C$DW$122       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_17"), DW_AT_const_value(0x11)
+    1466              $C$DW$123       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_18"), DW_AT_const_value(0x12)
+    1467              $C$DW$124       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_19"), DW_AT_const_value(0x13)
+    1468              $C$DW$125       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_20"), DW_AT_const_value(0x14)
+    1469              $C$DW$126       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_21"), DW_AT_const_value(0x15)
+    1470              $C$DW$127       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_22"), DW_AT_const_value(0x16)
+    1471              $C$DW$128       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_23"), DW_AT_const_value(0x17)
+    1472              $C$DW$129       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_24"), DW_AT_const_value(0x18)
+    1473              $C$DW$130       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_25"), DW_AT_const_value(0x19)
+    1474              $C$DW$131       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_26"), DW_AT_const_value(0x1a)
+    1475              $C$DW$132       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_27"), DW_AT_const_value(0x1b)
+    1476              $C$DW$133       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_28"), DW_AT_const_value(0x1c)
+    1477              $C$DW$134       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_29"), DW_AT_const_value(0x1d)
+    1478              $C$DW$135       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_30"), DW_AT_const_value(0x1e)
+    1479              $C$DW$136       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Rsvd_31"), DW_AT_const_value(0x1f)
+    1480              $C$DW$137       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_32"), DW_AT_const_value(0x20)
+    1481              $C$DW$138       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_33"), DW_AT_const_value(0x21)
+    1482              $C$DW$139       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_34"), DW_AT_const_value(0x22)
+    1483              $C$DW$140       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_35"), DW_AT_const_value(0x23)
+    1484              $C$DW$141       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_36"), DW_AT_const_value(0x24)
+    1485              $C$DW$142       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_37"), DW_AT_const_value(0x25)
+    1486              $C$DW$143       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Number_38"), DW_AT_const_value(0x26)
+    1487              $C$DW$144       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_numGpios"), DW_AT_const_value(0x27)
+    1488                      .dwendtag $C$DW$T$30
+    1489              
+    1490              $C$DW$T$31      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Number_e")
+    1491                      .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$30)
+    1492                      .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+    1493              $C$DW$145       .dwtag  DW_TAG_TI_far_type
+    1494                      .dwattr $C$DW$145, DW_AT_type(*$C$DW$T$31)
+    1495              $C$DW$T$32      .dwtag  DW_TAG_const_type
+    1496                      .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$145)
+    1497              
+    1498              $C$DW$T$33      .dwtag  DW_TAG_enumeration_type
+    1499                      .dwattr $C$DW$T$33, DW_AT_byte_size(0x01)
+    1500              $C$DW$146       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Port_A"), DW_AT_const_value(0x00)
+    1501              $C$DW$147       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Port_B"), DW_AT_const_value(0x01)
+    1502                      .dwendtag $C$DW$T$33
+    1503              
+    1504              $C$DW$T$34      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Port_e")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   29
+
+    1505                      .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$33)
+    1506                      .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+    1507              $C$DW$148       .dwtag  DW_TAG_TI_far_type
+    1508                      .dwattr $C$DW$148, DW_AT_type(*$C$DW$T$34)
+    1509              $C$DW$T$35      .dwtag  DW_TAG_const_type
+    1510                      .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$148)
+    1511              
+    1512              $C$DW$T$36      .dwtag  DW_TAG_enumeration_type
+    1513                      .dwattr $C$DW$T$36, DW_AT_byte_size(0x01)
+    1514              $C$DW$149       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Direction_Input"), DW_AT_const_value(0x00)
+    1515              $C$DW$150       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Direction_Output"), DW_AT_const_value(0x01)
+    1516                      .dwendtag $C$DW$T$36
+    1517              
+    1518              $C$DW$T$37      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Direction_e")
+    1519                      .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$36)
+    1520                      .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+    1521              $C$DW$151       .dwtag  DW_TAG_TI_far_type
+    1522                      .dwattr $C$DW$151, DW_AT_type(*$C$DW$T$37)
+    1523              $C$DW$T$38      .dwtag  DW_TAG_const_type
+    1524                      .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$151)
+    1525              
+    1526              $C$DW$T$39      .dwtag  DW_TAG_enumeration_type
+    1527                      .dwattr $C$DW$T$39, DW_AT_byte_size(0x01)
+    1528              $C$DW$152       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_PullUp_Enable"), DW_AT_const_value(0x00)
+    1529              $C$DW$153       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_PullUp_Disable"), DW_AT_const_value(0x01)
+    1530                      .dwendtag $C$DW$T$39
+    1531              
+    1532              $C$DW$T$40      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_PullUp_e")
+    1533                      .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$39)
+    1534                      .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+    1535              $C$DW$154       .dwtag  DW_TAG_TI_far_type
+    1536                      .dwattr $C$DW$154, DW_AT_type(*$C$DW$T$40)
+    1537              $C$DW$T$41      .dwtag  DW_TAG_const_type
+    1538                      .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$154)
+    1539              
+    1540              $C$DW$T$42      .dwtag  DW_TAG_enumeration_type
+    1541                      .dwattr $C$DW$T$42, DW_AT_byte_size(0x01)
+    1542              $C$DW$155       .dwtag  DW_TAG_enumerator, DW_AT_name("CPU_ExtIntNumber_1"), DW_AT_const_value(0x00)
+    1543              $C$DW$156       .dwtag  DW_TAG_enumerator, DW_AT_name("CPU_ExtIntNumber_2"), DW_AT_const_value(0x01)
+    1544              $C$DW$157       .dwtag  DW_TAG_enumerator, DW_AT_name("CPU_ExtIntNumber_3"), DW_AT_const_value(0x02)
+    1545                      .dwendtag $C$DW$T$42
+    1546              
+    1547              $C$DW$T$43      .dwtag  DW_TAG_typedef, DW_AT_name("CPU_ExtIntNumber_e")
+    1548                      .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$42)
+    1549                      .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    1550              $C$DW$158       .dwtag  DW_TAG_TI_far_type
+    1551                      .dwattr $C$DW$158, DW_AT_type(*$C$DW$T$43)
+    1552              $C$DW$T$44      .dwtag  DW_TAG_const_type
+    1553                      .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$158)
+    1554              
+    1555              $C$DW$T$45      .dwtag  DW_TAG_enumeration_type
+    1556                      .dwattr $C$DW$T$45, DW_AT_byte_size(0x01)
+    1557              $C$DW$159       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_0_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1558              $C$DW$160       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_0_Mode_EPWM1A"), DW_AT_const_value(0x01)
+    1559              $C$DW$161       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_0_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   30
+
+    1560              $C$DW$162       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_0_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1561              $C$DW$163       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_1_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1562              $C$DW$164       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_1_Mode_EPWM1B"), DW_AT_const_value(0x01)
+    1563              $C$DW$165       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_1_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1564              $C$DW$166       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_1_Mode_COMP1OUT"), DW_AT_const_value(0x03)
+    1565              $C$DW$167       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_2_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1566              $C$DW$168       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_2_Mode_EPWM2A"), DW_AT_const_value(0x01)
+    1567              $C$DW$169       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_2_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1568              $C$DW$170       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_2_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1569              $C$DW$171       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_3_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1570              $C$DW$172       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_3_Mode_EPWM2B"), DW_AT_const_value(0x01)
+    1571              $C$DW$173       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_3_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1572              $C$DW$174       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_3_Mode_COMP2OUT"), DW_AT_const_value(0x03)
+    1573              $C$DW$175       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_4_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1574              $C$DW$176       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_4_Mode_EPWM3A"), DW_AT_const_value(0x01)
+    1575              $C$DW$177       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_4_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1576              $C$DW$178       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_4_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1577              $C$DW$179       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_5_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1578              $C$DW$180       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_5_Mode_EPWM3B"), DW_AT_const_value(0x01)
+    1579              $C$DW$181       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_5_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1580              $C$DW$182       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_5_Mode_ECAP1"), DW_AT_const_value(0x03)
+    1581              $C$DW$183       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_6_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1582              $C$DW$184       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_6_Mode_EPWM4A"), DW_AT_const_value(0x01)
+    1583              $C$DW$185       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_6_Mode_EPWMSYNCI"), DW_AT_const_value(0x02)
+    1584              $C$DW$186       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_6_Mode_EPWMSYNCO"), DW_AT_const_value(0x03)
+    1585              $C$DW$187       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_7_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1586              $C$DW$188       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_7_Mode_EPWM4B"), DW_AT_const_value(0x01)
+    1587              $C$DW$189       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_7_Mode_SCIRXDA"), DW_AT_const_value(0x02)
+    1588              $C$DW$190       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_7_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1589              $C$DW$191       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_12_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1590              $C$DW$192       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_12_Mode_TZ1_NOT"), DW_AT_const_value(0x01)
+    1591              $C$DW$193       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_12_Mode_SCITXDA"), DW_AT_const_value(0x02)
+    1592              $C$DW$194       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_12_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1593              $C$DW$195       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_16_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1594              $C$DW$196       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_16_Mode_SPISIMOA"), DW_AT_const_value(0x01)
+    1595              $C$DW$197       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_16_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1596              $C$DW$198       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_16_Mode_TZ2_NOT"), DW_AT_const_value(0x03)
+    1597              $C$DW$199       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_17_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1598              $C$DW$200       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_17_Mode_SPISOMIA"), DW_AT_const_value(0x01)
+    1599              $C$DW$201       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_17_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1600              $C$DW$202       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_17_Mode_TZ3_NOT"), DW_AT_const_value(0x03)
+    1601              $C$DW$203       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_18_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1602              $C$DW$204       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_18_Mode_SPICLKA"), DW_AT_const_value(0x01)
+    1603              $C$DW$205       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_18_Mode_SCITXDA"), DW_AT_const_value(0x02)
+    1604              $C$DW$206       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_18_Mode_XCLKOUT"), DW_AT_const_value(0x03)
+    1605              $C$DW$207       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_19_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1606              $C$DW$208       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_19_Mode_SPISTEA_NOT"), DW_AT_const_value(0x01)
+    1607              $C$DW$209       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_19_Mode_SCIRXDA"), DW_AT_const_value(0x02)
+    1608              $C$DW$210       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_19_Mode_ECAP1"), DW_AT_const_value(0x03)
+    1609              $C$DW$211       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_28_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1610              $C$DW$212       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_28_Mode_SCIRXDA"), DW_AT_const_value(0x01)
+    1611              $C$DW$213       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_28_Mode_SDDA"), DW_AT_const_value(0x02)
+    1612              $C$DW$214       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_28_Mode_TZ2_NOT"), DW_AT_const_value(0x03)
+    1613              $C$DW$215       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_29_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1614              $C$DW$216       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_29_Mode_SCITXDA"), DW_AT_const_value(0x01)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   31
+
+    1615              $C$DW$217       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_29_Mode_SCLA"), DW_AT_const_value(0x02)
+    1616              $C$DW$218       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_29_Mode_TZ3_NOT"), DW_AT_const_value(0x03)
+    1617              $C$DW$219       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_32_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1618              $C$DW$220       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_32_Mode_SDAA"), DW_AT_const_value(0x01)
+    1619              $C$DW$221       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_32_Mode_EPWMSYNCI"), DW_AT_const_value(0x02)
+    1620              $C$DW$222       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_32_Mode_ADCSOCAO_NOT"), DW_AT_const_value(0x03)
+    1621              $C$DW$223       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_33_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1622              $C$DW$224       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_33_Mode_SCLA"), DW_AT_const_value(0x01)
+    1623              $C$DW$225       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_33_Mode_EPWMSYNCO"), DW_AT_const_value(0x02)
+    1624              $C$DW$226       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_33_Mode_ADCSOCBO_NOT"), DW_AT_const_value(0x03)
+    1625              $C$DW$227       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_34_Mode_GeneralPurpose"), DW_AT_const_value(0x00)
+    1626              $C$DW$228       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_34_Mode_COMP2OUT"), DW_AT_const_value(0x01)
+    1627              $C$DW$229       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_34_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1628              $C$DW$230       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_34_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1629              $C$DW$231       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_35_Mode_JTAG_TDI"), DW_AT_const_value(0x00)
+    1630              $C$DW$232       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_35_Mode_Rsvd_1"), DW_AT_const_value(0x01)
+    1631              $C$DW$233       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_35_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1632              $C$DW$234       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_35_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1633              $C$DW$235       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_36_Mode_JTAG_TMS"), DW_AT_const_value(0x00)
+    1634              $C$DW$236       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_36_Mode_Rsvd_1"), DW_AT_const_value(0x01)
+    1635              $C$DW$237       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_36_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1636              $C$DW$238       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_36_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1637              $C$DW$239       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_37_Mode_JTAG_TDO"), DW_AT_const_value(0x00)
+    1638              $C$DW$240       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_37_Mode_Rsvd_1"), DW_AT_const_value(0x01)
+    1639              $C$DW$241       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_37_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1640              $C$DW$242       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_37_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1641              $C$DW$243       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_38_Mode_JTAG_TCK"), DW_AT_const_value(0x00)
+    1642              $C$DW$244       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_38_Mode_Rsvd_1"), DW_AT_const_value(0x01)
+    1643              $C$DW$245       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_38_Mode_Rsvd_2"), DW_AT_const_value(0x02)
+    1644              $C$DW$246       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_38_Mode_Rsvd_3"), DW_AT_const_value(0x03)
+    1645                      .dwendtag $C$DW$T$45
+    1646              
+    1647              $C$DW$T$46      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Mode_e")
+    1648                      .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$45)
+    1649                      .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+    1650              $C$DW$247       .dwtag  DW_TAG_TI_far_type
+    1651                      .dwattr $C$DW$247, DW_AT_type(*$C$DW$T$46)
+    1652              $C$DW$T$47      .dwtag  DW_TAG_const_type
+    1653                      .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$247)
+    1654              
+    1655              $C$DW$T$48      .dwtag  DW_TAG_enumeration_type
+    1656                      .dwattr $C$DW$T$48, DW_AT_byte_size(0x01)
+    1657              $C$DW$248       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Qual_Sync"), DW_AT_const_value(0x00)
+    1658              $C$DW$249       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Qual_Sample_3"), DW_AT_const_value(0x01)
+    1659              $C$DW$250       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Qual_Sample_6"), DW_AT_const_value(0x02)
+    1660              $C$DW$251       .dwtag  DW_TAG_enumerator, DW_AT_name("GPIO_Qual_ASync"), DW_AT_const_value(0x03)
+    1661                      .dwendtag $C$DW$T$48
+    1662              
+    1663              $C$DW$T$49      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Qual_e")
+    1664                      .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$48)
+    1665                      .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    1666              $C$DW$252       .dwtag  DW_TAG_TI_far_type
+    1667                      .dwattr $C$DW$252, DW_AT_type(*$C$DW$T$49)
+    1668              $C$DW$T$50      .dwtag  DW_TAG_const_type
+    1669                      .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$252)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   32
+
+    1670              
+    1671              $C$DW$T$29      .dwtag  DW_TAG_structure_type
+    1672                      .dwattr $C$DW$T$29, DW_AT_name("_GPIO_Obj_")
+    1673                      .dwattr $C$DW$T$29, DW_AT_byte_size(0x6a)
+    1674              $C$DW$253       .dwtag  DW_TAG_member
+    1675                      .dwattr $C$DW$253, DW_AT_type(*$C$DW$T$20)
+    1676                      .dwattr $C$DW$253, DW_AT_name("GPACTRL")
+    1677                      .dwattr $C$DW$253, DW_AT_TI_symbol_name("_GPACTRL")
+    1678                      .dwattr $C$DW$253, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1679                      .dwattr $C$DW$253, DW_AT_accessibility(DW_ACCESS_public)
+    1680              $C$DW$254       .dwtag  DW_TAG_member
+    1681                      .dwattr $C$DW$254, DW_AT_type(*$C$DW$T$20)
+    1682                      .dwattr $C$DW$254, DW_AT_name("GPAQSEL1")
+    1683                      .dwattr $C$DW$254, DW_AT_TI_symbol_name("_GPAQSEL1")
+    1684                      .dwattr $C$DW$254, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+    1685                      .dwattr $C$DW$254, DW_AT_accessibility(DW_ACCESS_public)
+    1686              $C$DW$255       .dwtag  DW_TAG_member
+    1687                      .dwattr $C$DW$255, DW_AT_type(*$C$DW$T$20)
+    1688                      .dwattr $C$DW$255, DW_AT_name("GPAQSEL2")
+    1689                      .dwattr $C$DW$255, DW_AT_TI_symbol_name("_GPAQSEL2")
+    1690                      .dwattr $C$DW$255, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+    1691                      .dwattr $C$DW$255, DW_AT_accessibility(DW_ACCESS_public)
+    1692              $C$DW$256       .dwtag  DW_TAG_member
+    1693                      .dwattr $C$DW$256, DW_AT_type(*$C$DW$T$20)
+    1694                      .dwattr $C$DW$256, DW_AT_name("GPAMUX1")
+    1695                      .dwattr $C$DW$256, DW_AT_TI_symbol_name("_GPAMUX1")
+    1696                      .dwattr $C$DW$256, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+    1697                      .dwattr $C$DW$256, DW_AT_accessibility(DW_ACCESS_public)
+    1698              $C$DW$257       .dwtag  DW_TAG_member
+    1699                      .dwattr $C$DW$257, DW_AT_type(*$C$DW$T$20)
+    1700                      .dwattr $C$DW$257, DW_AT_name("GPAMUX2")
+    1701                      .dwattr $C$DW$257, DW_AT_TI_symbol_name("_GPAMUX2")
+    1702                      .dwattr $C$DW$257, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1703                      .dwattr $C$DW$257, DW_AT_accessibility(DW_ACCESS_public)
+    1704              $C$DW$258       .dwtag  DW_TAG_member
+    1705                      .dwattr $C$DW$258, DW_AT_type(*$C$DW$T$20)
+    1706                      .dwattr $C$DW$258, DW_AT_name("GPADIR")
+    1707                      .dwattr $C$DW$258, DW_AT_TI_symbol_name("_GPADIR")
+    1708                      .dwattr $C$DW$258, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+    1709                      .dwattr $C$DW$258, DW_AT_accessibility(DW_ACCESS_public)
+    1710              $C$DW$259       .dwtag  DW_TAG_member
+    1711                      .dwattr $C$DW$259, DW_AT_type(*$C$DW$T$20)
+    1712                      .dwattr $C$DW$259, DW_AT_name("GPAPUD")
+    1713                      .dwattr $C$DW$259, DW_AT_TI_symbol_name("_GPAPUD")
+    1714                      .dwattr $C$DW$259, DW_AT_data_member_location[DW_OP_plus_uconst 0xc]
+    1715                      .dwattr $C$DW$259, DW_AT_accessibility(DW_ACCESS_public)
+    1716              $C$DW$260       .dwtag  DW_TAG_member
+    1717                      .dwattr $C$DW$260, DW_AT_type(*$C$DW$T$23)
+    1718                      .dwattr $C$DW$260, DW_AT_name("rsvd_1")
+    1719                      .dwattr $C$DW$260, DW_AT_TI_symbol_name("_rsvd_1")
+    1720                      .dwattr $C$DW$260, DW_AT_data_member_location[DW_OP_plus_uconst 0xe]
+    1721                      .dwattr $C$DW$260, DW_AT_accessibility(DW_ACCESS_public)
+    1722              $C$DW$261       .dwtag  DW_TAG_member
+    1723                      .dwattr $C$DW$261, DW_AT_type(*$C$DW$T$20)
+    1724                      .dwattr $C$DW$261, DW_AT_name("GPBCTRL")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   33
+
+    1725                      .dwattr $C$DW$261, DW_AT_TI_symbol_name("_GPBCTRL")
+    1726                      .dwattr $C$DW$261, DW_AT_data_member_location[DW_OP_plus_uconst 0x10]
+    1727                      .dwattr $C$DW$261, DW_AT_accessibility(DW_ACCESS_public)
+    1728              $C$DW$262       .dwtag  DW_TAG_member
+    1729                      .dwattr $C$DW$262, DW_AT_type(*$C$DW$T$20)
+    1730                      .dwattr $C$DW$262, DW_AT_name("GPBQSEL1")
+    1731                      .dwattr $C$DW$262, DW_AT_TI_symbol_name("_GPBQSEL1")
+    1732                      .dwattr $C$DW$262, DW_AT_data_member_location[DW_OP_plus_uconst 0x12]
+    1733                      .dwattr $C$DW$262, DW_AT_accessibility(DW_ACCESS_public)
+    1734              $C$DW$263       .dwtag  DW_TAG_member
+    1735                      .dwattr $C$DW$263, DW_AT_type(*$C$DW$T$23)
+    1736                      .dwattr $C$DW$263, DW_AT_name("rsvd_2")
+    1737                      .dwattr $C$DW$263, DW_AT_TI_symbol_name("_rsvd_2")
+    1738                      .dwattr $C$DW$263, DW_AT_data_member_location[DW_OP_plus_uconst 0x14]
+    1739                      .dwattr $C$DW$263, DW_AT_accessibility(DW_ACCESS_public)
+    1740              $C$DW$264       .dwtag  DW_TAG_member
+    1741                      .dwattr $C$DW$264, DW_AT_type(*$C$DW$T$20)
+    1742                      .dwattr $C$DW$264, DW_AT_name("GPBMUX1")
+    1743                      .dwattr $C$DW$264, DW_AT_TI_symbol_name("_GPBMUX1")
+    1744                      .dwattr $C$DW$264, DW_AT_data_member_location[DW_OP_plus_uconst 0x16]
+    1745                      .dwattr $C$DW$264, DW_AT_accessibility(DW_ACCESS_public)
+    1746              $C$DW$265       .dwtag  DW_TAG_member
+    1747                      .dwattr $C$DW$265, DW_AT_type(*$C$DW$T$23)
+    1748                      .dwattr $C$DW$265, DW_AT_name("rsvd_3")
+    1749                      .dwattr $C$DW$265, DW_AT_TI_symbol_name("_rsvd_3")
+    1750                      .dwattr $C$DW$265, DW_AT_data_member_location[DW_OP_plus_uconst 0x18]
+    1751                      .dwattr $C$DW$265, DW_AT_accessibility(DW_ACCESS_public)
+    1752              $C$DW$266       .dwtag  DW_TAG_member
+    1753                      .dwattr $C$DW$266, DW_AT_type(*$C$DW$T$20)
+    1754                      .dwattr $C$DW$266, DW_AT_name("GPBDIR")
+    1755                      .dwattr $C$DW$266, DW_AT_TI_symbol_name("_GPBDIR")
+    1756                      .dwattr $C$DW$266, DW_AT_data_member_location[DW_OP_plus_uconst 0x1a]
+    1757                      .dwattr $C$DW$266, DW_AT_accessibility(DW_ACCESS_public)
+    1758              $C$DW$267       .dwtag  DW_TAG_member
+    1759                      .dwattr $C$DW$267, DW_AT_type(*$C$DW$T$20)
+    1760                      .dwattr $C$DW$267, DW_AT_name("GPBPUD")
+    1761                      .dwattr $C$DW$267, DW_AT_TI_symbol_name("_GPBPUD")
+    1762                      .dwattr $C$DW$267, DW_AT_data_member_location[DW_OP_plus_uconst 0x1c]
+    1763                      .dwattr $C$DW$267, DW_AT_accessibility(DW_ACCESS_public)
+    1764              $C$DW$268       .dwtag  DW_TAG_member
+    1765                      .dwattr $C$DW$268, DW_AT_type(*$C$DW$T$24)
+    1766                      .dwattr $C$DW$268, DW_AT_name("rsvd_4")
+    1767                      .dwattr $C$DW$268, DW_AT_TI_symbol_name("_rsvd_4")
+    1768                      .dwattr $C$DW$268, DW_AT_data_member_location[DW_OP_plus_uconst 0x1e]
+    1769                      .dwattr $C$DW$268, DW_AT_accessibility(DW_ACCESS_public)
+    1770              $C$DW$269       .dwtag  DW_TAG_member
+    1771                      .dwattr $C$DW$269, DW_AT_type(*$C$DW$T$20)
+    1772                      .dwattr $C$DW$269, DW_AT_name("AIOMUX1")
+    1773                      .dwattr $C$DW$269, DW_AT_TI_symbol_name("_AIOMUX1")
+    1774                      .dwattr $C$DW$269, DW_AT_data_member_location[DW_OP_plus_uconst 0x36]
+    1775                      .dwattr $C$DW$269, DW_AT_accessibility(DW_ACCESS_public)
+    1776              $C$DW$270       .dwtag  DW_TAG_member
+    1777                      .dwattr $C$DW$270, DW_AT_type(*$C$DW$T$23)
+    1778                      .dwattr $C$DW$270, DW_AT_name("rsvd_5")
+    1779                      .dwattr $C$DW$270, DW_AT_TI_symbol_name("_rsvd_5")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   34
+
+    1780                      .dwattr $C$DW$270, DW_AT_data_member_location[DW_OP_plus_uconst 0x38]
+    1781                      .dwattr $C$DW$270, DW_AT_accessibility(DW_ACCESS_public)
+    1782              $C$DW$271       .dwtag  DW_TAG_member
+    1783                      .dwattr $C$DW$271, DW_AT_type(*$C$DW$T$20)
+    1784                      .dwattr $C$DW$271, DW_AT_name("AIODIR")
+    1785                      .dwattr $C$DW$271, DW_AT_TI_symbol_name("_AIODIR")
+    1786                      .dwattr $C$DW$271, DW_AT_data_member_location[DW_OP_plus_uconst 0x3a]
+    1787                      .dwattr $C$DW$271, DW_AT_accessibility(DW_ACCESS_public)
+    1788              $C$DW$272       .dwtag  DW_TAG_member
+    1789                      .dwattr $C$DW$272, DW_AT_type(*$C$DW$T$25)
+    1790                      .dwattr $C$DW$272, DW_AT_name("rsvd_6")
+    1791                      .dwattr $C$DW$272, DW_AT_TI_symbol_name("_rsvd_6")
+    1792                      .dwattr $C$DW$272, DW_AT_data_member_location[DW_OP_plus_uconst 0x3c]
+    1793                      .dwattr $C$DW$272, DW_AT_accessibility(DW_ACCESS_public)
+    1794              $C$DW$273       .dwtag  DW_TAG_member
+    1795                      .dwattr $C$DW$273, DW_AT_type(*$C$DW$T$20)
+    1796                      .dwattr $C$DW$273, DW_AT_name("GPADAT")
+    1797                      .dwattr $C$DW$273, DW_AT_TI_symbol_name("_GPADAT")
+    1798                      .dwattr $C$DW$273, DW_AT_data_member_location[DW_OP_plus_uconst 0x40]
+    1799                      .dwattr $C$DW$273, DW_AT_accessibility(DW_ACCESS_public)
+    1800              $C$DW$274       .dwtag  DW_TAG_member
+    1801                      .dwattr $C$DW$274, DW_AT_type(*$C$DW$T$20)
+    1802                      .dwattr $C$DW$274, DW_AT_name("GPASET")
+    1803                      .dwattr $C$DW$274, DW_AT_TI_symbol_name("_GPASET")
+    1804                      .dwattr $C$DW$274, DW_AT_data_member_location[DW_OP_plus_uconst 0x42]
+    1805                      .dwattr $C$DW$274, DW_AT_accessibility(DW_ACCESS_public)
+    1806              $C$DW$275       .dwtag  DW_TAG_member
+    1807                      .dwattr $C$DW$275, DW_AT_type(*$C$DW$T$20)
+    1808                      .dwattr $C$DW$275, DW_AT_name("GPACLEAR")
+    1809                      .dwattr $C$DW$275, DW_AT_TI_symbol_name("_GPACLEAR")
+    1810                      .dwattr $C$DW$275, DW_AT_data_member_location[DW_OP_plus_uconst 0x44]
+    1811                      .dwattr $C$DW$275, DW_AT_accessibility(DW_ACCESS_public)
+    1812              $C$DW$276       .dwtag  DW_TAG_member
+    1813                      .dwattr $C$DW$276, DW_AT_type(*$C$DW$T$20)
+    1814                      .dwattr $C$DW$276, DW_AT_name("GPATOGGLE")
+    1815                      .dwattr $C$DW$276, DW_AT_TI_symbol_name("_GPATOGGLE")
+    1816                      .dwattr $C$DW$276, DW_AT_data_member_location[DW_OP_plus_uconst 0x46]
+    1817                      .dwattr $C$DW$276, DW_AT_accessibility(DW_ACCESS_public)
+    1818              $C$DW$277       .dwtag  DW_TAG_member
+    1819                      .dwattr $C$DW$277, DW_AT_type(*$C$DW$T$20)
+    1820                      .dwattr $C$DW$277, DW_AT_name("GPBDAT")
+    1821                      .dwattr $C$DW$277, DW_AT_TI_symbol_name("_GPBDAT")
+    1822                      .dwattr $C$DW$277, DW_AT_data_member_location[DW_OP_plus_uconst 0x48]
+    1823                      .dwattr $C$DW$277, DW_AT_accessibility(DW_ACCESS_public)
+    1824              $C$DW$278       .dwtag  DW_TAG_member
+    1825                      .dwattr $C$DW$278, DW_AT_type(*$C$DW$T$20)
+    1826                      .dwattr $C$DW$278, DW_AT_name("GPBSET")
+    1827                      .dwattr $C$DW$278, DW_AT_TI_symbol_name("_GPBSET")
+    1828                      .dwattr $C$DW$278, DW_AT_data_member_location[DW_OP_plus_uconst 0x4a]
+    1829                      .dwattr $C$DW$278, DW_AT_accessibility(DW_ACCESS_public)
+    1830              $C$DW$279       .dwtag  DW_TAG_member
+    1831                      .dwattr $C$DW$279, DW_AT_type(*$C$DW$T$20)
+    1832                      .dwattr $C$DW$279, DW_AT_name("GPBCLEAR")
+    1833                      .dwattr $C$DW$279, DW_AT_TI_symbol_name("_GPBCLEAR")
+    1834                      .dwattr $C$DW$279, DW_AT_data_member_location[DW_OP_plus_uconst 0x4c]
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   35
+
+    1835                      .dwattr $C$DW$279, DW_AT_accessibility(DW_ACCESS_public)
+    1836              $C$DW$280       .dwtag  DW_TAG_member
+    1837                      .dwattr $C$DW$280, DW_AT_type(*$C$DW$T$20)
+    1838                      .dwattr $C$DW$280, DW_AT_name("GPBTOGGLE")
+    1839                      .dwattr $C$DW$280, DW_AT_TI_symbol_name("_GPBTOGGLE")
+    1840                      .dwattr $C$DW$280, DW_AT_data_member_location[DW_OP_plus_uconst 0x4e]
+    1841                      .dwattr $C$DW$280, DW_AT_accessibility(DW_ACCESS_public)
+    1842              $C$DW$281       .dwtag  DW_TAG_member
+    1843                      .dwattr $C$DW$281, DW_AT_type(*$C$DW$T$26)
+    1844                      .dwattr $C$DW$281, DW_AT_name("rsvd_7")
+    1845                      .dwattr $C$DW$281, DW_AT_TI_symbol_name("_rsvd_7")
+    1846                      .dwattr $C$DW$281, DW_AT_data_member_location[DW_OP_plus_uconst 0x50]
+    1847                      .dwattr $C$DW$281, DW_AT_accessibility(DW_ACCESS_public)
+    1848              $C$DW$282       .dwtag  DW_TAG_member
+    1849                      .dwattr $C$DW$282, DW_AT_type(*$C$DW$T$20)
+    1850                      .dwattr $C$DW$282, DW_AT_name("AIODAT")
+    1851                      .dwattr $C$DW$282, DW_AT_TI_symbol_name("_AIODAT")
+    1852                      .dwattr $C$DW$282, DW_AT_data_member_location[DW_OP_plus_uconst 0x58]
+    1853                      .dwattr $C$DW$282, DW_AT_accessibility(DW_ACCESS_public)
+    1854              $C$DW$283       .dwtag  DW_TAG_member
+    1855                      .dwattr $C$DW$283, DW_AT_type(*$C$DW$T$20)
+    1856                      .dwattr $C$DW$283, DW_AT_name("AIOSET")
+    1857                      .dwattr $C$DW$283, DW_AT_TI_symbol_name("_AIOSET")
+    1858                      .dwattr $C$DW$283, DW_AT_data_member_location[DW_OP_plus_uconst 0x5a]
+    1859                      .dwattr $C$DW$283, DW_AT_accessibility(DW_ACCESS_public)
+    1860              $C$DW$284       .dwtag  DW_TAG_member
+    1861                      .dwattr $C$DW$284, DW_AT_type(*$C$DW$T$20)
+    1862                      .dwattr $C$DW$284, DW_AT_name("AIOCLEAR")
+    1863                      .dwattr $C$DW$284, DW_AT_TI_symbol_name("_AIOCLEAR")
+    1864                      .dwattr $C$DW$284, DW_AT_data_member_location[DW_OP_plus_uconst 0x5c]
+    1865                      .dwattr $C$DW$284, DW_AT_accessibility(DW_ACCESS_public)
+    1866              $C$DW$285       .dwtag  DW_TAG_member
+    1867                      .dwattr $C$DW$285, DW_AT_type(*$C$DW$T$20)
+    1868                      .dwattr $C$DW$285, DW_AT_name("AIOTOGGLE")
+    1869                      .dwattr $C$DW$285, DW_AT_TI_symbol_name("_AIOTOGGLE")
+    1870                      .dwattr $C$DW$285, DW_AT_data_member_location[DW_OP_plus_uconst 0x5e]
+    1871                      .dwattr $C$DW$285, DW_AT_accessibility(DW_ACCESS_public)
+    1872              $C$DW$286       .dwtag  DW_TAG_member
+    1873                      .dwattr $C$DW$286, DW_AT_type(*$C$DW$T$27)
+    1874                      .dwattr $C$DW$286, DW_AT_name("GPIOXINTnSEL")
+    1875                      .dwattr $C$DW$286, DW_AT_TI_symbol_name("_GPIOXINTnSEL")
+    1876                      .dwattr $C$DW$286, DW_AT_data_member_location[DW_OP_plus_uconst 0x60]
+    1877                      .dwattr $C$DW$286, DW_AT_accessibility(DW_ACCESS_public)
+    1878              $C$DW$287       .dwtag  DW_TAG_member
+    1879                      .dwattr $C$DW$287, DW_AT_type(*$C$DW$T$28)
+    1880                      .dwattr $C$DW$287, DW_AT_name("rsvd_8")
+    1881                      .dwattr $C$DW$287, DW_AT_TI_symbol_name("_rsvd_8")
+    1882                      .dwattr $C$DW$287, DW_AT_data_member_location[DW_OP_plus_uconst 0x63]
+    1883                      .dwattr $C$DW$287, DW_AT_accessibility(DW_ACCESS_public)
+    1884              $C$DW$288       .dwtag  DW_TAG_member
+    1885                      .dwattr $C$DW$288, DW_AT_type(*$C$DW$T$20)
+    1886                      .dwattr $C$DW$288, DW_AT_name("GPIOLPMSEL")
+    1887                      .dwattr $C$DW$288, DW_AT_TI_symbol_name("_GPIOLPMSEL")
+    1888                      .dwattr $C$DW$288, DW_AT_data_member_location[DW_OP_plus_uconst 0x68]
+    1889                      .dwattr $C$DW$288, DW_AT_accessibility(DW_ACCESS_public)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   36
+
+    1890                      .dwendtag $C$DW$T$29
+    1891              
+    1892              $C$DW$T$51      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Obj")
+    1893                      .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$29)
+    1894                      .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1895              $C$DW$T$52      .dwtag  DW_TAG_pointer_type
+    1896                      .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$29)
+    1897                      .dwattr $C$DW$T$52, DW_AT_address_class(0x20)
+    1898              $C$DW$T$53      .dwtag  DW_TAG_typedef, DW_AT_name("GPIO_Handle")
+    1899                      .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$52)
+    1900                      .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1901              $C$DW$289       .dwtag  DW_TAG_TI_far_type
+    1902                      .dwattr $C$DW$289, DW_AT_type(*$C$DW$T$53)
+    1903              $C$DW$T$54      .dwtag  DW_TAG_const_type
+    1904                      .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$289)
+    1905              $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1906                      .dwattr $C$DW$T$2, DW_AT_name("void")
+    1907              $C$DW$T$3       .dwtag  DW_TAG_pointer_type
+    1908                      .dwattr $C$DW$T$3, DW_AT_type(*$C$DW$T$2)
+    1909                      .dwattr $C$DW$T$3, DW_AT_address_class(0x20)
+    1910              $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1911                      .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1912                      .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1913                      .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1914              $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1915                      .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1916                      .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1917                      .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1918              $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1919                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1920                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1921                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1922              $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1923                      .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1924                      .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1925                      .dwattr $C$DW$T$7, DW_AT_byte_size(0x01)
+    1926              $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1927                      .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1928                      .dwattr $C$DW$T$8, DW_AT_name("short")
+    1929                      .dwattr $C$DW$T$8, DW_AT_byte_size(0x01)
+    1930              $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1931                      .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1932                      .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1933                      .dwattr $C$DW$T$9, DW_AT_byte_size(0x01)
+    1934              $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1935                      .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1936                      .dwattr $C$DW$T$10, DW_AT_name("int")
+    1937                      .dwattr $C$DW$T$10, DW_AT_byte_size(0x01)
+    1938              $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1939                      .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1940                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1941                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
+    1942              $C$DW$T$21      .dwtag  DW_TAG_typedef, DW_AT_name("uint16_t")
+    1943                      .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$11)
+    1944                      .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   37
+
+    1945              $C$DW$290       .dwtag  DW_TAG_TI_far_type
+    1946                      .dwattr $C$DW$290, DW_AT_type(*$C$DW$T$21)
+    1947              $C$DW$T$22      .dwtag  DW_TAG_volatile_type
+    1948                      .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$290)
+    1949              
+    1950              $C$DW$T$23      .dwtag  DW_TAG_array_type
+    1951                      .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
+    1952                      .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
+    1953                      .dwattr $C$DW$T$23, DW_AT_byte_size(0x02)
+    1954              $C$DW$291       .dwtag  DW_TAG_subrange_type
+    1955                      .dwattr $C$DW$291, DW_AT_upper_bound(0x01)
+    1956                      .dwendtag $C$DW$T$23
+    1957              
+    1958              
+    1959              $C$DW$T$24      .dwtag  DW_TAG_array_type
+    1960                      .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$22)
+    1961                      .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    1962                      .dwattr $C$DW$T$24, DW_AT_byte_size(0x18)
+    1963              $C$DW$292       .dwtag  DW_TAG_subrange_type
+    1964                      .dwattr $C$DW$292, DW_AT_upper_bound(0x17)
+    1965                      .dwendtag $C$DW$T$24
+    1966              
+    1967              
+    1968              $C$DW$T$25      .dwtag  DW_TAG_array_type
+    1969                      .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$22)
+    1970                      .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+    1971                      .dwattr $C$DW$T$25, DW_AT_byte_size(0x04)
+    1972              $C$DW$293       .dwtag  DW_TAG_subrange_type
+    1973                      .dwattr $C$DW$293, DW_AT_upper_bound(0x03)
+    1974                      .dwendtag $C$DW$T$25
+    1975              
+    1976              
+    1977              $C$DW$T$26      .dwtag  DW_TAG_array_type
+    1978                      .dwattr $C$DW$T$26, DW_AT_type(*$C$DW$T$22)
+    1979                      .dwattr $C$DW$T$26, DW_AT_language(DW_LANG_C)
+    1980                      .dwattr $C$DW$T$26, DW_AT_byte_size(0x08)
+    1981              $C$DW$294       .dwtag  DW_TAG_subrange_type
+    1982                      .dwattr $C$DW$294, DW_AT_upper_bound(0x07)
+    1983                      .dwendtag $C$DW$T$26
+    1984              
+    1985              
+    1986              $C$DW$T$27      .dwtag  DW_TAG_array_type
+    1987                      .dwattr $C$DW$T$27, DW_AT_type(*$C$DW$T$22)
+    1988                      .dwattr $C$DW$T$27, DW_AT_language(DW_LANG_C)
+    1989                      .dwattr $C$DW$T$27, DW_AT_byte_size(0x03)
+    1990              $C$DW$295       .dwtag  DW_TAG_subrange_type
+    1991                      .dwattr $C$DW$295, DW_AT_upper_bound(0x02)
+    1992                      .dwendtag $C$DW$T$27
+    1993              
+    1994              
+    1995              $C$DW$T$28      .dwtag  DW_TAG_array_type
+    1996                      .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$22)
+    1997                      .dwattr $C$DW$T$28, DW_AT_language(DW_LANG_C)
+    1998                      .dwattr $C$DW$T$28, DW_AT_byte_size(0x05)
+    1999              $C$DW$296       .dwtag  DW_TAG_subrange_type
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   38
+
+    2000                      .dwattr $C$DW$296, DW_AT_upper_bound(0x04)
+    2001                      .dwendtag $C$DW$T$28
+    2002              
+    2003              $C$DW$297       .dwtag  DW_TAG_TI_far_type
+    2004                      .dwattr $C$DW$297, DW_AT_type(*$C$DW$T$21)
+    2005              $C$DW$T$66      .dwtag  DW_TAG_const_type
+    2006                      .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$297)
+    2007              $C$DW$T$69      .dwtag  DW_TAG_typedef, DW_AT_name("uint_least8_t")
+    2008                      .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$21)
+    2009                      .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    2010              $C$DW$298       .dwtag  DW_TAG_TI_far_type
+    2011                      .dwattr $C$DW$298, DW_AT_type(*$C$DW$T$69)
+    2012              $C$DW$T$70      .dwtag  DW_TAG_const_type
+    2013                      .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$298)
+    2014              $C$DW$T$12      .dwtag  DW_TAG_base_type
+    2015                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    2016                      .dwattr $C$DW$T$12, DW_AT_name("long")
+    2017                      .dwattr $C$DW$T$12, DW_AT_byte_size(0x02)
+    2018              $C$DW$T$13      .dwtag  DW_TAG_base_type
+    2019                      .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    2020                      .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    2021                      .dwattr $C$DW$T$13, DW_AT_byte_size(0x02)
+    2022              $C$DW$T$55      .dwtag  DW_TAG_typedef, DW_AT_name("size_t")
+    2023                      .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$13)
+    2024                      .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    2025              $C$DW$299       .dwtag  DW_TAG_TI_far_type
+    2026                      .dwattr $C$DW$299, DW_AT_type(*$C$DW$T$55)
+    2027              $C$DW$T$56      .dwtag  DW_TAG_const_type
+    2028                      .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$299)
+    2029              $C$DW$T$19      .dwtag  DW_TAG_typedef, DW_AT_name("uint32_t")
+    2030                      .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$13)
+    2031                      .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+    2032              $C$DW$300       .dwtag  DW_TAG_TI_far_type
+    2033                      .dwattr $C$DW$300, DW_AT_type(*$C$DW$T$19)
+    2034              $C$DW$T$20      .dwtag  DW_TAG_volatile_type
+    2035                      .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$300)
+    2036              $C$DW$T$14      .dwtag  DW_TAG_base_type
+    2037                      .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    2038                      .dwattr $C$DW$T$14, DW_AT_name("long long")
+    2039                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
+    2040              $C$DW$T$15      .dwtag  DW_TAG_base_type
+    2041                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    2042                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    2043                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
+    2044              $C$DW$T$16      .dwtag  DW_TAG_base_type
+    2045                      .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    2046                      .dwattr $C$DW$T$16, DW_AT_name("float")
+    2047                      .dwattr $C$DW$T$16, DW_AT_byte_size(0x02)
+    2048              $C$DW$T$17      .dwtag  DW_TAG_base_type
+    2049                      .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    2050                      .dwattr $C$DW$T$17, DW_AT_name("double")
+    2051                      .dwattr $C$DW$T$17, DW_AT_byte_size(0x02)
+    2052              $C$DW$T$18      .dwtag  DW_TAG_base_type
+    2053                      .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    2054                      .dwattr $C$DW$T$18, DW_AT_name("long double")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   39
+
+    2055                      .dwattr $C$DW$T$18, DW_AT_byte_size(0x04)
+    2056              $C$DW$T$81      .dwtag  DW_TAG_base_type
+    2057                      .dwattr $C$DW$T$81, DW_AT_encoding(DW_ATE_unsigned_char)
+    2058                      .dwattr $C$DW$T$81, DW_AT_name("unsigned char")
+    2059                      .dwattr $C$DW$T$81, DW_AT_byte_size(0x01)
+    2060                      .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    2061              
+    2062              ;***************************************************************
+    2063              ;* DWARF CIE ENTRIES                                           *
+    2064              ;***************************************************************
+    2065              
+    2066              $C$DW$CIE       .dwcie 26
+    2067                      .dwcfi  cfa_register, 20
+    2068                      .dwcfi  cfa_offset, 0
+    2069                      .dwcfi  undefined, 0
+    2070                      .dwcfi  undefined, 1
+    2071                      .dwcfi  undefined, 2
+    2072                      .dwcfi  undefined, 3
+    2073                      .dwcfi  undefined, 20
+    2074                      .dwcfi  undefined, 21
+    2075                      .dwcfi  undefined, 22
+    2076                      .dwcfi  undefined, 23
+    2077                      .dwcfi  undefined, 24
+    2078                      .dwcfi  undefined, 25
+    2079                      .dwcfi  undefined, 26
+    2080                      .dwcfi  same_value, 28
+    2081                      .dwcfi  undefined, 29
+    2082                      .dwcfi  undefined, 30
+    2083                      .dwcfi  undefined, 31
+    2084                      .dwcfi  undefined, 32
+    2085                      .dwcfi  undefined, 33
+    2086                      .dwcfi  undefined, 34
+    2087                      .dwcfi  undefined, 35
+    2088                      .dwcfi  undefined, 36
+    2089                      .dwcfi  undefined, 37
+    2090                      .dwcfi  undefined, 38
+    2091                      .dwcfi  undefined, 75
+    2092                      .dwcfi  undefined, 76
+    2093                      .dwcfi  undefined, 77
+    2094                      .dwcfi  undefined, 4
+    2095                      .dwcfi  undefined, 5
+    2096                      .dwcfi  same_value, 6
+    2097                      .dwcfi  same_value, 7
+    2098                      .dwcfi  same_value, 8
+    2099                      .dwcfi  same_value, 9
+    2100                      .dwcfi  same_value, 10
+    2101                      .dwcfi  same_value, 11
+    2102                      .dwcfi  undefined, 12
+    2103                      .dwcfi  undefined, 13
+    2104                      .dwcfi  undefined, 14
+    2105                      .dwcfi  undefined, 15
+    2106                      .dwcfi  undefined, 16
+    2107                      .dwcfi  undefined, 17
+    2108                      .dwcfi  undefined, 18
+    2109                      .dwcfi  undefined, 19
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   40
+
+    2110                      .dwendentry
+    2111              
+    2112              ;***************************************************************
+    2113              ;* DWARF REGISTER MAP                                          *
+    2114              ;***************************************************************
+    2115              
+    2116              $C$DW$301       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AL")
+    2117                      .dwattr $C$DW$301, DW_AT_location[DW_OP_reg0]
+    2118              $C$DW$302       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AH")
+    2119                      .dwattr $C$DW$302, DW_AT_location[DW_OP_reg1]
+    2120              $C$DW$303       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PL")
+    2121                      .dwattr $C$DW$303, DW_AT_location[DW_OP_reg2]
+    2122              $C$DW$304       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PH")
+    2123                      .dwattr $C$DW$304, DW_AT_location[DW_OP_reg3]
+    2124              $C$DW$305       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
+    2125                      .dwattr $C$DW$305, DW_AT_location[DW_OP_reg20]
+    2126              $C$DW$306       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
+    2127                      .dwattr $C$DW$306, DW_AT_location[DW_OP_reg21]
+    2128              $C$DW$307       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("T")
+    2129                      .dwattr $C$DW$307, DW_AT_location[DW_OP_reg22]
+    2130              $C$DW$308       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST0")
+    2131                      .dwattr $C$DW$308, DW_AT_location[DW_OP_reg23]
+    2132              $C$DW$309       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
+    2133                      .dwattr $C$DW$309, DW_AT_location[DW_OP_reg24]
+    2134              $C$DW$310       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
+    2135                      .dwattr $C$DW$310, DW_AT_location[DW_OP_reg25]
+    2136              $C$DW$311       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RPC")
+    2137                      .dwattr $C$DW$311, DW_AT_location[DW_OP_reg26]
+    2138              $C$DW$312       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("FP")
+    2139                      .dwattr $C$DW$312, DW_AT_location[DW_OP_reg28]
+    2140              $C$DW$313       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("DP")
+    2141                      .dwattr $C$DW$313, DW_AT_location[DW_OP_reg29]
+    2142              $C$DW$314       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SXM")
+    2143                      .dwattr $C$DW$314, DW_AT_location[DW_OP_reg30]
+    2144              $C$DW$315       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PM")
+    2145                      .dwattr $C$DW$315, DW_AT_location[DW_OP_reg31]
+    2146              $C$DW$316       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("OVM")
+    2147                      .dwattr $C$DW$316, DW_AT_location[DW_OP_regx 0x20]
+    2148              $C$DW$317       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PAGE0")
+    2149                      .dwattr $C$DW$317, DW_AT_location[DW_OP_regx 0x21]
+    2150              $C$DW$318       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AMODE")
+    2151                      .dwattr $C$DW$318, DW_AT_location[DW_OP_regx 0x22]
+    2152              $C$DW$319       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("INTM")
+    2153                      .dwattr $C$DW$319, DW_AT_location[DW_OP_regx 0x23]
+    2154              $C$DW$320       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
+    2155                      .dwattr $C$DW$320, DW_AT_location[DW_OP_regx 0x24]
+    2156              $C$DW$321       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
+    2157                      .dwattr $C$DW$321, DW_AT_location[DW_OP_regx 0x25]
+    2158              $C$DW$322       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("V")
+    2159                      .dwattr $C$DW$322, DW_AT_location[DW_OP_regx 0x26]
+    2160              $C$DW$323       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PSEUDOH")
+    2161                      .dwattr $C$DW$323, DW_AT_location[DW_OP_regx 0x4c]
+    2162              $C$DW$324       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("VOL")
+    2163                      .dwattr $C$DW$324, DW_AT_location[DW_OP_regx 0x4d]
+    2164              $C$DW$325       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR0")
+TMS320C2000 Assembler PC v6.4.11 Thu Aug 11 16:06:12 2016
+
+Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
+C:\Users\bee25\AppData\Local\Temp\1823210                            PAGE   41
+
+    2165                      .dwattr $C$DW$325, DW_AT_location[DW_OP_reg4]
+    2166              $C$DW$326       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR0")
+    2167                      .dwattr $C$DW$326, DW_AT_location[DW_OP_reg5]
+    2168              $C$DW$327       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR1")
+    2169                      .dwattr $C$DW$327, DW_AT_location[DW_OP_reg6]
+    2170              $C$DW$328       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR1")
+    2171                      .dwattr $C$DW$328, DW_AT_location[DW_OP_reg7]
+    2172              $C$DW$329       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR2")
+    2173                      .dwattr $C$DW$329, DW_AT_location[DW_OP_reg8]
+    2174              $C$DW$330       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR2")
+    2175                      .dwattr $C$DW$330, DW_AT_location[DW_OP_reg9]
+    2176              $C$DW$331       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR3")
+    2177                      .dwattr $C$DW$331, DW_AT_location[DW_OP_reg10]
+    2178              $C$DW$332       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
+    2179                      .dwattr $C$DW$332, DW_AT_location[DW_OP_reg11]
+    2180              $C$DW$333       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
+    2181                      .dwattr $C$DW$333, DW_AT_location[DW_OP_reg12]
+    2182              $C$DW$334       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")
+    2183                      .dwattr $C$DW$334, DW_AT_location[DW_OP_reg13]
+    2184              $C$DW$335       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR5")
+    2185                      .dwattr $C$DW$335, DW_AT_location[DW_OP_reg14]
+    2186              $C$DW$336       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR5")
+    2187                      .dwattr $C$DW$336, DW_AT_location[DW_OP_reg15]
+    2188              $C$DW$337       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
+    2189                      .dwattr $C$DW$337, DW_AT_location[DW_OP_reg16]
+    2190              $C$DW$338       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
+    2191                      .dwattr $C$DW$338, DW_AT_location[DW_OP_reg17]
+    2192              $C$DW$339       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR7")
+    2193                      .dwattr $C$DW$339, DW_AT_location[DW_OP_reg18]
+    2194              $C$DW$340       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR7")
+    2195                      .dwattr $C$DW$340, DW_AT_location[DW_OP_reg19]
+    2196                      .dwendtag $C$DW$CU
+    2197              
+
+No Assembly Errors, No Assembly Warnings
