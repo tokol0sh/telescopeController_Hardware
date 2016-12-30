@@ -54,6 +54,7 @@
 #include "sw/drivers/timer/src/32b/f28x/f2806x/timer.h"
 #include "sw/drivers/wdog/src/32b/f28x/f2806x/wdog.h"
 #include "sw/drivers/drvic/drv8301/src/32b/f28x/f2806x/drv8301.h"
+#include "sw/drivers/sci/src/32b/f28x/f2806x/sci.h"
 
 
 #ifdef QEP
@@ -64,6 +65,7 @@
 #include "sw/modules/offset/src/32b/offset.h"
 #include "sw/modules/types/src/types.h"
 #include "sw/modules/usDelay/src/32b/usDelay.h"
+#include "sw/modules/cpu_usage/src/32b/cpu_usage.h"
 
 
 // platforms
@@ -171,8 +173,13 @@ typedef struct _HAL_Obj_
   SPI_Handle    spiAHandle;       //!< the SPI handle
   SPI_Handle    spiBHandle;       //!< the SPI handle
 
+  SCI_Handle	sciBHandle;
+
   DRV8301_Handle drv8301Handle;   //!< the drv8301 interface handle
   DRV8301_Obj    drv8301;         //!< the drv8301 interface object
+
+  CPU_USAGE_Handle  cpu_usageHandle;
+  CPU_USAGE_Obj     cpu_usage;
 
 #ifdef QEP
   QEP_Handle    qepHandle[2];        //!< the QEP handles

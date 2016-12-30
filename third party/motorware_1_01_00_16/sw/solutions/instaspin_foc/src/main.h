@@ -221,7 +221,7 @@ typedef enum
 //! \brief The main interrupt service (ISR) routine
 //!
 interrupt void mainISR(void);
-
+interrupt void scitxbISR(void);
 
 void runCurrentIgnore(void);
 

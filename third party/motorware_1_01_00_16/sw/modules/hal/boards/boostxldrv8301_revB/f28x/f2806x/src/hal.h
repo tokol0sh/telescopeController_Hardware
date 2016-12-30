@@ -168,6 +168,7 @@ typedef enum
 // the globals
 
 extern interrupt void mainISR(void);
+extern interrupt void scitxbISR(void);
 
 
 // **************************************************************************
@@ -494,6 +495,7 @@ extern HAL_Handle HAL_init(void *pMemory,const size_t numBytes);
 
 //! \brief      Initializes the interrupt vector table
 //! \details    Points ADCINT1 to mainISR
+//! \details	Points SCITXINTB to scitxbISR
 //! \param[in]  handle  The hardware abstraction layer (HAL) handle
 static inline void HAL_initIntVectorTable(HAL_Handle handle)
  {
@@ -504,6 +506,7 @@ static inline void HAL_initIntVectorTable(HAL_Handle handle)
   ENABLE_PROTECTED_REGISTER_WRITE_MODE;
 
   pie->ADCINT1 = &mainISR;
+  pie->SCITXINTB = &scitxbISR;
 
   DISABLE_PROTECTED_REGISTER_WRITE_MODE;
 

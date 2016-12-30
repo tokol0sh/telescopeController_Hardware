@@ -47,6 +47,7 @@
 #include "user.h"
 #include "hal_obj.h"
 
+
 #ifdef FLASH
 #pragma CODE_SECTION(HAL_setupFlash,"ramfuncs");
 #endif
@@ -676,6 +677,15 @@ HAL_Handle HAL_init(void *pMemory,const size_t numBytes)
   obj->spiAHandle = SPI_init((void *)SPIA_BASE_ADDR,sizeof(SPI_Obj));
   obj->spiBHandle = SPI_init((void *)SPIB_BASE_ADDR,sizeof(SPI_Obj));
 
+
+  // initialize the SCI handles
+  obj->sciBHandle = SCI_init((void *)SCIB_BASE_ADDR,sizeof(SCI_Obj));
+
+  // initialize the CPU usage module
+  obj->cpu_usageHandle = CPU_USAGE_init(&obj->cpu_usage,sizeof(obj->cpu_usage));
+  CPU_USAGE_setParams(obj->cpu_usageHandle,
+                     (uint32_t)USER_SYSTEM_FREQ_MHz * 1000000,     // timer period, cnts
+                     (uint32_t)USER_ISR_FREQ_Hz);                  // average over 1 second of ISRs
 
   // initialize PWM handles
 #ifdef J5
@@ -1610,6 +1620,31 @@ void HAL_setupSpiB(HAL_Handle handle)
 }  // end of HAL_setupSpiB() function
 
 
+void HAL_setupSciB(HAL_Handle handle)
+{
+	HAL_Obj *obj = (HAL_Obj *)handle;
+	SCI_reset(obj->sciBHandle);
+	SCI_setMode(obj->sciBHandle, SCI_Mode_IdleLine);
+	SCI_setNumStopBits(obj->sciBHandle, SCI_NumStopBits_One);
+	SCI_setParity(obj->sciBHandle, SCI_Parity_Odd);
+	SCI_setCharLength(obj->sciBHandle,SCI_CharLength_8_Bits);
+	SCI_setBaudRate(obj->sciBHandle,SCI_BaudRate_115_2_kBaud);
+
+	SCI_enableTxInt(obj->sciBHandle);
+	SCI_enableChannels(obj->sciBHandle);
+	SCI_enableTxFifo(obj->sciBHandle);
+	SCI_enableTxFifoEnh(obj->sciBHandle);
+	SCI_enableTxFifoInt(obj->sciBHandle);
+	SCI_setTxFifoIntLevel(obj->sciBHandle, SCI_FifoLevel_Empty);
+
+
+	SCI_enableTx(obj->sciBHandle);
+	SCI_enable(obj->sciBHandle);
+
+	PIE_enableInt(obj->pieHandle, PIE_GroupNumber_9, PIE_InterruptSource_SCIBTX);
+	CPU_enableInt(obj->cpuHandle,CPU_IntNumber_9);
+}
+
 void HAL_setupPwmDacs(HAL_Handle handle)
 {
   HAL_Obj *obj = (HAL_Obj *)handle;
@@ -1726,6 +1761,34 @@ void HAL_setupDrvSpi(HAL_Handle handle, DRV_SPI_8301_Vars_t *Spi_8301_Vars)
 
   return;
 }  // end of HAL_setupDrvSpi() function
+
+int HAL_scibwrite(HAL_Handle handle, char * buf, unsigned count)
+{
+	HAL_Obj  *obj = (HAL_Obj *)handle;
+	uint16_t writeCount = 0;
+	uint16_t * bufPtr = (uint16_t *) buf;
+
+	if(count == 0) {
+		return (0);
+	}
+
+	while(writeCount < count){
+		SCI_putDataNonBlocking(obj->sciBHandle, *bufPtr);
+		writeCount++;
+		bufPtr++;
+	}
+
+	return (writeCount);
+}
+
+void HAL_scibTXintclear(HAL_Handle handle)
+{
+	HAL_Obj  *obj = (HAL_Obj *)handle;
+	PIE_clearInt(obj->pieHandle,PIE_GroupNumber_9);
+	SCI_clearTxFifoInt(obj->sciBHandle);
+
+}
+
 
 
 // end of file

@@ -4,14 +4,14 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.10
+CG_TOOL_ROOT := C:/ti/ccsv6/tools/compiler/c2000_6.4.11
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
 -l"rts2800_ml.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/iqmath/lib/f28x/32b/IQmath.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/iqmath/lib/f28x/32b/IQmath.lib" \
 "./CodeStartBranch.obj" \
 "./adc.obj" \
 "./clarke.obj" \
@@ -40,11 +40,11 @@ ORDERED_OBJS += \
 "./usDelay.obj" \
 "./user.obj" \
 "./wdog.obj" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2806x/2806xRevB_FastSpinROMSymbols.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/afsel/lib/32b/f28x/afsel.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/ide/ccs/cmd/f2806x/f28069F_ram_lnk.cmd" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/fstart/lib/32b/f28x/fstart.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/ipd/lib/32b/f28x/ipd_hfi.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2806x/2806xRevB_FastSpinROMSymbols.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/afsel/lib/32b/f28x/afsel.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/ide/ccs/cmd/f2806x/f28069F_ram_lnk.cmd" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/fstart/lib/32b/f28x/fstart.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/ipd/lib/32b/f28x/ipd_hfi.lib" \
 $(GEN_CMDS__FLAG) \
 
 -include ../makefile.init
@@ -162,7 +162,7 @@ all: proj_lab21.out
 proj_lab21.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C2000 Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.10/bin/cl2000" -v28 -ml -mt -O2 -g --define=FAST_ROM_V1p6 --diag_warning=225 --display_error_number --asm_listing -z -m"proj_lab21.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.10/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.10/include" --reread_libs --priority --disable_auto_rts --diag_suppress=16002 --xml_link_info="proj_lab21_linkInfo.xml" --rom_model -o "proj_lab21.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/c2000_6.4.11/bin/cl2000" -v28 -ml -mt -O2 -g --define=FAST_ROM_V1p6 --diag_warning=225 --display_error_number --asm_listing -z -m"proj_lab21.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccsv6/tools/compiler/c2000_6.4.11/lib" -i"C:/ti/ccsv6/tools/compiler/c2000_6.4.11/include" --reread_libs --priority --disable_auto_rts --diag_suppress=16002 --xml_link_info="proj_lab21_linkInfo.xml" --rom_model -o "proj_lab21.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

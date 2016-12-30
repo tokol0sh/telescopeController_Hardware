@@ -65,6 +65,10 @@
 // **************************************************************************
 // the globals
 
+float_t gCpuUsagePercentageMin = 0.0;
+float_t gCpuUsagePercentageAvg = 0.0;
+float_t gCpuUsagePercentageMax = 0.0;
+
 uint_least16_t gCounter_updateGlobals = 0;
 
 bool Flag_Latch_softwareUpdate = true;
@@ -233,6 +237,8 @@ void main(void)
   // enable global interrupts
   HAL_enableGlobalInts(halHandle);
 
+  //Enbale UARTB
+  HAL_setupSciB(halHandle);
 
   // enable debug interrupts
   HAL_enableDebugInt(halHandle);
@@ -240,6 +246,7 @@ void main(void)
 
   // disable the PWM
   HAL_disablePwm(halHandle);
+
 
 
 #ifdef DRV8301_SPI
@@ -385,6 +392,7 @@ void main(void)
             gCounter_updateGlobals = 0;
 
             updateGlobalVariables_motor(ctrlHandle);
+            updateCPUusage();
           }
 
         // enable/disable the forced angle
@@ -417,9 +425,22 @@ void main(void)
 
 } // end of main() function
 
+interrupt void scitxbISR(void)
+{
+	HAL_scibTXintclear(halHandle);
+	unsigned char sdata[4];
+	int temp = 0xF00D;
+	memcpy ( &sdata[0], &temp, 1 );
+	memcpy ( &sdata[1], (&temp)+1, 1 );
+	memcpy ( &sdata[2], (&temp)+2, 1 );
+	memcpy ( &sdata[3], (&temp)+3, 1 );
+
+	HAL_scibwrite(halHandle, sdata,4);
+}
 
 interrupt void mainISR(void)
 {
+	uint32_t timer1Cnt;
   // toggle status LED
   if(gLEDcnt++ > (uint_least32_t)(USER_ISR_FREQ_Hz / LED_BLINK_FREQ_Hz))
   {
@@ -427,6 +448,9 @@ interrupt void mainISR(void)
     gLEDcnt = 0;
   }
 
+
+  timer1Cnt = HAL_readTimerCnt(halHandle,1);
+  CPU_USAGE_updateCnts(halHandle->cpu_usageHandle,timer1Cnt);
 
   // acknowledge the ADC interrupt
   HAL_acqAdcInt(halHandle,ADC_IntNumber_1);
@@ -447,6 +471,11 @@ interrupt void mainISR(void)
   // setup the controller
   CTRL_setup(ctrlHandle);
 
+  // read the timer 1 value and update the CPU usage module
+  timer1Cnt = HAL_readTimerCnt(halHandle,1);
+  CPU_USAGE_updateCnts(halHandle->cpu_usageHandle,timer1Cnt);
+  // run the CPU usage module
+  CPU_USAGE_run(halHandle->cpu_usageHandle);
 
   return;
 } // end of mainISR() function
@@ -498,6 +527,26 @@ void updateGlobalVariables_motor(CTRL_Handle handle)
   return;
 } // end of updateGlobalVariables_motor() function
 
+
+void updateCPUusage(void)
+{
+  uint32_t minDeltaCntObserved = CPU_USAGE_getMinDeltaCntObserved(halHandle->cpu_usageHandle);
+  uint32_t avgDeltaCntObserved = CPU_USAGE_getAvgDeltaCntObserved(halHandle->cpu_usageHandle);
+  uint32_t maxDeltaCntObserved = CPU_USAGE_getMaxDeltaCntObserved(halHandle->cpu_usageHandle);
+  uint16_t pwmPeriod = HAL_readPwmPeriod(halHandle,PWM_Number_1);
+  float_t  cpu_usage_den = (float_t)pwmPeriod * (float_t)USER_NUM_PWM_TICKS_PER_ISR_TICK * 2.0;
+
+  // calculate the minimum cpu usage percentage
+  gCpuUsagePercentageMin = (float_t)minDeltaCntObserved / cpu_usage_den * 100.0;
+
+  // calculate the average cpu usage percentage
+  gCpuUsagePercentageAvg = (float_t)avgDeltaCntObserved / cpu_usage_den * 100.0;
+
+  // calculate the maximum cpu usage percentage
+  gCpuUsagePercentageMax = (float_t)maxDeltaCntObserved / cpu_usage_den * 100.0;
+
+  return;
+} // end of updateCPUusage() function
 
 //@} //defgroup
 // end of file
