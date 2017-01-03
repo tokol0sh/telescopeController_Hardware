@@ -1623,26 +1623,46 @@ void HAL_setupSpiB(HAL_Handle handle)
 void HAL_setupSciB(HAL_Handle handle)
 {
 	HAL_Obj *obj = (HAL_Obj *)handle;
-	SCI_reset(obj->sciBHandle);
-	SCI_setMode(obj->sciBHandle, SCI_Mode_IdleLine);
-	SCI_setNumStopBits(obj->sciBHandle, SCI_NumStopBits_One);
+	//SCI_reset(obj->sciBHandle);
 	SCI_setParity(obj->sciBHandle, SCI_Parity_Odd);
+	SCI_setNumStopBits(obj->sciBHandle, SCI_NumStopBits_One);
 	SCI_setCharLength(obj->sciBHandle,SCI_CharLength_8_Bits);
-	SCI_setBaudRate(obj->sciBHandle,SCI_BaudRate_115_2_kBaud);
-
-	SCI_enableTxInt(obj->sciBHandle);
-	SCI_enableChannels(obj->sciBHandle);
-	SCI_enableTxFifo(obj->sciBHandle);
-	SCI_enableTxFifoEnh(obj->sciBHandle);
-	SCI_enableTxFifoInt(obj->sciBHandle);
-	SCI_setTxFifoIntLevel(obj->sciBHandle, SCI_FifoLevel_Empty);
-
+	SCI_setMode(obj->sciBHandle, SCI_Mode_IdleLine);
 
 	SCI_enableTx(obj->sciBHandle);
+	SCI_enableRx(obj->sciBHandle);
+
+	SCI_enableTxInt(obj->sciBHandle);
+	SCI_enableRxInt(obj->sciBHandle);
+
+	SCI_setBaudRate(obj->sciBHandle,SCI_BaudRate_115_2_kBaud);
+
 	SCI_enable(obj->sciBHandle);
 
+
+
+	SCI_enableTxFifoEnh(obj->sciBHandle);
+	SCI_resetTxFifo(obj->sciBHandle);
+	SCI_clearTxFifoInt(obj->sciBHandle);
+	SCI_resetChannels(obj->sciBHandle);
+	SCI_setTxFifoIntLevel(obj->sciBHandle, SCI_FifoLevel_2_Words);
+	SCI_enableTxFifoInt(obj->sciBHandle);
+
+	SCI_resetRxFifo(obj->sciBHandle);
+	SCI_clearRxFifoInt(obj->sciBHandle);
+	SCI_setRxFifoIntLevel(obj->sciBHandle,SCI_FifoLevel_1_Word);
+	SCI_enableRxFifoInt(obj->sciBHandle);
+
+
+	//SCI_setTxDelay(obj->sciBHandle,250);
+
+
+
 	PIE_enableInt(obj->pieHandle, PIE_GroupNumber_9, PIE_InterruptSource_SCIBTX);
+	PIE_enableInt(obj->pieHandle, PIE_GroupNumber_9, PIE_InterruptSource_SCIBRX);
 	CPU_enableInt(obj->cpuHandle,CPU_IntNumber_9);
+
+	return;
 }
 
 void HAL_setupPwmDacs(HAL_Handle handle)
@@ -1784,10 +1804,22 @@ int HAL_scibwrite(HAL_Handle handle, char * buf, unsigned count)
 void HAL_scibTXintclear(HAL_Handle handle)
 {
 	HAL_Obj  *obj = (HAL_Obj *)handle;
-	PIE_clearInt(obj->pieHandle,PIE_GroupNumber_9);
 	SCI_clearTxFifoInt(obj->sciBHandle);
+	PIE_clearInt(obj->pieHandle,PIE_GroupNumber_9);
 
+	return;
 }
+
+void HAL_scibRXintClear(HAL_Handle handle)
+{
+	HAL_Obj  *obj = (HAL_Obj *)handle;
+	SCI_clearRxFifoInt(obj->sciBHandle);
+	SCI_resetRxFifo(obj->sciBHandle);
+	PIE_clearInt(obj->pieHandle,PIE_GroupNumber_9);
+
+	return;
+}
+
 
 
 

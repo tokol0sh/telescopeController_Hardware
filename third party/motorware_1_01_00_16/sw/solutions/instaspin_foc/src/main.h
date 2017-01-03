@@ -83,7 +83,6 @@
                          true, \
                          false, \
                          false, \
-						 true,\
                          CTRL_State_Idle, \
                          EST_State_Idle, \
                          USER_ErrorCode_NoError, \
@@ -144,7 +143,6 @@ typedef struct _MOTOR_Vars_t_
   bool Flag_enableOffsetcalc;
   bool Flag_enablePowerWarp;
   bool Flag_enableSpeedCtrl;
-  bool startup;
 
   CTRL_State_e CtrlState;
   EST_State_e EstState;
@@ -222,6 +220,8 @@ typedef enum
 //!
 interrupt void mainISR(void);
 interrupt void scitxbISR(void);
+interrupt void scirxbISR(void);
+
 
 void runCurrentIgnore(void);
 

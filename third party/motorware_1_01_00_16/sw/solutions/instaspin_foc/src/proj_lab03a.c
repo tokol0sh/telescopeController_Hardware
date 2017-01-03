@@ -69,6 +69,11 @@ float_t gCpuUsagePercentageMin = 0.0;
 float_t gCpuUsagePercentageAvg = 0.0;
 float_t gCpuUsagePercentageMax = 0.0;
 
+ int sentBytes = 0;
+ int tempMotorVars[104];
+ int bytesToSend[208] ;
+int sdata[4];
+
 uint_least16_t gCounter_updateGlobals = 0;
 
 bool Flag_Latch_softwareUpdate = true;
@@ -427,15 +432,47 @@ void main(void)
 
 interrupt void scitxbISR(void)
 {
-	HAL_scibTXintclear(halHandle);
-	unsigned char sdata[4];
-	int temp = 0xF00D;
-	memcpy ( &sdata[0], &temp, 1 );
-	memcpy ( &sdata[1], (&temp)+1, 1 );
-	memcpy ( &sdata[2], (&temp)+2, 1 );
-	memcpy ( &sdata[3], (&temp)+3, 1 );
+	int i;
 
-	HAL_scibwrite(halHandle, sdata,4);
+	if (sentBytes == 0 )
+	{
+		memcpy(&tempMotorVars[0], &gMotorVars,104);
+		for(i = 0; i<208;i++ )
+			{
+				bytesToSend[i] = __byte(tempMotorVars,i);
+			}
+	}
+
+	if (sentBytes >= (sizeof(MOTOR_Vars_t) * 2 ))
+	{
+		SCI_disableTxFifoInt(halHandle->sciBHandle);
+		SCI_clearTxFifoInt(halHandle->sciBHandle);
+		sentBytes = 0;
+	}
+	else
+	{
+		sdata[0] = bytesToSend[0 + sentBytes];
+		sdata[1] = bytesToSend[1 + sentBytes];
+		//sdata[2] = bytesToSend[2 + sentBytes];
+		//sdata[3] = bytesToSend[3 + sentBytes];
+
+
+		//sdata[0] = 65 + sentBytes;
+		//sdata[1] = 66 + sentBytes;
+		//sdata[2] = 67 + sentBytes;
+		//sdata[3] = 68 + sentBytes;
+
+		HAL_scibwrite(halHandle, sdata,2);
+		sentBytes+=2;
+	}
+	HAL_scibTXintclear(halHandle);
+}
+
+interrupt void scirxbISR(void)
+{
+	HAL_scibRXintClear(halHandle);
+	SCI_clearTxFifoInt(halHandle->sciBHandle);
+	SCI_enableTxFifoInt(halHandle->sciBHandle);
 }
 
 interrupt void mainISR(void)
