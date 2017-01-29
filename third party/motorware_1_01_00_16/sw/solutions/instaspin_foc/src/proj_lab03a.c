@@ -433,7 +433,6 @@ void main(void)
 interrupt void scitxbISR(void)
 {
 	int i;
-
 	if (sentBytes == 0 )
 	{
 		memcpy(&tempMotorVars[0], &gMotorVars,104);

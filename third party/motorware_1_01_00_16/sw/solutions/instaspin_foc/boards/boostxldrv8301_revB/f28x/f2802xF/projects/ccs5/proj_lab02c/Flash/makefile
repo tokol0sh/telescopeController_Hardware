@@ -10,12 +10,12 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/2802xRevB_Fast_IQ_ROMSymbols.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/2802xRevB_Fast_ONLY_ROMSymbols.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/2802xRevB_Fast_RTS_ROMSymbols.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/2802xRevB_Fast_IQ_ROMSymbols.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/2802xRevB_Fast_ONLY_ROMSymbols.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/2802xRevB_Fast_RTS_ROMSymbols.lib" \
 -l"rts2800_ml.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/fast_public.lib" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/modules/iqmath/lib/f28x/32b/IQmath.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/fast/lib/32b/f28x/f2802x/fast_public.lib" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/modules/iqmath/lib/f28x/32b/IQmath.lib" \
 "./CodeStartBranch.obj" \
 "./adc.obj" \
 "./clarke.obj" \
@@ -46,7 +46,7 @@ ORDERED_OBJS += \
 "./usDelay.obj" \
 "./user.obj" \
 "./wdog.obj" \
-"C:/ti/motorware/motorware_1_01_00_16/sw/ide/ccs/cmd/f2802x/F28027F.cmd" \
+"C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third party/motorware_1_01_00_16/sw/ide/ccs/cmd/f2802x/F28027F.cmd" \
 $(GEN_CMDS__FLAG) \
 
 -include ../makefile.init

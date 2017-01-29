@@ -29,7 +29,7 @@
  * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * --/COPYRIGHT--*/
-//! \file   drivers/sci/src/32b/f28x/f2806x/sci.c
+//! \file   drivers/sci/src/32b/f28x/f2806x/sci.c1
 //! \brief  Contains the various functions related to the 
 //!         serial communications interface (SCI) object
 //!

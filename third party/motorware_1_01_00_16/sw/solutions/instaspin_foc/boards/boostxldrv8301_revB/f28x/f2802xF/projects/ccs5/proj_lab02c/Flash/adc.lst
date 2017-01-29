@@ -1,22 +1,22 @@
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    1
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    1
 
        1              ;***************************************************************
-       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.4.6 *
-       3              ;* Date/Time created: Thu Mar 31 18:42:22 2016                 *
+       2              ;* TMS320C2000 C/C++ Codegen                        PC v6.4.11 *
+       3              ;* Date/Time created: Fri Jan 13 19:54:55 2017                 *
        4              ;***************************************************************
        5                      .compiler_opts --float_support=softlib --hll_source=on --mem_model:code=flat --mem_model:data=large -
        6        0002  FP      .set    XAR2
        7              
        8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
-       9                      .dwattr $C$DW$CU, DW_AT_name("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x
-      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.6 Copyright (c) 1996-2015 Texa
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeControlle
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.11 Copyright (c) 1996-2015 Tex
       11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\ti\motorware\motorware_1_01_00_16\sw\solutions\instaspin_foc\boa
-      13              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_6.4.6\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\
-      14              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_6.4.6\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\bee25\Documents\Visual Studio 2015\Projects\telescopeContr
+      13              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\\16676
+      14              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp\\1667
       15 00000000               .sect   ".text"
       16                      .clink
       17                      .global _ADC_setupSocTrigSrc
@@ -26,11 +26,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    1
       21                      .dwattr $C$DW$1, DW_AT_high_pc(0x00)
       22                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_ADC_setupSocTrigSrc")
       23                      .dwattr $C$DW$1, DW_AT_external
-      24                      .dwattr $C$DW$1, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+      24                      .dwattr $C$DW$1, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
       25                      .dwattr $C$DW$1, DW_AT_TI_begin_line(0x236)
       26                      .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
       27                      .dwattr $C$DW$1, DW_AT_TI_max_frame_size(-2)
-      28                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 567
+      28                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       29              
       30                      .dwfde $C$DW$CIE, _ADC_setupSocTrigSrc
       31              $C$DW$2 .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -58,10 +58,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    1
       53              _ADC_setupSocTrigSrc:
       54              ;* T     assigned to $O$C1
       55              ;* T     assigned to _lShift_socsel1
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    2
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    2
 
       56              $C$DW$5 .dwtag  DW_TAG_variable, DW_AT_name("lShift_socsel1")
       57                      .dwattr $C$DW$5, DW_AT_TI_symbol_name("_lShift_socsel1")
@@ -87,18 +87,18 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    2
       77                      .dwcfi  save_reg_to_mem, 26, 0
       78 00000000 88A9          MOVZ      AR6,AL                ; [CPU_] |567| 
       79 00000001 80A8          MOVZ      AR7,AH                ; [CPU_] |567| 
-      80                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 571
+      80                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       81 00000002 5603          MOV       ACC,AR6 << #1         ; [CPU_] |571| 
          00000003 01A6 
       82 00000004 2DA9          MOV       T,AL                  ; [CPU_] |571| 
       83 00000005 7622   EALLOW
       84 00000006 92A6          MOV       AL,AR6                ; [CPU_] 
-      85                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 577
+      85                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       86 00000007 5208          CMPB      AL,#8                 ; [CPU_] |577| 
       87 00000008 56C8          BF        $C$L1,LO              ; [CPU_] |577| 
          00000009 0011 
       88                      ; branchcc occurs ; [] |577| 
-      89                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 594
+      89                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       90 0000000a 92AC          MOV       AL,T                  ; [CPU_] |594| 
       91 0000000b 9CF0          ADDB      AL,#-16               ; [CPU_] |594| 
       92 0000000c 2DA9          MOV       T,AL                  ; [CPU_] |594| 
@@ -110,18 +110,18 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    2
       97 00000012 FF66          LSL       AL,T                  ; [CPU_] |594| 
       98 00000013 FF5E          NOT       AL                    ; [CPU_] |594| 
       99 00000014 C0C5          AND       *+XAR5[0],AL          ; [CPU_] |594| 
-     100                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 597
+     100                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      101 00000015 A8A9          MOVL      ACC,XAR4              ; [CPU_] |597| 
      102 00000016 FF10          ADD       ACC,#26133 << 0       ; [CPU_] |597| 
          00000017 6615 
      103 00000018 6F0C          B         $C$L2,UNC             ; [CPU_] |597| 
      104                      ; branch occurs ; [] |597| 
      105 00000019       $C$L1:    
-     106                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 583
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+     106                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    3
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    3
 
      107 00000019 A8A9          MOVL      ACC,XAR4              ; [CPU_] |583| 
      108 0000001a FF12          ADD       ACC,#6533 << 2        ; [CPU_] |583| 
@@ -131,7 +131,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    3
      111 0000001e FF66          LSL       AL,T                  ; [CPU_] |583| 
      112 0000001f FF5E          NOT       AL                    ; [CPU_] |583| 
      113 00000020 C0C5          AND       *+XAR5[0],AL          ; [CPU_] |583| 
-     114                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 586
+     114                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      115 00000021 A8A9          MOVL      ACC,XAR4              ; [CPU_] |586| 
      116 00000022 FF12          ADD       ACC,#6533 << 2        ; [CPU_] |586| 
          00000023 1985 
@@ -147,7 +147,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    3
      126                      .dwattr $C$DW$9, DW_AT_TI_return
      127 0000002a 0006          LRETR     ; [CPU_] 
      128                      ; return occurs ; [] 
-     129                      .dwattr $C$DW$1, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/
+     129                      .dwattr $C$DW$1, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCon
      130                      .dwattr $C$DW$1, DW_AT_TI_end_line(0x25b)
      131                      .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
      132                      .dwendentry
@@ -162,11 +162,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    3
      141                      .dwattr $C$DW$10, DW_AT_high_pc(0x00)
      142                      .dwattr $C$DW$10, DW_AT_TI_symbol_name("_ADC_setVoltRefSrc")
      143                      .dwattr $C$DW$10, DW_AT_external
-     144                      .dwattr $C$DW$10, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     144                      .dwattr $C$DW$10, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      145                      .dwattr $C$DW$10, DW_AT_TI_begin_line(0x1e0)
      146                      .dwattr $C$DW$10, DW_AT_TI_begin_column(0x06)
      147                      .dwattr $C$DW$10, DW_AT_TI_max_frame_size(-2)
-     148                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 481
+     148                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      149              
      150                      .dwfde $C$DW$CIE, _ADC_setVoltRefSrc
      151              $C$DW$11        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -178,10 +178,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    3
      157                      .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$66)
      158                      .dwattr $C$DW$12, DW_AT_location[DW_OP_reg0]
      159              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    4
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    4
 
      160              ;***************************************************************
      161              ;* FNAME: _ADC_setVoltRefSrc            FR SIZE:   0           *
@@ -207,20 +207,20 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    4
      181                      .dwcfi  save_reg_to_mem, 26, 0
      182 0000002b 88A9          MOVZ      AR6,AL                ; [CPU_] |481| 
      183 0000002c 7622   EALLOW
-     184                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 488
+     184                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      185 0000002d A8A9          MOVL      ACC,XAR4              ; [CPU_] |488| 
      186 0000002e FF19          ADD       ACC,#51 << 9          ; [CPU_] |488| 
          0000002f 0033 
      187 00000030 83A9          MOVL      XAR5,ACC              ; [CPU_] |488| 
-     188                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 492
+     188                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      189 00000031 A8A9          MOVL      ACC,XAR4              ; [CPU_] |492| 
      190 00000032 FF19          ADD       ACC,#51 << 9          ; [CPU_] |492| 
          00000033 0033 
      191 00000034 8AA9          MOVL      XAR4,ACC              ; [CPU_] |492| 
-     192                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 488
+     192                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      193 00000035 18C5          AND       *+XAR5[0],#0xfff7     ; [CPU_] |488| 
          00000036 FFF7 
-     194                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 492
+     194                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      195 00000037 92A6          MOV       AL,AR6                ; [CPU_] |492| 
      196 00000038 98C4          OR        *+XAR4[0],AL          ; [CPU_] |492| 
      197 00000039 761A   EDIS
@@ -230,7 +230,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    4
      201                      .dwattr $C$DW$15, DW_AT_TI_return
      202 0000003b 0006          LRETR     ; [CPU_] 
      203                      ; return occurs ; [] 
-     204                      .dwattr $C$DW$10, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     204                      .dwattr $C$DW$10, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      205                      .dwattr $C$DW$10, DW_AT_TI_end_line(0x1f1)
      206                      .dwattr $C$DW$10, DW_AT_TI_end_column(0x01)
      207                      .dwendentry
@@ -238,10 +238,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    4
      209              
      210 0000003c               .sect   ".text"
      211                      .clink
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    5
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    5
 
      212                      .global _ADC_setTempSensorSrc
      213              
@@ -250,11 +250,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    5
      216                      .dwattr $C$DW$16, DW_AT_high_pc(0x00)
      217                      .dwattr $C$DW$16, DW_AT_TI_symbol_name("_ADC_setTempSensorSrc")
      218                      .dwattr $C$DW$16, DW_AT_external
-     219                      .dwattr $C$DW$16, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     219                      .dwattr $C$DW$16, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      220                      .dwattr $C$DW$16, DW_AT_TI_begin_line(0x1cc)
      221                      .dwattr $C$DW$16, DW_AT_TI_begin_column(0x06)
      222                      .dwattr $C$DW$16, DW_AT_TI_max_frame_size(-2)
-     223                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 461
+     223                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      224              
      225                      .dwfde $C$DW$CIE, _ADC_setTempSensorSrc
      226              $C$DW$17        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -290,25 +290,25 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    5
      256                      .dwcfi  save_reg_to_mem, 26, 0
      257 0000003c 88A9          MOVZ      AR6,AL                ; [CPU_] |461| 
      258 0000003d 7622   EALLOW
-     259                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 468
+     259                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      260 0000003e A8A9          MOVL      ACC,XAR4              ; [CPU_] |468| 
      261 0000003f FF19          ADD       ACC,#51 << 9          ; [CPU_] |468| 
          00000040 0033 
      262 00000041 83A9          MOVL      XAR5,ACC              ; [CPU_] |468| 
-     263                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 472
+     263                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      264 00000042 A8A9          MOVL      ACC,XAR4              ; [CPU_] |472| 
      265 00000043 FF19          ADD       ACC,#51 << 9          ; [CPU_] |472| 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    6
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    6
 
          00000044 0033 
      266 00000045 8AA9          MOVL      XAR4,ACC              ; [CPU_] |472| 
-     267                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 468
+     267                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      268 00000046 18C5          AND       *+XAR5[0],#0xfffe     ; [CPU_] |468| 
          00000047 FFFE 
-     269                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 472
+     269                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      270 00000048 92A6          MOV       AL,AR6                ; [CPU_] |472| 
      271 00000049 98C4          OR        *+XAR4[0],AL          ; [CPU_] |472| 
      272 0000004a 761A   EDIS
@@ -318,7 +318,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    6
      276                      .dwattr $C$DW$21, DW_AT_TI_return
      277 0000004c 0006          LRETR     ; [CPU_] 
      278                      ; return occurs ; [] 
-     279                      .dwattr $C$DW$16, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     279                      .dwattr $C$DW$16, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      280                      .dwattr $C$DW$16, DW_AT_TI_end_line(0x1dd)
      281                      .dwattr $C$DW$16, DW_AT_TI_end_column(0x01)
      282                      .dwendentry
@@ -333,11 +333,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    6
      291                      .dwattr $C$DW$22, DW_AT_high_pc(0x00)
      292                      .dwattr $C$DW$22, DW_AT_TI_symbol_name("_ADC_setSocTrigSrc")
      293                      .dwattr $C$DW$22, DW_AT_external
-     294                      .dwattr $C$DW$22, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     294                      .dwattr $C$DW$22, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      295                      .dwattr $C$DW$22, DW_AT_TI_begin_line(0x198)
      296                      .dwattr $C$DW$22, DW_AT_TI_begin_column(0x06)
      297                      .dwattr $C$DW$22, DW_AT_TI_max_frame_size(-2)
-     298                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 409
+     298                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      299              
      300                      .dwfde $C$DW$CIE, _ADC_setSocTrigSrc
      301              $C$DW$23        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -358,10 +358,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    6
      316              ;*                                                             *
      317              ;* FUNCTION ENVIRONMENT                                        *
      318              ;*                                                             *
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    7
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    7
 
      319              ;* FUNCTION PROPERTIES                                         *
      320              ;*                            0 Parameter,  0 Auto,  0 SOE     *
@@ -389,22 +389,22 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    7
      342 0000004d 80A9          MOVZ      AR7,AL                ; [CPU_] |409| 
      343 0000004e 88A8          MOVZ      AR6,AH                ; [CPU_] |409| 
      344 0000004f 7622   EALLOW
-     345                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 416
+     345                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      346 00000050 A8A9          MOVL      ACC,XAR4              ; [CPU_] |416| 
      347 00000051 0DA7          ADDU      ACC,AR7               ; [CPU_] |416| 
      348 00000052 8AA9          MOVL      XAR4,ACC              ; [CPU_] |416| 
      349 00000053 FF15          ADD       ACC,#817 << 5         ; [CPU_] |416| 
          00000054 0331 
      350 00000055 83A9          MOVL      XAR5,ACC              ; [CPU_] |416| 
-     351                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 420
+     351                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      352 00000056 A8A9          MOVL      ACC,XAR4              ; [CPU_] |420| 
      353 00000057 FF15          ADD       ACC,#817 << 5         ; [CPU_] |420| 
          00000058 0331 
      354 00000059 8AA9          MOVL      XAR4,ACC              ; [CPU_] |420| 
-     355                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 416
+     355                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      356 0000005a 18C5          AND       *+XAR5[0],#0x07ff     ; [CPU_] |416| 
          0000005b 07FF 
-     357                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 420
+     357                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      358 0000005c 92A6          MOV       AL,AR6                ; [CPU_] |420| 
      359 0000005d 98C4          OR        *+XAR4[0],AL          ; [CPU_] |420| 
      360 0000005e 761A   EDIS
@@ -414,14 +414,14 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    7
      364                      .dwattr $C$DW$29, DW_AT_TI_return
      365 00000060 0006          LRETR     ; [CPU_] 
      366                      ; return occurs ; [] 
-     367                      .dwattr $C$DW$22, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     367                      .dwattr $C$DW$22, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      368                      .dwattr $C$DW$22, DW_AT_TI_end_line(0x1a9)
      369                      .dwattr $C$DW$22, DW_AT_TI_end_column(0x01)
      370                      .dwendentry
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    8
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    8
 
      371                      .dwendtag $C$DW$22
      372              
@@ -434,11 +434,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    8
      379                      .dwattr $C$DW$30, DW_AT_high_pc(0x00)
      380                      .dwattr $C$DW$30, DW_AT_TI_symbol_name("_ADC_setSocSampleDelay")
      381                      .dwattr $C$DW$30, DW_AT_external
-     382                      .dwattr $C$DW$30, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     382                      .dwattr $C$DW$30, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      383                      .dwattr $C$DW$30, DW_AT_TI_begin_line(0x184)
      384                      .dwattr $C$DW$30, DW_AT_TI_begin_column(0x06)
      385                      .dwattr $C$DW$30, DW_AT_TI_max_frame_size(-2)
-     386                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 389
+     386                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      387              
      388                      .dwfde $C$DW$CIE, _ADC_setSocSampleDelay
      389              $C$DW$31        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -478,10 +478,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    8
      423              ;* AR6   assigned to _sampleDelay
      424              $C$DW$36        .dwtag  DW_TAG_variable, DW_AT_name("sampleDelay")
      425                      .dwattr $C$DW$36, DW_AT_TI_symbol_name("_sampleDelay")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    9
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE    9
 
      426                      .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$54)
      427                      .dwattr $C$DW$36, DW_AT_location[DW_OP_reg16]
@@ -490,22 +490,22 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    9
      430 00000061 80A9          MOVZ      AR7,AL                ; [CPU_] |389| 
      431 00000062 88A8          MOVZ      AR6,AH                ; [CPU_] |389| 
      432 00000063 7622   EALLOW
-     433                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 396
+     433                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      434 00000064 A8A9          MOVL      ACC,XAR4              ; [CPU_] |396| 
      435 00000065 0DA7          ADDU      ACC,AR7               ; [CPU_] |396| 
      436 00000066 8AA9          MOVL      XAR4,ACC              ; [CPU_] |396| 
      437 00000067 FF15          ADD       ACC,#817 << 5         ; [CPU_] |396| 
          00000068 0331 
      438 00000069 83A9          MOVL      XAR5,ACC              ; [CPU_] |396| 
-     439                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 400
+     439                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      440 0000006a A8A9          MOVL      ACC,XAR4              ; [CPU_] |400| 
      441 0000006b FF15          ADD       ACC,#817 << 5         ; [CPU_] |400| 
          0000006c 0331 
      442 0000006d 8AA9          MOVL      XAR4,ACC              ; [CPU_] |400| 
-     443                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 396
+     443                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      444 0000006e 18C5          AND       *+XAR5[0],#0xffc0     ; [CPU_] |396| 
          0000006f FFC0 
-     445                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 400
+     445                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      446 00000070 92A6          MOV       AL,AR6                ; [CPU_] |400| 
      447 00000071 98C4          OR        *+XAR4[0],AL          ; [CPU_] |400| 
      448 00000072 761A   EDIS
@@ -515,7 +515,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    9
      452                      .dwattr $C$DW$37, DW_AT_TI_return
      453 00000074 0006          LRETR     ; [CPU_] 
      454                      ; return occurs ; [] 
-     455                      .dwattr $C$DW$30, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     455                      .dwattr $C$DW$30, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      456                      .dwattr $C$DW$30, DW_AT_TI_end_line(0x195)
      457                      .dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
      458                      .dwendentry
@@ -530,18 +530,18 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE    9
      467                      .dwattr $C$DW$38, DW_AT_high_pc(0x00)
      468                      .dwattr $C$DW$38, DW_AT_TI_symbol_name("_ADC_setSocFrcWord")
      469                      .dwattr $C$DW$38, DW_AT_external
-     470                      .dwattr $C$DW$38, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     470                      .dwattr $C$DW$38, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      471                      .dwattr $C$DW$38, DW_AT_TI_begin_line(0x1bc)
      472                      .dwattr $C$DW$38, DW_AT_TI_begin_column(0x06)
      473                      .dwattr $C$DW$38, DW_AT_TI_max_frame_size(-2)
-     474                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 445
+     474                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      475              
      476                      .dwfde $C$DW$CIE, _ADC_setSocFrcWord
      477              $C$DW$39        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   10
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   10
 
      478                      .dwattr $C$DW$39, DW_AT_TI_symbol_name("_adcHandle")
      479                      .dwattr $C$DW$39, DW_AT_type(*$C$DW$T$71)
@@ -576,7 +576,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   10
      508 00000075 88A9          MOVZ      AR6,AL                ; [CPU_] |445| 
      509 00000076 A8A9          MOVL      ACC,XAR4              ; [CPU_] |445| 
      510 00000077 7622   EALLOW
-     511                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 452
+     511                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      512 00000078 FF11          ADD       ACC,#13069 << 1       ; [CPU_] |452| 
          00000079 330D 
      513 0000007a 8AA9          MOVL      XAR4,ACC              ; [CPU_] |452| 
@@ -588,7 +588,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   10
      519                      .dwattr $C$DW$43, DW_AT_TI_return
      520 0000007e 0006          LRETR     ; [CPU_] 
      521                      ; return occurs ; [] 
-     522                      .dwattr $C$DW$38, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     522                      .dwattr $C$DW$38, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      523                      .dwattr $C$DW$38, DW_AT_TI_end_line(0x1c9)
      524                      .dwattr $C$DW$38, DW_AT_TI_end_column(0x01)
      525                      .dwendentry
@@ -598,21 +598,21 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   10
      529                      .clink
      530                      .global _ADC_setSocFrc
      531              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   11
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   11
 
      532              $C$DW$44        .dwtag  DW_TAG_subprogram, DW_AT_name("ADC_setSocFrc")
      533                      .dwattr $C$DW$44, DW_AT_low_pc(_ADC_setSocFrc)
      534                      .dwattr $C$DW$44, DW_AT_high_pc(0x00)
      535                      .dwattr $C$DW$44, DW_AT_TI_symbol_name("_ADC_setSocFrc")
      536                      .dwattr $C$DW$44, DW_AT_external
-     537                      .dwattr $C$DW$44, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     537                      .dwattr $C$DW$44, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      538                      .dwattr $C$DW$44, DW_AT_TI_begin_line(0x1ac)
      539                      .dwattr $C$DW$44, DW_AT_TI_begin_column(0x06)
      540                      .dwattr $C$DW$44, DW_AT_TI_max_frame_size(-2)
-     541                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 429
+     541                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      542              
      543                      .dwfde $C$DW$CIE, _ADC_setSocFrc
      544              $C$DW$45        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -643,7 +643,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   11
      569                      .dwcfi  save_reg_to_mem, 26, 0
      570 0000007f 2DA9          MOV       T,AL                  ; [CPU_] |429| 
      571 00000080 7622   EALLOW
-     572                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 436
+     572                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      573 00000081 9A01          MOVB      AL,#1                 ; [CPU_] |436| 
      574 00000082 FF66          LSL       AL,T                  ; [CPU_] |436| 
      575 00000083 88A9          MOVZ      AR6,AL                ; [CPU_] |436| 
@@ -658,13 +658,13 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   11
      583                      .dwattr $C$DW$48, DW_AT_low_pc(0x00)
      584                      .dwattr $C$DW$48, DW_AT_TI_return
      585 0000008b 0006          LRETR     ; [CPU_] 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   12
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   12
 
      586                      ; return occurs ; [] 
-     587                      .dwattr $C$DW$44, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     587                      .dwattr $C$DW$44, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      588                      .dwattr $C$DW$44, DW_AT_TI_end_line(0x1b9)
      589                      .dwattr $C$DW$44, DW_AT_TI_end_column(0x01)
      590                      .dwendentry
@@ -679,11 +679,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   12
      599                      .dwattr $C$DW$49, DW_AT_high_pc(0x00)
      600                      .dwattr $C$DW$49, DW_AT_TI_symbol_name("_ADC_setSocChanNumber")
      601                      .dwattr $C$DW$49, DW_AT_external
-     602                      .dwattr $C$DW$49, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     602                      .dwattr $C$DW$49, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      603                      .dwattr $C$DW$49, DW_AT_TI_begin_line(0x170)
      604                      .dwattr $C$DW$49, DW_AT_TI_begin_column(0x06)
      605                      .dwattr $C$DW$49, DW_AT_TI_max_frame_size(-2)
-     606                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 369
+     606                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      607              
      608                      .dwfde $C$DW$CIE, _ADC_setSocChanNumber
      609              $C$DW$50        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -718,10 +718,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   12
      638              ;* AR7   assigned to _socNumber
      639              $C$DW$54        .dwtag  DW_TAG_variable, DW_AT_name("socNumber")
      640                      .dwattr $C$DW$54, DW_AT_TI_symbol_name("_socNumber")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   13
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   13
 
      641                      .dwattr $C$DW$54, DW_AT_type(*$C$DW$T$48)
      642                      .dwattr $C$DW$54, DW_AT_location[DW_OP_reg18]
@@ -735,22 +735,22 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   13
      650 0000008c 80A9          MOVZ      AR7,AL                ; [CPU_] |369| 
      651 0000008d 88A8          MOVZ      AR6,AH                ; [CPU_] |369| 
      652 0000008e 7622   EALLOW
-     653                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 376
+     653                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      654 0000008f A8A9          MOVL      ACC,XAR4              ; [CPU_] |376| 
      655 00000090 0DA7          ADDU      ACC,AR7               ; [CPU_] |376| 
      656 00000091 8AA9          MOVL      XAR4,ACC              ; [CPU_] |376| 
      657 00000092 FF15          ADD       ACC,#817 << 5         ; [CPU_] |376| 
          00000093 0331 
      658 00000094 83A9          MOVL      XAR5,ACC              ; [CPU_] |376| 
-     659                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 380
+     659                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      660 00000095 A8A9          MOVL      ACC,XAR4              ; [CPU_] |380| 
      661 00000096 FF15          ADD       ACC,#817 << 5         ; [CPU_] |380| 
          00000097 0331 
      662 00000098 8AA9          MOVL      XAR4,ACC              ; [CPU_] |380| 
-     663                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 376
+     663                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      664 00000099 18C5          AND       *+XAR5[0],#0xfc3f     ; [CPU_] |376| 
          0000009a FC3F 
-     665                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 380
+     665                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      666 0000009b 92A6          MOV       AL,AR6                ; [CPU_] |380| 
      667 0000009c 98C4          OR        *+XAR4[0],AL          ; [CPU_] |380| 
      668 0000009d 761A   EDIS
@@ -760,7 +760,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   13
      672                      .dwattr $C$DW$56, DW_AT_TI_return
      673 0000009f 0006          LRETR     ; [CPU_] 
      674                      ; return occurs ; [] 
-     675                      .dwattr $C$DW$49, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     675                      .dwattr $C$DW$49, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      676                      .dwattr $C$DW$49, DW_AT_TI_end_line(0x181)
      677                      .dwattr $C$DW$49, DW_AT_TI_end_column(0x01)
      678                      .dwendentry
@@ -775,16 +775,16 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   13
      687                      .dwattr $C$DW$57, DW_AT_high_pc(0x00)
      688                      .dwattr $C$DW$57, DW_AT_TI_symbol_name("_ADC_setSampleOverlapMode")
      689                      .dwattr $C$DW$57, DW_AT_external
-     690                      .dwattr $C$DW$57, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     690                      .dwattr $C$DW$57, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      691                      .dwattr $C$DW$57, DW_AT_TI_begin_line(0x101)
      692                      .dwattr $C$DW$57, DW_AT_TI_begin_column(0x06)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   14
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   14
 
      693                      .dwattr $C$DW$57, DW_AT_TI_max_frame_size(-2)
-     694                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 258
+     694                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      695              
      696                      .dwfde $C$DW$CIE, _ADC_setSampleOverlapMode
      697              $C$DW$58        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -819,32 +819,32 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   14
      726                      .dwcfi  cfa_offset, -2
      727                      .dwcfi  save_reg_to_mem, 26, 0
      728 000000a0 7622   EALLOW
-     729                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 265
+     729                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      730 000000a1 5200          CMPB      AL,#0                 ; [CPU_] |265| 
-     731 000000a2 EC08          BF        $C$L3,EQ              ; [CPU_] |265| 
+     731 000000a2 ED08          BF        $C$L3,NEQ             ; [CPU_] |265| 
      732                      ; branchcc occurs ; [] |265| 
-     733                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 268
-     734 000000a3 A8A9          MOVL      ACC,XAR4              ; [CPU_] |268| 
-     735 000000a4 FF10          ADD       ACC,#26113 << 0       ; [CPU_] |268| 
+     733                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+     734 000000a3 A8A9          MOVL      ACC,XAR4              ; [CPU_] |266| 
+     735 000000a4 FF10          ADD       ACC,#26113 << 0       ; [CPU_] |266| 
          000000a5 6601 
-     736 000000a6 8AA9          MOVL      XAR4,ACC              ; [CPU_] |268| 
-     737 000000a7 1AC4          OR        *+XAR4[0],#0x0002     ; [CPU_] |268| 
-         000000a8 0002 
-     738 000000a9 6F07          B         $C$L4,UNC             ; [CPU_] |268| 
-     739                      ; branch occurs ; [] |268| 
+     736 000000a6 8AA9          MOVL      XAR4,ACC              ; [CPU_] |266| 
+     737 000000a7 18C4          AND       *+XAR4[0],#0xfffd     ; [CPU_] |266| 
+         000000a8 FFFD 
+     738 000000a9 6F07          B         $C$L4,UNC             ; [CPU_] |266| 
+     739                      ; branch occurs ; [] |266| 
      740 000000aa       $C$L3:    
-     741                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 266
-     742 000000aa A8A9          MOVL      ACC,XAR4              ; [CPU_] |266| 
-     743 000000ab FF10          ADD       ACC,#26113 << 0       ; [CPU_] |266| 
+     741                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+     742 000000aa A8A9          MOVL      ACC,XAR4              ; [CPU_] |268| 
+     743 000000ab FF10          ADD       ACC,#26113 << 0       ; [CPU_] |268| 
          000000ac 6601 
-     744 000000ad 8AA9          MOVL      XAR4,ACC              ; [CPU_] |266| 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+     744 000000ad 8AA9          MOVL      XAR4,ACC              ; [CPU_] |268| 
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   15
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   15
 
-     745 000000ae 18C4          AND       *+XAR4[0],#0xfffd     ; [CPU_] |266| 
-         000000af FFFD 
+     745 000000ae 1AC4          OR        *+XAR4[0],#0x0002     ; [CPU_] |268| 
+         000000af 0002 
      746 000000b0       $C$L4:    
      747 000000b0 761A   EDIS
      748 000000b1 FF69          SPM       #0                    ; [CPU_] 
@@ -853,7 +853,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   15
      751                      .dwattr $C$DW$62, DW_AT_TI_return
      752 000000b2 0006          LRETR     ; [CPU_] 
      753                      ; return occurs ; [] 
-     754                      .dwattr $C$DW$57, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     754                      .dwattr $C$DW$57, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      755                      .dwattr $C$DW$57, DW_AT_TI_end_line(0x111)
      756                      .dwattr $C$DW$57, DW_AT_TI_end_column(0x01)
      757                      .dwendentry
@@ -868,11 +868,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   15
      766                      .dwattr $C$DW$63, DW_AT_high_pc(0x00)
      767                      .dwattr $C$DW$63, DW_AT_TI_symbol_name("_ADC_setSampleMode")
      768                      .dwattr $C$DW$63, DW_AT_external
-     769                      .dwattr $C$DW$63, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     769                      .dwattr $C$DW$63, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      770                      .dwattr $C$DW$63, DW_AT_TI_begin_line(0x15a)
      771                      .dwattr $C$DW$63, DW_AT_TI_begin_column(0x06)
      772                      .dwattr $C$DW$63, DW_AT_TI_max_frame_size(-2)
-     773                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 347
+     773                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      774              
      775                      .dwfde $C$DW$CIE, _ADC_setSampleMode
      776              $C$DW$64        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -898,10 +898,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   15
      796              $C$DW$66        .dwtag  DW_TAG_variable, DW_AT_name("sampleMode")
      797                      .dwattr $C$DW$66, DW_AT_TI_symbol_name("_sampleMode")
      798                      .dwattr $C$DW$66, DW_AT_type(*$C$DW$T$45)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   16
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   16
 
      799                      .dwattr $C$DW$66, DW_AT_location[DW_OP_reg16]
      800              ;* AR4   assigned to _adcHandle
@@ -913,11 +913,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   16
      806                      .dwcfi  save_reg_to_mem, 26, 0
      807 000000b3 88A9          MOVZ      AR6,AL                ; [CPU_] |347| 
      808 000000b4 7622   EALLOW
-     809                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 353
+     809                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      810 000000b5 48A6          TBIT      AR6,#8                ; [CPU_] |353| 
      811 000000b6 EE08          BF        $C$L5,TC              ; [CPU_] |353| 
      812                      ; branchcc occurs ; [] |353| 
-     813                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 359
+     813                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      814 000000b7 A8A9          MOVL      ACC,XAR4              ; [CPU_] |359| 
      815 000000b8 FF11          ADD       ACC,#13065 << 1       ; [CPU_] |359| 
          000000b9 3309 
@@ -927,7 +927,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   16
      819 000000bd 6F0A          B         $C$L6,UNC             ; [CPU_] |359| 
      820                      ; branch occurs ; [] |359| 
      821 000000be       $C$L5:    
-     822                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 355
+     822                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      823 000000be A8A9          MOVL      ACC,XAR4              ; [CPU_] |355| 
      824 000000bf FF11          ADD       ACC,#13065 << 1       ; [CPU_] |355| 
          000000c0 3309 
@@ -945,7 +945,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   16
      835                      .dwattr $C$DW$68, DW_AT_TI_return
      836 000000c9 0006          LRETR     ; [CPU_] 
      837                      ; return occurs ; [] 
-     838                      .dwattr $C$DW$63, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     838                      .dwattr $C$DW$63, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      839                      .dwattr $C$DW$63, DW_AT_TI_end_line(0x16d)
      840                      .dwattr $C$DW$63, DW_AT_TI_end_column(0x01)
      841                      .dwendentry
@@ -958,18 +958,18 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   16
      848              $C$DW$69        .dwtag  DW_TAG_subprogram, DW_AT_name("ADC_setOffTrim")
      849                      .dwattr $C$DW$69, DW_AT_low_pc(_ADC_setOffTrim)
      850                      .dwattr $C$DW$69, DW_AT_high_pc(0x00)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   17
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   17
 
      851                      .dwattr $C$DW$69, DW_AT_TI_symbol_name("_ADC_setOffTrim")
      852                      .dwattr $C$DW$69, DW_AT_external
-     853                      .dwattr $C$DW$69, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     853                      .dwattr $C$DW$69, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      854                      .dwattr $C$DW$69, DW_AT_TI_begin_line(0x25d)
      855                      .dwattr $C$DW$69, DW_AT_TI_begin_column(0x06)
      856                      .dwattr $C$DW$69, DW_AT_TI_max_frame_size(-2)
-     857                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 606
+     857                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      858              
      859                      .dwfde $C$DW$CIE, _ADC_setOffTrim
      860              $C$DW$70        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1006,7 +1006,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   17
      891 000000ca 88A9          MOVZ      AR6,AL                ; [CPU_] |606| 
      892 000000cb A8A9          MOVL      ACC,XAR4              ; [CPU_] |606| 
      893 000000cc 7622   EALLOW
-     894                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 613
+     894                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      895 000000cd FF10          ADD       ACC,#26177 << 0       ; [CPU_] |613| 
          000000ce 6641 
      896 000000cf 8AA9          MOVL      XAR4,ACC              ; [CPU_] |613| 
@@ -1018,12 +1018,12 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   17
      902                      .dwattr $C$DW$74, DW_AT_TI_return
      903 000000d3 0006          LRETR     ; [CPU_] 
      904                      ; return occurs ; [] 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   18
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   18
 
-     905                      .dwattr $C$DW$69, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     905                      .dwattr $C$DW$69, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      906                      .dwattr $C$DW$69, DW_AT_TI_end_line(0x26a)
      907                      .dwattr $C$DW$69, DW_AT_TI_end_column(0x01)
      908                      .dwendentry
@@ -1038,11 +1038,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   18
      917                      .dwattr $C$DW$75, DW_AT_high_pc(0x00)
      918                      .dwattr $C$DW$75, DW_AT_TI_symbol_name("_ADC_setIntSrc")
      919                      .dwattr $C$DW$75, DW_AT_external
-     920                      .dwattr $C$DW$75, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+     920                      .dwattr $C$DW$75, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      921                      .dwattr $C$DW$75, DW_AT_TI_begin_line(0x140)
      922                      .dwattr $C$DW$75, DW_AT_TI_begin_column(0x06)
      923                      .dwattr $C$DW$75, DW_AT_TI_max_frame_size(-2)
-     924                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 321
+     924                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      925              
      926                      .dwfde $C$DW$CIE, _ADC_setIntSrc
      927              $C$DW$76        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1078,10 +1078,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   18
      957              ;* AR7   assigned to _intSrc
      958              $C$DW$80        .dwtag  DW_TAG_variable, DW_AT_name("intSrc")
      959                      .dwattr $C$DW$80, DW_AT_TI_symbol_name("_intSrc")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   19
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   19
 
      960                      .dwattr $C$DW$80, DW_AT_type(*$C$DW$T$42)
      961                      .dwattr $C$DW$80, DW_AT_location[DW_OP_reg18]
@@ -1090,7 +1090,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   19
      964 000000d4 88A9          MOVZ      AR6,AL                ; [CPU_] |321| 
      965 000000d5 80A8          MOVZ      AR7,AH                ; [CPU_] |321| 
      966 000000d6 7622   EALLOW
-     967                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 333
+     967                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      968 000000d7 28AC          MOV       T,#8                  ; [CPU_] |333| 
          000000d8 0008 
      969 000000d9 5603          MOV       ACC,AR6 << #3         ; [CPU_] |333| 
@@ -1111,7 +1111,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   19
      982 000000e8 FF66          LSL       AL,T                  ; [CPU_] |333| 
      983 000000e9 FF5E          NOT       AL                    ; [CPU_] |333| 
      984 000000ea C0C5          AND       *+XAR5[0],AL          ; [CPU_] |333| 
-     985                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 337
+     985                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      986 000000eb A8A9          MOVL      ACC,XAR4              ; [CPU_] |337| 
      987 000000ec FF13          ADD       ACC,#3265 << 3        ; [CPU_] |337| 
          000000ed 0CC1 
@@ -1126,7 +1126,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   19
      996                      .dwattr $C$DW$81, DW_AT_TI_return
      997 000000f4 0006          LRETR     ; [CPU_] 
      998                      ; return occurs ; [] 
-     999                      .dwattr $C$DW$75, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+     999                      .dwattr $C$DW$75, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
     1000                      .dwattr $C$DW$75, DW_AT_TI_end_line(0x157)
     1001                      .dwattr $C$DW$75, DW_AT_TI_end_column(0x01)
     1002                      .dwendentry
@@ -1138,19 +1138,19 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   19
     1008              
     1009              $C$DW$82        .dwtag  DW_TAG_subprogram, DW_AT_name("ADC_setIntPulseGenMode")
     1010                      .dwattr $C$DW$82, DW_AT_low_pc(_ADC_setIntPulseGenMode)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   20
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   20
 
     1011                      .dwattr $C$DW$82, DW_AT_high_pc(0x00)
     1012                      .dwattr $C$DW$82, DW_AT_TI_symbol_name("_ADC_setIntPulseGenMode")
     1013                      .dwattr $C$DW$82, DW_AT_external
-    1014                      .dwattr $C$DW$82, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+    1014                      .dwattr $C$DW$82, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
     1015                      .dwattr $C$DW$82, DW_AT_TI_begin_line(0x12c)
     1016                      .dwattr $C$DW$82, DW_AT_TI_begin_column(0x06)
     1017                      .dwattr $C$DW$82, DW_AT_TI_max_frame_size(-2)
-    1018                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 301
+    1018                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1019              
     1020                      .dwfde $C$DW$CIE, _ADC_setIntPulseGenMode
     1021              $C$DW$83        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1186,25 +1186,25 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   20
     1051                      .dwcfi  save_reg_to_mem, 26, 0
     1052 000000f5 88A9          MOVZ      AR6,AL                ; [CPU_] |301| 
     1053 000000f6 7622   EALLOW
-    1054                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 308
+    1054                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1055 000000f7 A8A9          MOVL      ACC,XAR4              ; [CPU_] |308| 
     1056 000000f8 FF19          ADD       ACC,#51 << 9          ; [CPU_] |308| 
          000000f9 0033 
     1057 000000fa 83A9          MOVL      XAR5,ACC              ; [CPU_] |308| 
-    1058                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 312
+    1058                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1059 000000fb A8A9          MOVL      ACC,XAR4              ; [CPU_] |312| 
     1060 000000fc FF19          ADD       ACC,#51 << 9          ; [CPU_] |312| 
          000000fd 0033 
     1061 000000fe 8AA9          MOVL      XAR4,ACC              ; [CPU_] |312| 
-    1062                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 308
+    1062                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1063 000000ff 18C5          AND       *+XAR5[0],#0xfffb     ; [CPU_] |308| 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   21
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   21
 
          00000100 FFFB 
-    1064                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 312
+    1064                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1065 00000101 92A6          MOV       AL,AR6                ; [CPU_] |312| 
     1066 00000102 98C4          OR        *+XAR4[0],AL          ; [CPU_] |312| 
     1067 00000103 761A   EDIS
@@ -1214,7 +1214,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   21
     1071                      .dwattr $C$DW$87, DW_AT_TI_return
     1072 00000105 0006          LRETR     ; [CPU_] 
     1073                      ; return occurs ; [] 
-    1074                      .dwattr $C$DW$82, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+    1074                      .dwattr $C$DW$82, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
     1075                      .dwattr $C$DW$82, DW_AT_TI_end_line(0x13d)
     1076                      .dwattr $C$DW$82, DW_AT_TI_end_column(0x01)
     1077                      .dwendentry
@@ -1229,11 +1229,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   21
     1086                      .dwattr $C$DW$88, DW_AT_high_pc(0x00)
     1087                      .dwattr $C$DW$88, DW_AT_TI_symbol_name("_ADC_setIntMode")
     1088                      .dwattr $C$DW$88, DW_AT_external
-    1089                      .dwattr $C$DW$88, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+    1089                      .dwattr $C$DW$88, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
     1090                      .dwattr $C$DW$88, DW_AT_TI_begin_line(0x114)
     1091                      .dwattr $C$DW$88, DW_AT_TI_begin_column(0x06)
     1092                      .dwattr $C$DW$88, DW_AT_TI_max_frame_size(-2)
-    1093                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 277
+    1093                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1094              
     1095                      .dwfde $C$DW$CIE, _ADC_setIntMode
     1096              $C$DW$89        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1258,10 +1258,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   21
     1115              ;*                            0 Parameter,  0 Auto,  0 SOE     *
     1116              ;***************************************************************
     1117              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   22
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   22
 
     1118              _ADC_setIntMode:
     1119              ;* AR4   assigned to $O$C1
@@ -1281,7 +1281,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   22
     1133 00000106 88A9          MOVZ      AR6,AL                ; [CPU_] |277| 
     1134 00000107 80A8          MOVZ      AR7,AH                ; [CPU_] |277| 
     1135 00000108 7622   EALLOW
-    1136                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 288
+    1136                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1137 00000109 28AC          MOV       T,#8                  ; [CPU_] |288| 
          0000010a 0008 
     1138 0000010b 5603          MOV       ACC,AR6 << #3         ; [CPU_] |288| 
@@ -1302,7 +1302,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   22
     1151 0000011a FF66          LSL       AL,T                  ; [CPU_] |288| 
     1152 0000011b FF5E          NOT       AL                    ; [CPU_] |288| 
     1153 0000011c C0C5          AND       *+XAR5[0],AL          ; [CPU_] |288| 
-    1154                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 292
+    1154                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1155 0000011d A8A9          MOVL      ACC,XAR4              ; [CPU_] |292| 
     1156 0000011e FF13          ADD       ACC,#3265 << 3        ; [CPU_] |292| 
          0000011f 0CC1 
@@ -1317,11 +1317,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   22
     1165                      .dwattr $C$DW$94, DW_AT_TI_return
     1166 00000126 0006          LRETR     ; [CPU_] 
     1167                      ; return occurs ; [] 
-    1168                      .dwattr $C$DW$88, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+    1168                      .dwattr $C$DW$88, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   23
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   23
 
     1169                      .dwattr $C$DW$88, DW_AT_TI_end_line(0x129)
     1170                      .dwattr $C$DW$88, DW_AT_TI_end_column(0x01)
@@ -1337,11 +1337,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   23
     1180                      .dwattr $C$DW$95, DW_AT_high_pc(0x00)
     1181                      .dwattr $C$DW$95, DW_AT_TI_symbol_name("_ADC_setDivideSelect")
     1182                      .dwattr $C$DW$95, DW_AT_external
-    1183                      .dwattr $C$DW$95, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f2
+    1183                      .dwattr $C$DW$95, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
     1184                      .dwattr $C$DW$95, DW_AT_TI_begin_line(0x202)
     1185                      .dwattr $C$DW$95, DW_AT_TI_begin_column(0x06)
     1186                      .dwattr $C$DW$95, DW_AT_TI_max_frame_size(-2)
-    1187                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 515
+    1187                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1188              
     1189                      .dwfde $C$DW$CIE, _ADC_setDivideSelect
     1190              $C$DW$96        .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1377,25 +1377,25 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   23
     1220                      .dwcfi  save_reg_to_mem, 26, 0
     1221 00000127 88A9          MOVZ      AR6,AL                ; [CPU_] |515| 
     1222 00000128 7622   EALLOW
-    1223                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 522
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+    1223                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   24
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   24
 
     1224 00000129 A8A9          MOVL      ACC,XAR4              ; [CPU_] |522| 
     1225 0000012a FF10          ADD       ACC,#26113 << 0       ; [CPU_] |522| 
          0000012b 6601 
     1226 0000012c 83A9          MOVL      XAR5,ACC              ; [CPU_] |522| 
-    1227                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 526
+    1227                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1228 0000012d A8A9          MOVL      ACC,XAR4              ; [CPU_] |526| 
     1229 0000012e FF10          ADD       ACC,#26113 << 0       ; [CPU_] |526| 
          0000012f 6601 
     1230 00000130 8AA9          MOVL      XAR4,ACC              ; [CPU_] |526| 
-    1231                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 522
+    1231                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1232 00000131 18C5          AND       *+XAR5[0],#0xfffe     ; [CPU_] |522| 
          00000132 FFFE 
-    1233                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 526
+    1233                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1234 00000133 92A6          MOV       AL,AR6                ; [CPU_] |526| 
     1235 00000134 98C4          OR        *+XAR4[0],AL          ; [CPU_] |526| 
     1236 00000135 761A   EDIS
@@ -1405,7 +1405,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   24
     1240                      .dwattr $C$DW$100, DW_AT_TI_return
     1241 00000137 0006          LRETR     ; [CPU_] 
     1242                      ; return occurs ; [] 
-    1243                      .dwattr $C$DW$95, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x
+    1243                      .dwattr $C$DW$95, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
     1244                      .dwattr $C$DW$95, DW_AT_TI_end_line(0x213)
     1245                      .dwattr $C$DW$95, DW_AT_TI_end_column(0x01)
     1246                      .dwendentry
@@ -1420,11 +1420,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   24
     1255                      .dwattr $C$DW$101, DW_AT_high_pc(0x00)
     1256                      .dwattr $C$DW$101, DW_AT_TI_symbol_name("_ADC_reset")
     1257                      .dwattr $C$DW$101, DW_AT_external
-    1258                      .dwattr $C$DW$101, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1258                      .dwattr $C$DW$101, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1259                      .dwattr $C$DW$101, DW_AT_TI_begin_line(0xf1)
     1260                      .dwattr $C$DW$101, DW_AT_TI_begin_column(0x06)
     1261                      .dwattr $C$DW$101, DW_AT_TI_max_frame_size(-2)
-    1262                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 242
+    1262                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1263              
     1264                      .dwfde $C$DW$CIE, _ADC_reset
     1265              $C$DW$102       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1438,10 +1438,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   24
     1273              ;* FUNCTION ENVIRONMENT                                        *
     1274              ;*                                                             *
     1275              ;* FUNCTION PROPERTIES                                         *
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   25
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   25
 
     1276              ;*                            0 Parameter,  0 Auto,  0 SOE     *
     1277              ;***************************************************************
@@ -1455,7 +1455,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   25
     1285                      .dwcfi  cfa_offset, -2
     1286                      .dwcfi  save_reg_to_mem, 26, 0
     1287 00000138 7622   EALLOW
-    1288                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 249
+    1288                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1289 00000139 A8A9          MOVL      ACC,XAR4              ; [CPU_] |249| 
     1290 0000013a FF19          ADD       ACC,#51 << 9          ; [CPU_] |249| 
          0000013b 0033 
@@ -1469,7 +1469,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   25
     1297                      .dwattr $C$DW$104, DW_AT_TI_return
     1298 00000141 0006          LRETR     ; [CPU_] 
     1299                      ; return occurs ; [] 
-    1300                      .dwattr $C$DW$101, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1300                      .dwattr $C$DW$101, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1301                      .dwattr $C$DW$101, DW_AT_TI_end_line(0xfe)
     1302                      .dwattr $C$DW$101, DW_AT_TI_end_column(0x01)
     1303                      .dwendentry
@@ -1484,11 +1484,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   25
     1312                      .dwattr $C$DW$105, DW_AT_high_pc(0x00)
     1313                      .dwattr $C$DW$105, DW_AT_TI_symbol_name("_ADC_powerUp")
     1314                      .dwattr $C$DW$105, DW_AT_external
-    1315                      .dwattr $C$DW$105, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1315                      .dwattr $C$DW$105, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1316                      .dwattr $C$DW$105, DW_AT_TI_begin_line(0xe1)
     1317                      .dwattr $C$DW$105, DW_AT_TI_begin_column(0x06)
     1318                      .dwattr $C$DW$105, DW_AT_TI_max_frame_size(-2)
-    1319                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 226
+    1319                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1320              
     1321                      .dwfde $C$DW$CIE, _ADC_powerUp
     1322              $C$DW$106       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1498,10 +1498,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   25
     1326              
     1327              ;***************************************************************
     1328              ;* FNAME: _ADC_powerUp                  FR SIZE:   0           *
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   26
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   26
 
     1329              ;*                                                             *
     1330              ;* FUNCTION ENVIRONMENT                                        *
@@ -1519,7 +1519,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   26
     1342                      .dwcfi  cfa_offset, -2
     1343                      .dwcfi  save_reg_to_mem, 26, 0
     1344 00000142 7622   EALLOW
-    1345                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 233
+    1345                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1346 00000143 A8A9          MOVL      ACC,XAR4              ; [CPU_] |233| 
     1347 00000144 FF19          ADD       ACC,#51 << 9          ; [CPU_] |233| 
          00000145 0033 
@@ -1533,7 +1533,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   26
     1354                      .dwattr $C$DW$108, DW_AT_TI_return
     1355 0000014b 0006          LRETR     ; [CPU_] 
     1356                      ; return occurs ; [] 
-    1357                      .dwattr $C$DW$105, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1357                      .dwattr $C$DW$105, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1358                      .dwattr $C$DW$105, DW_AT_TI_end_line(0xee)
     1359                      .dwattr $C$DW$105, DW_AT_TI_end_column(0x01)
     1360                      .dwendentry
@@ -1548,20 +1548,20 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   26
     1369                      .dwattr $C$DW$109, DW_AT_high_pc(0x00)
     1370                      .dwattr $C$DW$109, DW_AT_TI_symbol_name("_ADC_powerDown")
     1371                      .dwattr $C$DW$109, DW_AT_external
-    1372                      .dwattr $C$DW$109, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1372                      .dwattr $C$DW$109, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1373                      .dwattr $C$DW$109, DW_AT_TI_begin_line(0xd1)
     1374                      .dwattr $C$DW$109, DW_AT_TI_begin_column(0x06)
     1375                      .dwattr $C$DW$109, DW_AT_TI_max_frame_size(-2)
-    1376                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 210
+    1376                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1377              
     1378                      .dwfde $C$DW$CIE, _ADC_powerDown
     1379              $C$DW$110       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
     1380                      .dwattr $C$DW$110, DW_AT_TI_symbol_name("_adcHandle")
     1381                      .dwattr $C$DW$110, DW_AT_type(*$C$DW$T$71)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   27
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   27
 
     1382                      .dwattr $C$DW$110, DW_AT_location[DW_OP_reg12]
     1383              
@@ -1583,7 +1583,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   27
     1399                      .dwcfi  cfa_offset, -2
     1400                      .dwcfi  save_reg_to_mem, 26, 0
     1401 0000014c 7622   EALLOW
-    1402                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 217
+    1402                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1403 0000014d A8A9          MOVL      ACC,XAR4              ; [CPU_] |217| 
     1404 0000014e FF19          ADD       ACC,#51 << 9          ; [CPU_] |217| 
          0000014f 0033 
@@ -1597,7 +1597,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   27
     1411                      .dwattr $C$DW$112, DW_AT_TI_return
     1412 00000155 0006          LRETR     ; [CPU_] 
     1413                      ; return occurs ; [] 
-    1414                      .dwattr $C$DW$109, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1414                      .dwattr $C$DW$109, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1415                      .dwattr $C$DW$109, DW_AT_TI_end_line(0xde)
     1416                      .dwattr $C$DW$109, DW_AT_TI_end_column(0x01)
     1417                      .dwendentry
@@ -1613,15 +1613,15 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   27
     1427                      .dwattr $C$DW$113, DW_AT_TI_symbol_name("_ADC_init")
     1428                      .dwattr $C$DW$113, DW_AT_external
     1429                      .dwattr $C$DW$113, DW_AT_type(*$C$DW$T$71)
-    1430                      .dwattr $C$DW$113, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1430                      .dwattr $C$DW$113, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1431                      .dwattr $C$DW$113, DW_AT_TI_begin_line(0xc1)
     1432                      .dwattr $C$DW$113, DW_AT_TI_begin_column(0x0c)
     1433                      .dwattr $C$DW$113, DW_AT_TI_max_frame_size(-2)
-    1434                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 194
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+    1434                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   28
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   28
 
     1435              
     1436                      .dwfde $C$DW$CIE, _ADC_init
@@ -1652,7 +1652,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   28
     1461                      .dwcfi  cfa_offset, -2
     1462                      .dwcfi  save_reg_to_mem, 26, 0
     1463 00000156 1EA6          MOVL      XAR6,ACC              ; [CPU_] |194| 
-    1464                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 199
+    1464                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1465 00000157 8F40          MOVL      XAR5,#26192           ; [CPU_U] |199| 
          00000158 6650 
     1466 00000159 A0A9          MOVL      ACC,XAR5              ; [CPU_] |199| 
@@ -1667,7 +1667,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   28
     1474                      .dwattr $C$DW$117, DW_AT_TI_return
     1475 0000015e 0006          LRETR     ; [CPU_] 
     1476                      ; return occurs ; [] 
-    1477                      .dwattr $C$DW$113, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1477                      .dwattr $C$DW$113, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1478                      .dwattr $C$DW$113, DW_AT_TI_end_line(0xce)
     1479                      .dwattr $C$DW$113, DW_AT_TI_end_column(0x01)
     1480                      .dwendentry
@@ -1678,21 +1678,21 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   28
     1485                      .global _ADC_getDivideSelect
     1486              
     1487              $C$DW$118       .dwtag  DW_TAG_subprogram, DW_AT_name("ADC_getDivideSelect")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   29
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   29
 
     1488                      .dwattr $C$DW$118, DW_AT_low_pc(_ADC_getDivideSelect)
     1489                      .dwattr $C$DW$118, DW_AT_high_pc(0x00)
     1490                      .dwattr $C$DW$118, DW_AT_TI_symbol_name("_ADC_getDivideSelect")
     1491                      .dwattr $C$DW$118, DW_AT_external
     1492                      .dwattr $C$DW$118, DW_AT_type(*$C$DW$T$68)
-    1493                      .dwattr $C$DW$118, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1493                      .dwattr $C$DW$118, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1494                      .dwattr $C$DW$118, DW_AT_TI_begin_line(0x1f4)
     1495                      .dwattr $C$DW$118, DW_AT_TI_begin_column(0x1b)
     1496                      .dwattr $C$DW$118, DW_AT_TI_max_frame_size(-2)
-    1497                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 501
+    1497                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1498              
     1499                      .dwfde $C$DW$CIE, _ADC_getDivideSelect
     1500              $C$DW$119       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1723,7 +1723,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   29
     1525                      .dwcfi  cfa_offset, -2
     1526                      .dwcfi  save_reg_to_mem, 26, 0
     1527 0000015f A8A9          MOVL      ACC,XAR4              ; [CPU_] |501| 
-    1528                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 505
+    1528                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1529 00000160 FF10          ADD       ACC,#26113 << 0       ; [CPU_] |505| 
          00000161 6601 
     1530 00000162 8AA9          MOVL      XAR4,ACC              ; [CPU_] |505| 
@@ -1734,14 +1734,14 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   29
     1534                      .dwattr $C$DW$122, DW_AT_TI_return
     1535 00000165 0006          LRETR     ; [CPU_] 
     1536                      ; return occurs ; [] 
-    1537                      .dwattr $C$DW$118, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1537                      .dwattr $C$DW$118, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1538                      .dwattr $C$DW$118, DW_AT_TI_end_line(0x1ff)
     1539                      .dwattr $C$DW$118, DW_AT_TI_end_column(0x01)
     1540                      .dwendentry
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   30
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   30
 
     1541                      .dwendtag $C$DW$118
     1542              
@@ -1754,11 +1754,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   30
     1549                      .dwattr $C$DW$123, DW_AT_high_pc(0x00)
     1550                      .dwattr $C$DW$123, DW_AT_TI_symbol_name("_ADC_enableVoltRefLoConv")
     1551                      .dwattr $C$DW$123, DW_AT_external
-    1552                      .dwattr $C$DW$123, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1552                      .dwattr $C$DW$123, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1553                      .dwattr $C$DW$123, DW_AT_TI_begin_line(0x26c)
     1554                      .dwattr $C$DW$123, DW_AT_TI_begin_column(0x06)
     1555                      .dwattr $C$DW$123, DW_AT_TI_max_frame_size(-2)
-    1556                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 621
+    1556                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1557              
     1558                      .dwfde $C$DW$CIE, _ADC_enableVoltRefLoConv
     1559              $C$DW$124       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1784,7 +1784,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   30
     1579                      .dwcfi  cfa_offset, -2
     1580                      .dwcfi  save_reg_to_mem, 26, 0
     1581 00000166 7622   EALLOW
-    1582                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 628
+    1582                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1583 00000167 A8A9          MOVL      ACC,XAR4              ; [CPU_] |628| 
     1584 00000168 FF19          ADD       ACC,#51 << 9          ; [CPU_] |628| 
          00000169 0033 
@@ -1798,12 +1798,12 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   30
     1591                      .dwattr $C$DW$126, DW_AT_TI_return
     1592 0000016f 0006          LRETR     ; [CPU_] 
     1593                      ; return occurs ; [] 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   31
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   31
 
-    1594                      .dwattr $C$DW$123, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1594                      .dwattr $C$DW$123, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1595                      .dwattr $C$DW$123, DW_AT_TI_end_line(0x279)
     1596                      .dwattr $C$DW$123, DW_AT_TI_end_column(0x01)
     1597                      .dwendentry
@@ -1818,11 +1818,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   31
     1606                      .dwattr $C$DW$127, DW_AT_high_pc(0x00)
     1607                      .dwattr $C$DW$127, DW_AT_TI_symbol_name("_ADC_enableRefBuffers")
     1608                      .dwattr $C$DW$127, DW_AT_external
-    1609                      .dwattr $C$DW$127, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1609                      .dwattr $C$DW$127, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1610                      .dwattr $C$DW$127, DW_AT_TI_begin_line(0xb0)
     1611                      .dwattr $C$DW$127, DW_AT_TI_begin_column(0x06)
     1612                      .dwattr $C$DW$127, DW_AT_TI_max_frame_size(-2)
-    1613                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 177
+    1613                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1614              
     1615                      .dwfde $C$DW$CIE, _ADC_enableRefBuffers
     1616              $C$DW$128       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1848,7 +1848,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   31
     1636                      .dwcfi  cfa_offset, -2
     1637                      .dwcfi  save_reg_to_mem, 26, 0
     1638 00000170 7622   EALLOW
-    1639                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 184
+    1639                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1640 00000171 A8A9          MOVL      ACC,XAR4              ; [CPU_] |184| 
     1641 00000172 FF19          ADD       ACC,#51 << 9          ; [CPU_] |184| 
          00000173 0033 
@@ -1858,16 +1858,16 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   31
     1644 00000177 761A   EDIS
     1645 00000178 FF69          SPM       #0                    ; [CPU_] 
     1646              $C$DW$130       .dwtag  DW_TAG_TI_branch
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   32
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   32
 
     1647                      .dwattr $C$DW$130, DW_AT_low_pc(0x00)
     1648                      .dwattr $C$DW$130, DW_AT_TI_return
     1649 00000179 0006          LRETR     ; [CPU_] 
     1650                      ; return occurs ; [] 
-    1651                      .dwattr $C$DW$127, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1651                      .dwattr $C$DW$127, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1652                      .dwattr $C$DW$127, DW_AT_TI_end_line(0xbd)
     1653                      .dwattr $C$DW$127, DW_AT_TI_end_column(0x01)
     1654                      .dwendentry
@@ -1882,11 +1882,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   32
     1663                      .dwattr $C$DW$131, DW_AT_high_pc(0x00)
     1664                      .dwattr $C$DW$131, DW_AT_TI_symbol_name("_ADC_enableNoOverlapMode")
     1665                      .dwattr $C$DW$131, DW_AT_external
-    1666                      .dwattr $C$DW$131, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1666                      .dwattr $C$DW$131, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1667                      .dwattr $C$DW$131, DW_AT_TI_begin_line(0x216)
     1668                      .dwattr $C$DW$131, DW_AT_TI_begin_column(0x06)
     1669                      .dwattr $C$DW$131, DW_AT_TI_max_frame_size(-2)
-    1670                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 535
+    1670                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1671              
     1672                      .dwfde $C$DW$CIE, _ADC_enableNoOverlapMode
     1673              $C$DW$132       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1912,16 +1912,16 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   32
     1693                      .dwcfi  cfa_offset, -2
     1694                      .dwcfi  save_reg_to_mem, 26, 0
     1695 0000017a 7622   EALLOW
-    1696                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 542
+    1696                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1697 0000017b A8A9          MOVL      ACC,XAR4              ; [CPU_] |542| 
     1698 0000017c FF10          ADD       ACC,#26113 << 0       ; [CPU_] |542| 
          0000017d 6601 
     1699 0000017e 8AA9          MOVL      XAR4,ACC              ; [CPU_] |542| 
     1700 0000017f 1AC4          OR        *+XAR4[0],#0x0002     ; [CPU_] |542| 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   33
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   33
 
          00000180 0002 
     1701 00000181 761A   EDIS
@@ -1931,7 +1931,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   33
     1705                      .dwattr $C$DW$134, DW_AT_TI_return
     1706 00000183 0006          LRETR     ; [CPU_] 
     1707                      ; return occurs ; [] 
-    1708                      .dwattr $C$DW$131, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1708                      .dwattr $C$DW$131, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1709                      .dwattr $C$DW$131, DW_AT_TI_end_line(0x223)
     1710                      .dwattr $C$DW$131, DW_AT_TI_end_column(0x01)
     1711                      .dwendentry
@@ -1946,11 +1946,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   33
     1720                      .dwattr $C$DW$135, DW_AT_high_pc(0x00)
     1721                      .dwattr $C$DW$135, DW_AT_TI_symbol_name("_ADC_enableInt")
     1722                      .dwattr $C$DW$135, DW_AT_external
-    1723                      .dwattr $C$DW$135, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1723                      .dwattr $C$DW$135, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1724                      .dwattr $C$DW$135, DW_AT_TI_begin_line(0x9d)
     1725                      .dwattr $C$DW$135, DW_AT_TI_begin_column(0x06)
     1726                      .dwattr $C$DW$135, DW_AT_TI_max_frame_size(-2)
-    1727                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 158
+    1727                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1728              
     1729                      .dwfde $C$DW$CIE, _ADC_enableInt
     1730              $C$DW$136       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -1978,15 +1978,15 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   33
     1752                      .dwattr $C$DW$138, DW_AT_type(*$C$DW$T$30)
     1753                      .dwattr $C$DW$138, DW_AT_location[DW_OP_reg16]
     1754                      .dwcfi  cfa_offset, -2
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   34
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   34
 
     1755                      .dwcfi  save_reg_to_mem, 26, 0
     1756 00000184 88A9          MOVZ      AR6,AL                ; [CPU_] |158| 
     1757 00000185 7622   EALLOW
-    1758                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 168
+    1758                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1759 00000186 FFC0          LSR       AL,1                  ; [CPU_] |168| 
     1760 00000187 80A9          MOVZ      AR7,AL                ; [CPU_] |168| 
     1761 00000188 28AC          MOV       T,#8                  ; [CPU_] |168| 
@@ -2011,7 +2011,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   34
     1777                      .dwattr $C$DW$139, DW_AT_TI_return
     1778 00000199 0006          LRETR     ; [CPU_] 
     1779                      ; return occurs ; [] 
-    1780                      .dwattr $C$DW$135, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1780                      .dwattr $C$DW$135, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1781                      .dwattr $C$DW$135, DW_AT_TI_end_line(0xad)
     1782                      .dwattr $C$DW$135, DW_AT_TI_end_column(0x01)
     1783                      .dwendentry
@@ -2026,11 +2026,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   34
     1792                      .dwattr $C$DW$140, DW_AT_high_pc(0x00)
     1793                      .dwattr $C$DW$140, DW_AT_TI_symbol_name("_ADC_enableBandGap")
     1794                      .dwattr $C$DW$140, DW_AT_external
-    1795                      .dwattr $C$DW$140, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1795                      .dwattr $C$DW$140, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1796                      .dwattr $C$DW$140, DW_AT_TI_begin_line(0x8d)
     1797                      .dwattr $C$DW$140, DW_AT_TI_begin_column(0x06)
     1798                      .dwattr $C$DW$140, DW_AT_TI_max_frame_size(-2)
-    1799                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 142
+    1799                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1800              
     1801                      .dwfde $C$DW$CIE, _ADC_enableBandGap
     1802              $C$DW$141       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2038,10 +2038,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   34
     1804                      .dwattr $C$DW$141, DW_AT_type(*$C$DW$T$71)
     1805                      .dwattr $C$DW$141, DW_AT_location[DW_OP_reg12]
     1806              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   35
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   35
 
     1807              ;***************************************************************
     1808              ;* FNAME: _ADC_enableBandGap            FR SIZE:   0           *
@@ -2061,7 +2061,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   35
     1822                      .dwcfi  cfa_offset, -2
     1823                      .dwcfi  save_reg_to_mem, 26, 0
     1824 0000019a 7622   EALLOW
-    1825                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 149
+    1825                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1826 0000019b A8A9          MOVL      ACC,XAR4              ; [CPU_] |149| 
     1827 0000019c FF19          ADD       ACC,#51 << 9          ; [CPU_] |149| 
          0000019d 0033 
@@ -2075,7 +2075,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   35
     1834                      .dwattr $C$DW$143, DW_AT_TI_return
     1835 000001a3 0006          LRETR     ; [CPU_] 
     1836                      ; return occurs ; [] 
-    1837                      .dwattr $C$DW$140, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1837                      .dwattr $C$DW$140, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1838                      .dwattr $C$DW$140, DW_AT_TI_end_line(0x9a)
     1839                      .dwattr $C$DW$140, DW_AT_TI_end_column(0x01)
     1840                      .dwendentry
@@ -2090,18 +2090,18 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   35
     1849                      .dwattr $C$DW$144, DW_AT_high_pc(0x00)
     1850                      .dwattr $C$DW$144, DW_AT_TI_symbol_name("_ADC_enable")
     1851                      .dwattr $C$DW$144, DW_AT_external
-    1852                      .dwattr $C$DW$144, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1852                      .dwattr $C$DW$144, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1853                      .dwattr $C$DW$144, DW_AT_TI_begin_line(0x7d)
     1854                      .dwattr $C$DW$144, DW_AT_TI_begin_column(0x06)
     1855                      .dwattr $C$DW$144, DW_AT_TI_max_frame_size(-2)
-    1856                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 126
+    1856                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1857              
     1858                      .dwfde $C$DW$CIE, _ADC_enable
     1859              $C$DW$145       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   36
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   36
 
     1860                      .dwattr $C$DW$145, DW_AT_TI_symbol_name("_adcHandle")
     1861                      .dwattr $C$DW$145, DW_AT_type(*$C$DW$T$71)
@@ -2125,7 +2125,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   36
     1879                      .dwcfi  cfa_offset, -2
     1880                      .dwcfi  save_reg_to_mem, 26, 0
     1881 000001a4 7622   EALLOW
-    1882                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 133
+    1882                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1883 000001a5 A8A9          MOVL      ACC,XAR4              ; [CPU_] |133| 
     1884 000001a6 FF19          ADD       ACC,#51 << 9          ; [CPU_] |133| 
          000001a7 0033 
@@ -2139,7 +2139,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   36
     1891                      .dwattr $C$DW$147, DW_AT_TI_return
     1892 000001ad 0006          LRETR     ; [CPU_] 
     1893                      ; return occurs ; [] 
-    1894                      .dwattr $C$DW$144, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1894                      .dwattr $C$DW$144, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1895                      .dwattr $C$DW$144, DW_AT_TI_end_line(0x8a)
     1896                      .dwattr $C$DW$144, DW_AT_TI_end_column(0x01)
     1897                      .dwendentry
@@ -2154,16 +2154,16 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   36
     1906                      .dwattr $C$DW$148, DW_AT_high_pc(0x00)
     1907                      .dwattr $C$DW$148, DW_AT_TI_symbol_name("_ADC_disableVoltRefLoConv")
     1908                      .dwattr $C$DW$148, DW_AT_external
-    1909                      .dwattr $C$DW$148, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1909                      .dwattr $C$DW$148, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1910                      .dwattr $C$DW$148, DW_AT_TI_begin_line(0x27b)
     1911                      .dwattr $C$DW$148, DW_AT_TI_begin_column(0x06)
     1912                      .dwattr $C$DW$148, DW_AT_TI_max_frame_size(-2)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   37
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   37
 
-    1913                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 636
+    1913                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1914              
     1915                      .dwfde $C$DW$CIE, _ADC_disableVoltRefLoConv
     1916              $C$DW$149       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2189,7 +2189,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   37
     1936                      .dwcfi  cfa_offset, -2
     1937                      .dwcfi  save_reg_to_mem, 26, 0
     1938 000001ae 7622   EALLOW
-    1939                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 643
+    1939                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1940 000001af A8A9          MOVL      ACC,XAR4              ; [CPU_] |643| 
     1941 000001b0 FF19          ADD       ACC,#51 << 9          ; [CPU_] |643| 
          000001b1 0033 
@@ -2203,7 +2203,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   37
     1948                      .dwattr $C$DW$151, DW_AT_TI_return
     1949 000001b7 0006          LRETR     ; [CPU_] 
     1950                      ; return occurs ; [] 
-    1951                      .dwattr $C$DW$148, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    1951                      .dwattr $C$DW$148, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     1952                      .dwattr $C$DW$148, DW_AT_TI_end_line(0x288)
     1953                      .dwattr $C$DW$148, DW_AT_TI_end_column(0x01)
     1954                      .dwendentry
@@ -2218,16 +2218,16 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   37
     1963                      .dwattr $C$DW$152, DW_AT_high_pc(0x00)
     1964                      .dwattr $C$DW$152, DW_AT_TI_symbol_name("_ADC_disableRefBuffers")
     1965                      .dwattr $C$DW$152, DW_AT_external
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   38
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   38
 
-    1966                      .dwattr $C$DW$152, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    1966                      .dwattr $C$DW$152, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     1967                      .dwattr $C$DW$152, DW_AT_TI_begin_line(0x6d)
     1968                      .dwattr $C$DW$152, DW_AT_TI_begin_column(0x06)
     1969                      .dwattr $C$DW$152, DW_AT_TI_max_frame_size(-2)
-    1970                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 110
+    1970                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1971              
     1972                      .dwfde $C$DW$CIE, _ADC_disableRefBuffers
     1973              $C$DW$153       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2253,7 +2253,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   38
     1993                      .dwcfi  cfa_offset, -2
     1994                      .dwcfi  save_reg_to_mem, 26, 0
     1995 000001b8 7622   EALLOW
-    1996                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 117
+    1996                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     1997 000001b9 A8A9          MOVL      ACC,XAR4              ; [CPU_] |117| 
     1998 000001ba FF19          ADD       ACC,#51 << 9          ; [CPU_] |117| 
          000001bb 0033 
@@ -2267,7 +2267,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   38
     2005                      .dwattr $C$DW$155, DW_AT_TI_return
     2006 000001c1 0006          LRETR     ; [CPU_] 
     2007                      ; return occurs ; [] 
-    2008                      .dwattr $C$DW$152, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    2008                      .dwattr $C$DW$152, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     2009                      .dwattr $C$DW$152, DW_AT_TI_end_line(0x7a)
     2010                      .dwattr $C$DW$152, DW_AT_TI_end_column(0x01)
     2011                      .dwendentry
@@ -2278,20 +2278,20 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   38
     2016                      .global _ADC_disableNoOverlapMode
     2017              
     2018              $C$DW$156       .dwtag  DW_TAG_subprogram, DW_AT_name("ADC_disableNoOverlapMode")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   39
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   39
 
     2019                      .dwattr $C$DW$156, DW_AT_low_pc(_ADC_disableNoOverlapMode)
     2020                      .dwattr $C$DW$156, DW_AT_high_pc(0x00)
     2021                      .dwattr $C$DW$156, DW_AT_TI_symbol_name("_ADC_disableNoOverlapMode")
     2022                      .dwattr $C$DW$156, DW_AT_external
-    2023                      .dwattr $C$DW$156, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    2023                      .dwattr $C$DW$156, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     2024                      .dwattr $C$DW$156, DW_AT_TI_begin_line(0x226)
     2025                      .dwattr $C$DW$156, DW_AT_TI_begin_column(0x06)
     2026                      .dwattr $C$DW$156, DW_AT_TI_max_frame_size(-2)
-    2027                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 551
+    2027                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2028              
     2029                      .dwfde $C$DW$CIE, _ADC_disableNoOverlapMode
     2030              $C$DW$157       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2317,7 +2317,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   39
     2050                      .dwcfi  cfa_offset, -2
     2051                      .dwcfi  save_reg_to_mem, 26, 0
     2052 000001c2 7622   EALLOW
-    2053                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 558
+    2053                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2054 000001c3 A8A9          MOVL      ACC,XAR4              ; [CPU_] |558| 
     2055 000001c4 FF10          ADD       ACC,#26113 << 0       ; [CPU_] |558| 
          000001c5 6601 
@@ -2331,17 +2331,17 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   39
     2062                      .dwattr $C$DW$159, DW_AT_TI_return
     2063 000001cb 0006          LRETR     ; [CPU_] 
     2064                      ; return occurs ; [] 
-    2065                      .dwattr $C$DW$156, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    2065                      .dwattr $C$DW$156, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     2066                      .dwattr $C$DW$156, DW_AT_TI_end_line(0x233)
     2067                      .dwattr $C$DW$156, DW_AT_TI_end_column(0x01)
     2068                      .dwendentry
     2069                      .dwendtag $C$DW$156
     2070              
     2071 000001cc               .sect   ".text"
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   40
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   40
 
     2072                      .clink
     2073                      .global _ADC_disableInt
@@ -2351,11 +2351,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   40
     2077                      .dwattr $C$DW$160, DW_AT_high_pc(0x00)
     2078                      .dwattr $C$DW$160, DW_AT_TI_symbol_name("_ADC_disableInt")
     2079                      .dwattr $C$DW$160, DW_AT_external
-    2080                      .dwattr $C$DW$160, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    2080                      .dwattr $C$DW$160, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     2081                      .dwattr $C$DW$160, DW_AT_TI_begin_line(0x5a)
     2082                      .dwattr $C$DW$160, DW_AT_TI_begin_column(0x06)
     2083                      .dwattr $C$DW$160, DW_AT_TI_max_frame_size(-2)
-    2084                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 91,
+    2084                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2085              
     2086                      .dwfde $C$DW$CIE, _ADC_disableInt
     2087              $C$DW$161       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2386,7 +2386,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   40
     2112                      .dwcfi  save_reg_to_mem, 26, 0
     2113 000001cc 88A9          MOVZ      AR6,AL                ; [CPU_] |91| 
     2114 000001cd 7622   EALLOW
-    2115                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 101
+    2115                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2116 000001ce FFC0          LSR       AL,1                  ; [CPU_] |101| 
     2117 000001cf 80A9          MOVZ      AR7,AL                ; [CPU_] |101| 
     2118 000001d0 28AC          MOV       T,#8                  ; [CPU_] |101| 
@@ -2398,10 +2398,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   40
     2122 000001d6 8AA9          MOVL      XAR4,ACC              ; [CPU_] |101| 
     2123 000001d7 5603          MOV       ACC,AR6 << #3         ; [CPU_] |101| 
          000001d8 03A6 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   41
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   41
 
     2124 000001d9 F00F          XORB      AL,#0x0f              ; [CPU_] |101| 
     2125 000001da 9008          ANDB      AL,#0x08              ; [CPU_] |101| 
@@ -2417,7 +2417,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   41
     2135                      .dwattr $C$DW$164, DW_AT_TI_return
     2136 000001e2 0006          LRETR     ; [CPU_] 
     2137                      ; return occurs ; [] 
-    2138                      .dwattr $C$DW$160, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    2138                      .dwattr $C$DW$160, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     2139                      .dwattr $C$DW$160, DW_AT_TI_end_line(0x6a)
     2140                      .dwattr $C$DW$160, DW_AT_TI_end_column(0x01)
     2141                      .dwendentry
@@ -2432,11 +2432,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   41
     2150                      .dwattr $C$DW$165, DW_AT_high_pc(0x00)
     2151                      .dwattr $C$DW$165, DW_AT_TI_symbol_name("_ADC_disableBandGap")
     2152                      .dwattr $C$DW$165, DW_AT_external
-    2153                      .dwattr $C$DW$165, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    2153                      .dwattr $C$DW$165, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     2154                      .dwattr $C$DW$165, DW_AT_TI_begin_line(0x4a)
     2155                      .dwattr $C$DW$165, DW_AT_TI_begin_column(0x06)
     2156                      .dwattr $C$DW$165, DW_AT_TI_max_frame_size(-2)
-    2157                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 75,
+    2157                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2158              
     2159                      .dwfde $C$DW$CIE, _ADC_disableBandGap
     2160              $C$DW$166       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2458,16 +2458,16 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   41
     2176              $C$DW$167       .dwtag  DW_TAG_variable, DW_AT_name("adcHandle")
     2177                      .dwattr $C$DW$167, DW_AT_TI_symbol_name("_adcHandle")
     2178                      .dwattr $C$DW$167, DW_AT_type(*$C$DW$T$78)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   42
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   42
 
     2179                      .dwattr $C$DW$167, DW_AT_location[DW_OP_reg12]
     2180                      .dwcfi  cfa_offset, -2
     2181                      .dwcfi  save_reg_to_mem, 26, 0
     2182 000001e3 7622   EALLOW
-    2183                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 82,
+    2183                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2184 000001e4 A8A9          MOVL      ACC,XAR4              ; [CPU_] |82| 
     2185 000001e5 FF19          ADD       ACC,#51 << 9          ; [CPU_] |82| 
          000001e6 0033 
@@ -2481,7 +2481,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   42
     2192                      .dwattr $C$DW$168, DW_AT_TI_return
     2193 000001ec 0006          LRETR     ; [CPU_] 
     2194                      ; return occurs ; [] 
-    2195                      .dwattr $C$DW$165, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    2195                      .dwattr $C$DW$165, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     2196                      .dwattr $C$DW$165, DW_AT_TI_end_line(0x57)
     2197                      .dwattr $C$DW$165, DW_AT_TI_end_column(0x01)
     2198                      .dwendentry
@@ -2496,11 +2496,11 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   42
     2207                      .dwattr $C$DW$169, DW_AT_high_pc(0x00)
     2208                      .dwattr $C$DW$169, DW_AT_TI_symbol_name("_ADC_disable")
     2209                      .dwattr $C$DW$169, DW_AT_external
-    2210                      .dwattr $C$DW$169, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f
+    2210                      .dwattr $C$DW$169, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescop
     2211                      .dwattr $C$DW$169, DW_AT_TI_begin_line(0x3b)
     2212                      .dwattr $C$DW$169, DW_AT_TI_begin_column(0x06)
     2213                      .dwattr $C$DW$169, DW_AT_TI_max_frame_size(-2)
-    2214                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 60,
+    2214                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2215              
     2216                      .dwfde $C$DW$CIE, _ADC_disable
     2217              $C$DW$170       .dwtag  DW_TAG_formal_parameter, DW_AT_name("adcHandle")
@@ -2518,10 +2518,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   42
     2229              ;***************************************************************
     2230              
     2231              _ADC_disable:
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   43
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   43
 
     2232              ;* AR4   assigned to _adcHandle
     2233              $C$DW$171       .dwtag  DW_TAG_variable, DW_AT_name("adcHandle")
@@ -2531,7 +2531,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   43
     2237                      .dwcfi  cfa_offset, -2
     2238                      .dwcfi  save_reg_to_mem, 26, 0
     2239 000001ed 7622   EALLOW
-    2240                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28x/f2802x/adc.c",line 66,
+    2240                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
     2241 000001ee A8A9          MOVL      ACC,XAR4              ; [CPU_] |66| 
     2242 000001ef FF19          ADD       ACC,#51 << 9          ; [CPU_] |66| 
          000001f0 0033 
@@ -2545,7 +2545,7 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   43
     2249                      .dwattr $C$DW$172, DW_AT_TI_return
     2250 000001f6 0006          LRETR     ; [CPU_] 
     2251                      ; return occurs ; [] 
-    2252                      .dwattr $C$DW$169, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/drivers/adc/src/32b/f28
+    2252                      .dwattr $C$DW$169, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
     2253                      .dwattr $C$DW$169, DW_AT_TI_end_line(0x47)
     2254                      .dwattr $C$DW$169, DW_AT_TI_end_column(0x01)
     2255                      .dwendentry
@@ -2578,10 +2578,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   43
     2282              $C$DW$185       .dwtag  DW_TAG_TI_far_type
     2283                      .dwattr $C$DW$185, DW_AT_type(*$C$DW$T$29)
     2284              $C$DW$T$30      .dwtag  DW_TAG_const_type
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   44
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   44
 
     2285                      .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$185)
     2286              
@@ -2638,10 +2638,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   44
     2337              $C$DW$201       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_IntSrc_EOC6"), DW_AT_const_value(0x06)
     2338              $C$DW$202       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_IntSrc_EOC7"), DW_AT_const_value(0x07)
     2339              $C$DW$203       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_IntSrc_EOC8"), DW_AT_const_value(0x08)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   45
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   45
 
     2340              $C$DW$204       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_IntSrc_EOC9"), DW_AT_const_value(0x09)
     2341              $C$DW$205       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_IntSrc_EOC10"), DW_AT_const_value(0x0a)
@@ -2698,10 +2698,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   45
     2392              $C$DW$234       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocNumber_5"), DW_AT_const_value(0x05)
     2393              $C$DW$235       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocNumber_6"), DW_AT_const_value(0x06)
     2394              $C$DW$236       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocNumber_7"), DW_AT_const_value(0x07)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   46
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   46
 
     2395              $C$DW$237       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocNumber_8"), DW_AT_const_value(0x08)
     2396              $C$DW$238       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocNumber_9"), DW_AT_const_value(0x09)
@@ -2758,10 +2758,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   46
     2447                      .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$270)
     2448              
     2449              $C$DW$T$52      .dwtag  DW_TAG_enumeration_type
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   47
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   47
 
     2450                      .dwattr $C$DW$T$52, DW_AT_byte_size(0x01)
     2451              $C$DW$271       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocSampleDelay_7_cycles"), DW_AT_const_value(0x06)
@@ -2818,10 +2818,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   47
     2502              $C$DW$311       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocTrigSrc_CpuTimer_0"), DW_AT_const_value(0x800)
     2503              $C$DW$312       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocTrigSrc_CpuTimer_1"), DW_AT_const_value(0x1000)
     2504              $C$DW$313       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocTrigSrc_CpuTimer_2"), DW_AT_const_value(0x1800)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   48
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   48
 
     2505              $C$DW$314       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocTrigSrc_XINT2_XINT2SOC"), DW_AT_const_value(0x2
     2506              $C$DW$315       .dwtag  DW_TAG_enumerator, DW_AT_name("ADC_SocTrigSrc_EPWM1_ADCSOCA"), DW_AT_const_value(0x28
@@ -2878,10 +2878,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   48
     2557              
     2558              $C$DW$T$62      .dwtag  DW_TAG_typedef, DW_AT_name("ADC_TempSensorSrc_e")
     2559                      .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$61)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   49
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   49
 
     2560                      .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
     2561              $C$DW$343       .dwtag  DW_TAG_TI_far_type
@@ -2938,10 +2938,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   49
     2612              $C$DW$354       .dwtag  DW_TAG_member
     2613                      .dwattr $C$DW$354, DW_AT_type(*$C$DW$T$21)
     2614                      .dwattr $C$DW$354, DW_AT_name("ADCRESULT")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   50
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   50
 
     2615                      .dwattr $C$DW$354, DW_AT_TI_symbol_name("_ADCRESULT")
     2616                      .dwattr $C$DW$354, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
@@ -2998,10 +2998,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   50
     2667                      .dwattr $C$DW$363, DW_AT_type(*$C$DW$T$24)
     2668                      .dwattr $C$DW$363, DW_AT_name("INTSELxNy")
     2669                      .dwattr $C$DW$363, DW_AT_TI_symbol_name("_INTSELxNy")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   51
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   51
 
     2670                      .dwattr $C$DW$363, DW_AT_data_member_location[DW_OP_plus_uconst 0x6608]
     2671                      .dwattr $C$DW$363, DW_AT_accessibility(DW_ACCESS_public)
@@ -3058,10 +3058,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   51
     2722                      .dwattr $C$DW$372, DW_AT_name("ADCSOCFLG1")
     2723                      .dwattr $C$DW$372, DW_AT_TI_symbol_name("_ADCSOCFLG1")
     2724                      .dwattr $C$DW$372, DW_AT_data_member_location[DW_OP_plus_uconst 0x6618]
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   52
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   52
 
     2725                      .dwattr $C$DW$372, DW_AT_accessibility(DW_ACCESS_public)
     2726              $C$DW$373       .dwtag  DW_TAG_member
@@ -3118,10 +3118,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   52
     2777                      .dwattr $C$DW$381, DW_AT_TI_symbol_name("_rsvd_11")
     2778                      .dwattr $C$DW$381, DW_AT_data_member_location[DW_OP_plus_uconst 0x6630]
     2779                      .dwattr $C$DW$381, DW_AT_accessibility(DW_ACCESS_public)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   53
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   53
 
     2780              $C$DW$382       .dwtag  DW_TAG_member
     2781                      .dwattr $C$DW$382, DW_AT_type(*$C$DW$T$20)
@@ -3178,10 +3178,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   53
     2832              $C$DW$T$6       .dwtag  DW_TAG_base_type
     2833                      .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
     2834                      .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   54
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   54
 
     2835                      .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
     2836              $C$DW$T$7       .dwtag  DW_TAG_base_type
@@ -3238,10 +3238,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   54
     2887                      .dwattr $C$DW$390, DW_AT_upper_bound(0x01)
     2888                      .dwendtag $C$DW$T$23
     2889              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   55
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   55
 
     2890              
     2891              $C$DW$T$24      .dwtag  DW_TAG_array_type
@@ -3298,10 +3298,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   55
     2942                      .dwattr $C$DW$T$14, DW_AT_byte_size(0x04)
     2943              $C$DW$T$15      .dwtag  DW_TAG_base_type
     2944                      .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   56
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   56
 
     2945                      .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
     2946                      .dwattr $C$DW$T$15, DW_AT_byte_size(0x04)
@@ -3358,10 +3358,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   56
     2997                      .dwcfi  same_value, 8
     2998                      .dwcfi  same_value, 9
     2999                      .dwcfi  same_value, 10
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   57
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   57
 
     3000                      .dwcfi  same_value, 11
     3001                      .dwcfi  undefined, 12
@@ -3418,10 +3418,10 @@ C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   57
     3052                      .dwattr $C$DW$414, DW_AT_location[DW_OP_regx 0x23]
     3053              $C$DW$415       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IFR")
     3054                      .dwattr $C$DW$415, DW_AT_location[DW_OP_regx 0x24]
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:22 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:55 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\5056410                            PAGE   58
+C:\Users\bee25\AppData\Local\Temp\1667610                            PAGE   58
 
     3055              $C$DW$416       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("IER")
     3056                      .dwattr $C$DW$416, DW_AT_location[DW_OP_regx 0x25]

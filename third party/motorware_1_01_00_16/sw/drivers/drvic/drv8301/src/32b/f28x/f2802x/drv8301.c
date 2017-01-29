@@ -701,17 +701,17 @@ void DRV8301_setupSpi(DRV8301_Handle handle, DRV_SPI_8301_Vars_t *Spi_8301_Vars)
 
   // Update Control Register 1
   drvRegName = DRV8301_RegName_Control_1;
-  drvDataNew = (DRV8301_PeakCurrent_1p70_A   | \
+  drvDataNew = (DRV8301_PeakCurrent_0p70_A   | \
                 DRV8301_Reset_Normal         | \
                 DRV8301_PwmMode_Six_Inputs   | \
                 DRV8301_OcMode_CurrentLimit  | \
-				DRV8301_VdsLevel_0p250_V );
+				DRV8301_VdsLevel_1p043_V );
   DRV8301_writeSpi(handle,drvRegName,drvDataNew);
 
   // Update Control Register 2
   drvRegName = DRV8301_RegName_Control_2;
   drvDataNew = (DRV8301_OcTwMode_Both        | \
-		  	  	DRV8301_ShuntAmpGain_20VpV   | \
+		  	  	DRV8301_ShuntAmpGain_10VpV   | \
                 DRV8301_DcCalMode_Ch1_Load   | \
                 DRV8301_DcCalMode_Ch2_Load   | \
                 DRV8301_OcOffTimeMode_Normal);

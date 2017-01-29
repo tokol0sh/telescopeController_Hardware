@@ -85,7 +85,7 @@ extern "C" {
 //! \brief WARNING: if you know the value of your Bemf constant, and you know you are operating at a multiple speed due to field weakening, be sure to set this value higher than the expected Bemf voltage
 //! \brief It is recommended to start with a value ~3x greater than the USER_ADC_FULL_SCALE_VOLTAGE_V and increase to 4-5x if scenarios where a Bemf calculation may exceed these limits
 //! \brief This value is also used to calculate the minimum flux value: USER_IQ_FULL_SCALE_VOLTAGE_V/USER_EST_FREQ_Hz/0.7
-#define USER_IQ_FULL_SCALE_VOLTAGE_V      (50.0)   // 24.0 Example for boostxldrv8301_revB typical usage and the Anaheim motor
+#define USER_IQ_FULL_SCALE_VOLTAGE_V      (46.0)   // 24.0 Example for boostxldrv8301_revB typical usage and the Anaheim motor
 
 //! \brief Defines the maximum voltage at the input to the AD converter
 //! \brief The value that will be represented by the maximum ADC input (3.3V) and conversion (0FFFh)
@@ -99,12 +99,12 @@ extern "C" {
 //! \brief Defines the full scale current for the IQ variables, A
 //! \brief All currents are converted into (pu) based on the ratio to this value
 //! \brief WARNING: this value MUST be larger than the maximum current readings that you are expecting from the motor or the reading will roll over to 0, creating a control issue 
-#define USER_IQ_FULL_SCALE_CURRENT_A         (85.0) // 20.0 Example for boostxldrv8301_revB typical usage (85)
+#define USER_IQ_FULL_SCALE_CURRENT_A         (170.0) // 20.0 Example for boostxldrv8301_revB typical usage (85)
 
 //! \brief Defines the maximum current at the AD converter
 //! \brief The value that will be represented by the maximum ADC input (3.3V) and conversion (0FFFh)
 //! \brief Hardware dependent, this should be based on the current sensing and scaling to the ADC input
-#define USER_ADC_FULL_SCALE_CURRENT_A        (165.0)  // 33.0 boostxldrv8301_revB current scaling (165)
+#define USER_ADC_FULL_SCALE_CURRENT_A        (330.0)  // 33.0 boostxldrv8301_revB current scaling (165)
 
 //! \brief Defines the current scale factor for the system
 //! \brief Compile time calculation for scale factor (ratio) used throughout the system
@@ -144,7 +144,7 @@ extern "C" {
 //! \brief For higher PWM frequencies (60 KHz+ typical for low inductance, high current ripple motors) it is recommended to use the ePWM hardware
 //! \brief and adjustable ADC SOC to decimate the ADC conversion done interrupt to the control system, or to use the software Que example.
 //! \brief Otherwise you risk missing interrupts and disrupting the timing of the control state machine
-#define USER_PWM_FREQ_kHz                (20.0) //30.0 Example, 8.0 - 30.0 KHz typical; 45-80 KHz may be required for very low inductance, high speed motors
+#define USER_PWM_FREQ_kHz                (30.0) //30.0 Example, 8.0 - 30.0 KHz typical; 45-80 KHz may be required for very low inductance, high speed motors
 
 //! \brief Defines the maximum Voltage vector (Vs) magnitude allowed.  This value sets the maximum magnitude for the output of the
 //! \brief Id and Iq PI current controllers.  The Id and Iq current controller outputs are Vd and Vq.
@@ -190,7 +190,7 @@ extern "C" {
 //! \brief ADC Conversion Done triggers ISR
 //! \brief This relates the hardware ISR rate to the software controller rate
 //! \brief Typcially want to consider some form of decimation (ePWM hardware, CURRENT or EST) over 16KHz ISR to insure interrupt completes and leaves time for background tasks
-#define USER_NUM_ISR_TICKS_PER_CTRL_TICK       (1)      // 2 Example, controller clock rate (CTRL) runs at PWM / 2; ex 30 KHz PWM, 15 KHz control
+#define USER_NUM_ISR_TICKS_PER_CTRL_TICK       (2)      // 2 Example, controller clock rate (CTRL) runs at PWM / 2; ex 30 KHz PWM, 15 KHz control
 
 //! \brief Defines the number of controller clock ticks per current controller clock tick
 //! \brief Relationship of controller clock rate to current controller (FOC) rate
@@ -259,7 +259,7 @@ extern "C" {
 
 //! \brief Defines maximum acceleration for the estimation speed profiles, Hz/s
 //! \brief Only used during Motor ID (commission)
-#define USER_MAX_ACCEL_EST_Hzps           (12.0) // 11.0 was here on 21Nov, change back to 5.0         // 5.0 Default, don't change
+#define USER_MAX_ACCEL_EST_Hzps           (11.0) // 11.0 was here on 21Nov, change back to 5.0         // 5.0 Default, don't change
 
 //! \brief Defines the maximum current slope for Id trajectory during estimation
 #define USER_MAX_CURRENT_SLOPE           (USER_MOTOR_RES_EST_CURRENT/USER_IQ_FULL_SCALE_CURRENT_A/USER_TRAJ_FREQ_Hz)      // USER_MOTOR_RES_EST_CURRENT/USER_IQ_FULL_SCALE_CURRENT_A/USER_TRAJ_FREQ_Hz Default, don't change
@@ -538,14 +538,14 @@ extern "C" {
 #define USER_MOTOR_TYPE                 MOTOR_Type_Pm
 #define USER_MOTOR_NUM_POLE_PAIRS       (7)
 #define USER_MOTOR_Rr                   (NULL)
-#define USER_MOTOR_Rs                   (0.009885111823678017)//(0.022371463)//(0.01645)
-#define USER_MOTOR_Ls_d                 (0.000013014877367822919)//(0.000027502086)//(0.00002606)
-#define USER_MOTOR_Ls_q                 (0.000013014877367822919)//(0.000026061)
-#define USER_MOTOR_RATED_FLUX           (0.03647712245583534)//(0.036038402)//(0.036192)
+#define USER_MOTOR_Rs                   (0.016416886)//(0.009885111823678017)//(0.022371463)//(0.01645)
+#define USER_MOTOR_Ls_d                 (0.000022421766)//(0.000013014877367822919)//(0.000027502086)//(0.00002606)
+#define USER_MOTOR_Ls_q                 (0.000022421766)//(0.000013014877367822919)//(0.000026061)
+#define USER_MOTOR_RATED_FLUX           (0.036015165)//(0.03647712245583534)//(0.036038402)//(0.036192)
 #define USER_MOTOR_MAGNETIZING_CURRENT  (NULL)
-#define USER_MOTOR_RES_EST_CURRENT      (12.0)
-#define USER_MOTOR_IND_EST_CURRENT      (-5.0)
-#define USER_MOTOR_MAX_CURRENT          (80.0)
+#define USER_MOTOR_RES_EST_CURRENT      (7.5)
+#define USER_MOTOR_IND_EST_CURRENT      (-3.5)
+#define USER_MOTOR_MAX_CURRENT          (40.0)
 #define USER_MOTOR_FLUX_EST_FREQ_Hz     (70.0)
 
 #elif (USER_MOTOR == Belt_Drive_Washer_IPM)

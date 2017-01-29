@@ -1,20 +1,20 @@
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    1
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    1
 
        1              ;***************************************************************
-       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.4.6 *
-       3              ;* Date/Time created: Thu Mar 31 18:42:32 2016                 *
+       2              ;* TMS320C2000 C/C++ Codegen                        PC v6.4.11 *
+       3              ;* Date/Time created: Fri Jan 13 19:55:01 2017                 *
        4              ;***************************************************************
        5                      .compiler_opts --float_support=softlib --hll_source=on --mem_model:code=flat --mem_model:data=large -
        6        0002  FP      .set    XAR2
        7              
        8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
-       9                      .dwattr $C$DW$CU, DW_AT_name("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c
-      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.6 Copyright (c) 1996-2015 Texa
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeControlle
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.11 Copyright (c) 1996-2015 Tex
       11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\ti\motorware\motorware_1_01_00_16\sw\solutions\instaspin_foc\boa
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\bee25\Documents\Visual Studio 2015\Projects\telescopeContr
       13              
       14              $C$DW$1 .dwtag  DW_TAG_subprogram, DW_AT_name("FILTER_FO_setNumCoeffs")
       15                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_FILTER_FO_setNumCoeffs")
@@ -58,10 +58,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    1
       53              $C$DW$13        .dwtag  DW_TAG_subprogram, DW_AT_name("FILTER_FO_setDenCoeffs")
       54                      .dwattr $C$DW$13, DW_AT_TI_symbol_name("_FILTER_FO_setDenCoeffs")
       55                      .dwattr $C$DW$13, DW_AT_declaration
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    2
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    2
 
       56                      .dwattr $C$DW$13, DW_AT_external
       57              $C$DW$14        .dwtag  DW_TAG_formal_parameter
@@ -82,8 +82,8 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    2
       72                      .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$29)
       73                      .dwendtag $C$DW$16
       74              
-      75              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_6.4.6\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\
-      76              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_6.4.6\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp
+      75              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\\22980
+      76              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp\\2298
       77 00000000               .sect   ".text"
       78                      .clink
       79                      .global _OFFSET_setOffset
@@ -93,11 +93,11 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    2
       83                      .dwattr $C$DW$19, DW_AT_high_pc(0x00)
       84                      .dwattr $C$DW$19, DW_AT_TI_symbol_name("_OFFSET_setOffset")
       85                      .dwattr $C$DW$19, DW_AT_external
-      86                      .dwattr $C$DW$19, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b
+      86                      .dwattr $C$DW$19, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
       87                      .dwattr $C$DW$19, DW_AT_TI_begin_line(0x71)
       88                      .dwattr $C$DW$19, DW_AT_TI_begin_column(0x06)
       89                      .dwattr $C$DW$19, DW_AT_TI_max_frame_size(-2)
-      90                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 114,colum
+      90                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       91              
       92                      .dwfde $C$DW$CIE, _OFFSET_setOffset
       93              $C$DW$20        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -118,10 +118,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    2
      108              ;*                            0 Parameter,  0 Auto,  0 SOE     *
      109              ;***************************************************************
      110              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    3
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    3
 
      111              _OFFSET_setOffset:
      112              ;* AR4   assigned to _handle
@@ -136,14 +136,14 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    3
      121                      .dwattr $C$DW$23, DW_AT_location[DW_OP_reg0]
      122                      .dwcfi  cfa_offset, -2
      123                      .dwcfi  save_reg_to_mem, 26, 0
-     124                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 117,colum
+     124                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      125 00000000 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_] |117| 
      126              $C$DW$24        .dwtag  DW_TAG_TI_branch
      127                      .dwattr $C$DW$24, DW_AT_low_pc(0x00)
      128                      .dwattr $C$DW$24, DW_AT_TI_return
      129 00000001 0006          LRETR     ; [CPU_] 
      130                      ; return occurs ; [] 
-     131                      .dwattr $C$DW$19, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/o
+     131                      .dwattr $C$DW$19, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      132                      .dwattr $C$DW$19, DW_AT_TI_end_line(0x78)
      133                      .dwattr $C$DW$19, DW_AT_TI_end_column(0x01)
      134                      .dwendentry
@@ -158,11 +158,11 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    3
      143                      .dwattr $C$DW$25, DW_AT_high_pc(0x00)
      144                      .dwattr $C$DW$25, DW_AT_TI_symbol_name("_OFFSET_setInitCond")
      145                      .dwattr $C$DW$25, DW_AT_external
-     146                      .dwattr $C$DW$25, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b
+     146                      .dwattr $C$DW$25, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      147                      .dwattr $C$DW$25, DW_AT_TI_begin_line(0x66)
      148                      .dwattr $C$DW$25, DW_AT_TI_begin_column(0x06)
      149                      .dwattr $C$DW$25, DW_AT_TI_max_frame_size(-8)
-     150                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 103,colum
+     150                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      151              
      152                      .dwfde $C$DW$CIE, _OFFSET_setInitCond
      153              $C$DW$26        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -178,10 +178,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    3
      163              ;* FNAME: _OFFSET_setInitCond           FR SIZE:   6           *
      164              ;*                                                             *
      165              ;* FUNCTION ENVIRONMENT                                        *
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    4
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    4
 
      166              ;*                                                             *
      167              ;* FUNCTION PROPERTIES                                         *
@@ -210,11 +210,11 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    4
      190 00000004 FE02          ADDB      SP,#2                 ; [CPU_U] 
      191                      .dwcfi  cfa_offset, -8
      192 00000005 86A4          MOVL      XAR2,XAR4             ; [CPU_] |103| 
-     193                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 106,colum
+     193                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      194 00000006 D00E          MOVB      XAR0,#14              ; [CPU_] |106| 
-     195                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 103,colum
+     195                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      196 00000007 8BA9          MOVL      XAR1,ACC              ; [CPU_] |103| 
-     197                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 106,colum
+     197                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      198 00000008 1E42          MOVL      *-SP[2],ACC           ; [CPU_] |106| 
      199 00000009 8A92          MOVL      XAR4,*+XAR2[AR0]      ; [CPU_] |106| 
      200              $C$DW$30        .dwtag  DW_TAG_TI_branch
@@ -226,7 +226,7 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    4
      205                      ; call occurs [#_FILTER_FO_setInitialConditions] ; [] |106| 
      206 0000000c FE82          SUBB      SP,#2                 ; [CPU_U] 
      207                      .dwcfi  cfa_offset, -6
-     208                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 107,colum
+     208                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      209 0000000d B2C2          MOVL      *+XAR2[0],XAR1        ; [CPU_] |107| 
      210 0000000e 86BE          MOVL      XAR2,*--SP            ; [CPU_] 
      211                      .dwcfi  cfa_offset, -4
@@ -238,13 +238,13 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    4
      217                      .dwattr $C$DW$31, DW_AT_low_pc(0x00)
      218                      .dwattr $C$DW$31, DW_AT_TI_return
      219 00000010 0006          LRETR     ; [CPU_] 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    5
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    5
 
      220                      ; return occurs ; [] 
-     221                      .dwattr $C$DW$25, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/o
+     221                      .dwattr $C$DW$25, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      222                      .dwattr $C$DW$25, DW_AT_TI_end_line(0x6e)
      223                      .dwattr $C$DW$25, DW_AT_TI_end_column(0x01)
      224                      .dwendentry
@@ -259,11 +259,11 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    5
      233                      .dwattr $C$DW$32, DW_AT_high_pc(0x00)
      234                      .dwattr $C$DW$32, DW_AT_TI_symbol_name("_OFFSET_setBeta")
      235                      .dwattr $C$DW$32, DW_AT_external
-     236                      .dwattr $C$DW$32, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b
+     236                      .dwattr $C$DW$32, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      237                      .dwattr $C$DW$32, DW_AT_TI_begin_line(0x58)
      238                      .dwattr $C$DW$32, DW_AT_TI_begin_column(0x06)
      239                      .dwattr $C$DW$32, DW_AT_TI_max_frame_size(-8)
-     240                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 89,column
+     240                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      241              
      242                      .dwfde $C$DW$CIE, _OFFSET_setBeta
      243              $C$DW$33        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -298,10 +298,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    5
      272                      .dwcfi  cfa_offset, -2
      273                      .dwcfi  save_reg_to_mem, 26, 0
      274 00000011 B2BD          MOVL      *SP++,XAR1            ; [CPU_] 
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    6
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    6
 
      275                      .dwcfi  save_reg_to_mem, 7, 2
      276                      .dwcfi  cfa_offset, -4
@@ -311,11 +311,11 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    6
      280 00000013 FE02          ADDB      SP,#2                 ; [CPU_U] 
      281                      .dwcfi  cfa_offset, -8
      282 00000014 8BA4          MOVL      XAR1,XAR4             ; [CPU_] |89| 
-     283                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 95,column
+     283                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      284 00000015 D00E          MOVB      XAR0,#14              ; [CPU_] |95| 
-     285                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 89,column
+     285                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      286 00000016 86A9          MOVL      XAR2,ACC              ; [CPU_] |89| 
-     287                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 95,column
+     287                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      288 00000017 FF0F          SUB       ACC,#512 << 15        ; [CPU_] |95| 
          00000018 0200 
      289 00000019 8A91          MOVL      XAR4,*+XAR1[AR0]      ; [CPU_] |95| 
@@ -326,7 +326,7 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    6
      294 0000001a 7640!         LCR       #_FILTER_FO_setDenCoeffs ; [CPU_] |95| 
          0000001b 0000 
      295                      ; call occurs [#_FILTER_FO_setDenCoeffs] ; [] |95| 
-     296                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 96,column
+     296                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      297 0000001c 0200          MOVB      ACC,#0                ; [CPU_] |96| 
      298 0000001d D00E          MOVB      XAR0,#14              ; [CPU_] |96| 
      299 0000001e 1E42          MOVL      *-SP[2],ACC           ; [CPU_] |96| 
@@ -352,16 +352,16 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    6
      318                      .dwattr $C$DW$39, DW_AT_TI_return
      319 00000026 0006          LRETR     ; [CPU_] 
      320                      ; return occurs ; [] 
-     321                      .dwattr $C$DW$32, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/o
+     321                      .dwattr $C$DW$32, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      322                      .dwattr $C$DW$32, DW_AT_TI_end_line(0x63)
      323                      .dwattr $C$DW$32, DW_AT_TI_end_column(0x01)
      324                      .dwendentry
      325                      .dwendtag $C$DW$32
      326              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    7
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    7
 
      327 00000027               .sect   ".text"
      328                      .clink
@@ -373,11 +373,11 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    7
      334                      .dwattr $C$DW$40, DW_AT_TI_symbol_name("_OFFSET_init")
      335                      .dwattr $C$DW$40, DW_AT_external
      336                      .dwattr $C$DW$40, DW_AT_type(*$C$DW$T$36)
-     337                      .dwattr $C$DW$40, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b
+     337                      .dwattr $C$DW$40, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      338                      .dwattr $C$DW$40, DW_AT_TI_begin_line(0x46)
      339                      .dwattr $C$DW$40, DW_AT_TI_begin_column(0x0f)
      340                      .dwattr $C$DW$40, DW_AT_TI_max_frame_size(-4)
-     341                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 71,column
+     341                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      342              
      343                      .dwfde $C$DW$CIE, _OFFSET_init
      344              $C$DW$41        .dwtag  DW_TAG_formal_parameter, DW_AT_name("pMemory")
@@ -415,26 +415,26 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    7
      376 00000028 B2BD          MOVL      *SP++,XAR1            ; [CPU_] 
      377                      .dwcfi  save_reg_to_mem, 7, 2
      378                      .dwcfi  cfa_offset, -4
-     379                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 75,column
+     379                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      380 00000029 0210          MOVB      ACC,#16               ; [CPU_] |75| 
-     381                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 71,column
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+     381                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    8
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    8
 
      382 0000002a 8BA4          MOVL      XAR1,XAR4             ; [CPU_] |71| 
-     383                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 75,column
+     383                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      384 0000002b 0FA6          CMPL      ACC,XAR6              ; [CPU_] |75| 
      385 0000002c 56C9          BF        $C$L1,LOS             ; [CPU_] |75| 
          0000002d 0004 
      386                      ; branchcc occurs ; [] |75| 
-     387                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 76,column
+     387                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      388 0000002e D400          MOVB      XAR4,#0               ; [CPU_] |76| 
      389 0000002f 6F08          B         $C$L2,UNC             ; [CPU_] |76| 
      390                      ; branch occurs ; [] |76| 
      391 00000030       $C$L1:    
-     392                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 82,column
+     392                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      393 00000030 DC04          ADDB      XAR4,#4               ; [CPU_] |82| 
      394 00000031 020A          MOVB      ACC,#10               ; [CPU_] |82| 
      395              $C$DW$45        .dwtag  DW_TAG_TI_branch
@@ -446,7 +446,7 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    8
      400                      ; call occurs [#_FILTER_FO_init] ; [] |82| 
      401 00000034 D00E          MOVB      XAR0,#14              ; [CPU_] |82| 
      402 00000035 A891          MOVL      *+XAR1[AR0],XAR4      ; [CPU_] |82| 
-     403                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 84,column
+     403                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      404 00000036 8AA1          MOVL      XAR4,XAR1             ; [CPU_] |84| 
      405 00000037       $C$L2:    
      406 00000037 8BBE          MOVL      XAR1,*--SP            ; [CPU_] 
@@ -457,7 +457,7 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    8
      411                      .dwattr $C$DW$46, DW_AT_TI_return
      412 00000038 0006          LRETR     ; [CPU_] 
      413                      ; return occurs ; [] 
-     414                      .dwattr $C$DW$40, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/o
+     414                      .dwattr $C$DW$40, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      415                      .dwattr $C$DW$40, DW_AT_TI_end_line(0x55)
      416                      .dwattr $C$DW$40, DW_AT_TI_end_column(0x01)
      417                      .dwendentry
@@ -473,15 +473,15 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    8
      427                      .dwattr $C$DW$47, DW_AT_TI_symbol_name("_OFFSET_getBeta")
      428                      .dwattr $C$DW$47, DW_AT_external
      429                      .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$21)
-     430                      .dwattr $C$DW$47, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b
+     430                      .dwattr $C$DW$47, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      431                      .dwattr $C$DW$47, DW_AT_TI_begin_line(0x3a)
      432                      .dwattr $C$DW$47, DW_AT_TI_begin_column(0x05)
      433                      .dwattr $C$DW$47, DW_AT_TI_max_frame_size(-8)
-     434                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 59,column
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+     434                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    9
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE    9
 
      435              
      436                      .dwfde $C$DW$CIE, _OFFSET_getBeta
@@ -517,7 +517,7 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    9
      466                      .dwcfi  save_reg_to_mem, 26, 0
      467 00000039 FE06          ADDB      SP,#6                 ; [CPU_U] 
      468                      .dwcfi  cfa_offset, -8
-     469                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 64,column
+     469                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      470 0000003a 5DAD          MOVZ      AR5,SP                ; [CPU_] |64| 
      471 0000003b DD86          SUBB      XAR5,#6               ; [CPU_U] |64| 
      472 0000003c 0EA5          MOVU      ACC,AR5               ; [CPU_] |64| 
@@ -534,21 +534,21 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE    9
      483 00000043 7640!         LCR       #_FILTER_FO_getNumCoeffs ; [CPU_] |64| 
          00000044 0000 
      484                      ; call occurs [#_FILTER_FO_getNumCoeffs] ; [] |64| 
-     485                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/offset.c",line 66,column
+     485                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      486 00000045 0644          MOVL      ACC,*-SP[4]           ; [CPU_] |66| 
      487 00000046 FE86          SUBB      SP,#6                 ; [CPU_U] 
      488                      .dwcfi  cfa_offset, -2
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   10
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   10
 
      489              $C$DW$53        .dwtag  DW_TAG_TI_branch
      490                      .dwattr $C$DW$53, DW_AT_low_pc(0x00)
      491                      .dwattr $C$DW$53, DW_AT_TI_return
      492 00000047 0006          LRETR     ; [CPU_] 
      493                      ; return occurs ; [] 
-     494                      .dwattr $C$DW$47, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/offset/src/32b/o
+     494                      .dwattr $C$DW$47, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      495                      .dwattr $C$DW$47, DW_AT_TI_end_line(0x43)
      496                      .dwattr $C$DW$47, DW_AT_TI_end_column(0x01)
      497                      .dwendentry
@@ -598,10 +598,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   10
      541                      .dwattr $C$DW$58, DW_AT_type(*$C$DW$T$21)
      542                      .dwattr $C$DW$58, DW_AT_name("y1")
      543                      .dwattr $C$DW$58, DW_AT_TI_symbol_name("_y1")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   11
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   11
 
      544                      .dwattr $C$DW$58, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
      545                      .dwattr $C$DW$58, DW_AT_accessibility(DW_ACCESS_public)
@@ -658,10 +658,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   11
      596              
      597              $C$DW$T$20      .dwtag  DW_TAG_structure_type
      598                      .dwattr $C$DW$T$20, DW_AT_name("_OFFSET_Obj_")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   12
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   12
 
      599                      .dwattr $C$DW$T$20, DW_AT_declaration
      600                      .dwendtag $C$DW$T$20
@@ -718,10 +718,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   12
      651                      .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
      652                      .dwattr $C$DW$T$11, DW_AT_byte_size(0x01)
      653              $C$DW$T$12      .dwtag  DW_TAG_base_type
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   13
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   13
 
      654                      .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
      655                      .dwattr $C$DW$T$12, DW_AT_name("long")
@@ -778,10 +778,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   13
      706                      .dwcfi  cfa_offset, 0
      707                      .dwcfi  undefined, 0
      708                      .dwcfi  undefined, 1
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   14
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   14
 
      709                      .dwcfi  undefined, 2
      710                      .dwcfi  undefined, 3
@@ -838,10 +838,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   14
      761                      .dwattr $C$DW$70, DW_AT_location[DW_OP_reg3]
      762              $C$DW$71        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("SP")
      763                      .dwattr $C$DW$71, DW_AT_location[DW_OP_reg20]
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   15
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   15
 
      764              $C$DW$72        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XT")
      765                      .dwattr $C$DW$72, DW_AT_location[DW_OP_reg21]
@@ -898,10 +898,10 @@ C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   15
      816              $C$DW$98        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR3")
      817                      .dwattr $C$DW$98, DW_AT_location[DW_OP_reg11]
      818              $C$DW$99        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR4")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:32 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:55:01 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\1750010                            PAGE   16
+C:\Users\bee25\AppData\Local\Temp\2298010                            PAGE   16
 
      819                      .dwattr $C$DW$99, DW_AT_location[DW_OP_reg12]
      820              $C$DW$100       .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR4")

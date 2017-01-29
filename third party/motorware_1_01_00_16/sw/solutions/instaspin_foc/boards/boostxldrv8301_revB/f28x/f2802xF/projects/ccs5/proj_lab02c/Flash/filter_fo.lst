@@ -1,22 +1,22 @@
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    1
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    1
 
        1              ;***************************************************************
-       2              ;* TMS320C2000 C/C++ Codegen                         PC v6.4.6 *
-       3              ;* Date/Time created: Thu Mar 31 18:42:27 2016                 *
+       2              ;* TMS320C2000 C/C++ Codegen                        PC v6.4.11 *
+       3              ;* Date/Time created: Fri Jan 13 19:54:58 2017                 *
        4              ;***************************************************************
        5                      .compiler_opts --float_support=softlib --hll_source=on --mem_model:code=flat --mem_model:data=large -
        6        0002  FP      .set    XAR2
        7              
        8              $C$DW$CU        .dwtag  DW_TAG_compile_unit
-       9                      .dwattr $C$DW$CU, DW_AT_name("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_f
-      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.6 Copyright (c) 1996-2015 Texa
+       9                      .dwattr $C$DW$CU, DW_AT_name("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeControlle
+      10                      .dwattr $C$DW$CU, DW_AT_producer("TI TMS320C2000 C/C++ Codegen PC v6.4.11 Copyright (c) 1996-2015 Tex
       11                      .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\ti\motorware\motorware_1_01_00_16\sw\solutions\instaspin_foc\boa
-      13              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_6.4.6\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\
-      14              ;       C:\ti\ccsv6\tools\compiler\ti-cgt-c2000_6.4.6\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp
+      12                      .dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\bee25\Documents\Visual Studio 2015\Projects\telescopeContr
+      13              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\opt2000.exe C:\\Users\\bee25\\AppData\\Local\\Temp\\23336
+      14              ;       C:\ti\ccsv6\tools\compiler\c2000_6.4.11\bin\ac2000.exe -@C:\\Users\\bee25\\AppData\\Local\\Temp\\2333
       15 00000000               .sect   ".text"
       16                      .clink
       17                      .global _FILTER_FO_setNumCoeffs
@@ -26,11 +26,11 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    1
       21                      .dwattr $C$DW$1, DW_AT_high_pc(0x00)
       22                      .dwattr $C$DW$1, DW_AT_TI_symbol_name("_FILTER_FO_setNumCoeffs")
       23                      .dwattr $C$DW$1, DW_AT_external
-      24                      .dwattr $C$DW$1, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/
+      24                      .dwattr $C$DW$1, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
       25                      .dwattr $C$DW$1, DW_AT_TI_begin_line(0x85)
       26                      .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
       27                      .dwattr $C$DW$1, DW_AT_TI_max_frame_size(-2)
-      28                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 134,co
+      28                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       29              
       30                      .dwfde $C$DW$CIE, _FILTER_FO_setNumCoeffs
       31              $C$DW$2 .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -58,10 +58,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    1
       53              _FILTER_FO_setNumCoeffs:
       54              ;* AR4   assigned to _handle
       55              $C$DW$5 .dwtag  DW_TAG_variable, DW_AT_name("handle")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    2
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    2
 
       56                      .dwattr $C$DW$5, DW_AT_TI_symbol_name("_handle")
       57                      .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$26)
@@ -79,16 +79,16 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    2
       69                      .dwcfi  cfa_offset, -2
       70                      .dwcfi  save_reg_to_mem, 26, 0
       71 00000000 C444          MOVL      XAR6,*-SP[4]          ; [CPU_] |134| 
-      72                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 138,co
+      72                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       73 00000001 1ED4          MOVL      *+XAR4[2],ACC         ; [CPU_] |138| 
-      74                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 139,co
+      74                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
       75 00000002 C2E4          MOVL      *+XAR4[4],XAR6        ; [CPU_] |139| 
       76              $C$DW$8 .dwtag  DW_TAG_TI_branch
       77                      .dwattr $C$DW$8, DW_AT_low_pc(0x00)
       78                      .dwattr $C$DW$8, DW_AT_TI_return
       79 00000003 0006          LRETR     ; [CPU_] 
       80                      ; return occurs ; [] 
-      81                      .dwattr $C$DW$1, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/fi
+      81                      .dwattr $C$DW$1, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCon
       82                      .dwattr $C$DW$1, DW_AT_TI_end_line(0x8e)
       83                      .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
       84                      .dwendentry
@@ -103,11 +103,11 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    2
       93                      .dwattr $C$DW$9, DW_AT_high_pc(0x00)
       94                      .dwattr $C$DW$9, DW_AT_TI_symbol_name("_FILTER_FO_setInitialConditions")
       95                      .dwattr $C$DW$9, DW_AT_external
-      96                      .dwattr $C$DW$9, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/
+      96                      .dwattr $C$DW$9, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeC
       97                      .dwattr $C$DW$9, DW_AT_TI_begin_line(0x78)
       98                      .dwattr $C$DW$9, DW_AT_TI_begin_column(0x06)
       99                      .dwattr $C$DW$9, DW_AT_TI_max_frame_size(-2)
-     100                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 121,co
+     100                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      101              
      102                      .dwfde $C$DW$CIE, _FILTER_FO_setInitialConditions
      103              $C$DW$10        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -118,10 +118,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    2
      108                      .dwattr $C$DW$11, DW_AT_TI_symbol_name("_x1")
      109                      .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$36)
      110                      .dwattr $C$DW$11, DW_AT_location[DW_OP_reg0]
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    3
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    3
 
      111              $C$DW$12        .dwtag  DW_TAG_formal_parameter, DW_AT_name("y1")
      112                      .dwattr $C$DW$12, DW_AT_TI_symbol_name("_y1")
@@ -156,18 +156,18 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    3
      141                      .dwcfi  cfa_offset, -2
      142                      .dwcfi  save_reg_to_mem, 26, 0
      143 00000004 C444          MOVL      XAR6,*-SP[4]          ; [CPU_] |121| 
-     144                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 127,co
+     144                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      145 00000005 D008          MOVB      XAR0,#8               ; [CPU_] |127| 
-     146                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 125,co
+     146                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      147 00000006 1EF4          MOVL      *+XAR4[6],ACC         ; [CPU_] |125| 
-     148                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 127,co
+     148                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      149 00000007 C294          MOVL      *+XAR4[AR0],XAR6      ; [CPU_] |127| 
      150              $C$DW$16        .dwtag  DW_TAG_TI_branch
      151                      .dwattr $C$DW$16, DW_AT_low_pc(0x00)
      152                      .dwattr $C$DW$16, DW_AT_TI_return
      153 00000008 0006          LRETR     ; [CPU_] 
      154                      ; return occurs ; [] 
-     155                      .dwattr $C$DW$9, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/fi
+     155                      .dwattr $C$DW$9, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCon
      156                      .dwattr $C$DW$9, DW_AT_TI_end_line(0x82)
      157                      .dwattr $C$DW$9, DW_AT_TI_end_column(0x01)
      158                      .dwendentry
@@ -178,20 +178,20 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    3
      163                      .global _FILTER_FO_setDenCoeffs
      164              
      165              $C$DW$17        .dwtag  DW_TAG_subprogram, DW_AT_name("FILTER_FO_setDenCoeffs")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    4
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    4
 
      166                      .dwattr $C$DW$17, DW_AT_low_pc(_FILTER_FO_setDenCoeffs)
      167                      .dwattr $C$DW$17, DW_AT_high_pc(0x00)
      168                      .dwattr $C$DW$17, DW_AT_TI_symbol_name("_FILTER_FO_setDenCoeffs")
      169                      .dwattr $C$DW$17, DW_AT_external
-     170                      .dwattr $C$DW$17, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b
+     170                      .dwattr $C$DW$17, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      171                      .dwattr $C$DW$17, DW_AT_TI_begin_line(0x6d)
      172                      .dwattr $C$DW$17, DW_AT_TI_begin_column(0x06)
      173                      .dwattr $C$DW$17, DW_AT_TI_max_frame_size(-2)
-     174                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 110,co
+     174                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      175              
      176                      .dwfde $C$DW$CIE, _FILTER_FO_setDenCoeffs
      177              $C$DW$18        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -225,23 +225,23 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    4
      205                      .dwattr $C$DW$21, DW_AT_location[DW_OP_reg0]
      206                      .dwcfi  cfa_offset, -2
      207                      .dwcfi  save_reg_to_mem, 26, 0
-     208                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 114,co
+     208                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      209 00000009 1EC4          MOVL      *+XAR4[0],ACC         ; [CPU_] |114| 
      210              $C$DW$22        .dwtag  DW_TAG_TI_branch
      211                      .dwattr $C$DW$22, DW_AT_low_pc(0x00)
      212                      .dwattr $C$DW$22, DW_AT_TI_return
      213 0000000a 0006          LRETR     ; [CPU_] 
      214                      ; return occurs ; [] 
-     215                      .dwattr $C$DW$17, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/f
+     215                      .dwattr $C$DW$17, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      216                      .dwattr $C$DW$17, DW_AT_TI_end_line(0x75)
      217                      .dwattr $C$DW$17, DW_AT_TI_end_column(0x01)
      218                      .dwendentry
      219                      .dwendtag $C$DW$17
      220              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    5
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    5
 
      221 0000000b               .sect   ".text"
      222                      .clink
@@ -253,11 +253,11 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    5
      228                      .dwattr $C$DW$23, DW_AT_TI_symbol_name("_FILTER_FO_init")
      229                      .dwattr $C$DW$23, DW_AT_external
      230                      .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$25)
-     231                      .dwattr $C$DW$23, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b
+     231                      .dwattr $C$DW$23, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      232                      .dwattr $C$DW$23, DW_AT_TI_begin_line(0x5e)
      233                      .dwattr $C$DW$23, DW_AT_TI_begin_column(0x12)
      234                      .dwattr $C$DW$23, DW_AT_TI_max_frame_size(-2)
-     235                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 95,col
+     235                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      236              
      237                      .dwfde $C$DW$CIE, _FILTER_FO_init
      238              $C$DW$24        .dwtag  DW_TAG_formal_parameter, DW_AT_name("pMemory")
@@ -287,7 +287,7 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    5
      262                      .dwcfi  cfa_offset, -2
      263                      .dwcfi  save_reg_to_mem, 26, 0
      264 0000000b 1EA6          MOVL      XAR6,ACC              ; [CPU_] |95| 
-     265                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 100,co
+     265                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      266 0000000c 020A          MOVB      ACC,#10               ; [CPU_] |100| 
      267 0000000d 0FA6          CMPL      ACC,XAR6              ; [CPU_] |100| 
      268 0000000e 56C9          BF        $C$L1,LOS             ; [CPU_] |100| 
@@ -298,14 +298,14 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    5
      272              $C$DW$27        .dwtag  DW_TAG_TI_branch
      273                      .dwattr $C$DW$27, DW_AT_low_pc(0x00)
      274                      .dwattr $C$DW$27, DW_AT_TI_return
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    6
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    6
 
      275 00000011 0006          LRETR     ; [CPU_] 
      276                      ; return occurs ; [] 
-     277                      .dwattr $C$DW$23, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/f
+     277                      .dwattr $C$DW$23, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      278                      .dwattr $C$DW$23, DW_AT_TI_end_line(0x6a)
      279                      .dwattr $C$DW$23, DW_AT_TI_end_column(0x01)
      280                      .dwendentry
@@ -320,11 +320,11 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    6
      289                      .dwattr $C$DW$28, DW_AT_high_pc(0x00)
      290                      .dwattr $C$DW$28, DW_AT_TI_symbol_name("_FILTER_FO_getNumCoeffs")
      291                      .dwattr $C$DW$28, DW_AT_external
-     292                      .dwattr $C$DW$28, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b
+     292                      .dwattr $C$DW$28, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      293                      .dwattr $C$DW$28, DW_AT_TI_begin_line(0x52)
      294                      .dwattr $C$DW$28, DW_AT_TI_begin_column(0x06)
      295                      .dwattr $C$DW$28, DW_AT_TI_max_frame_size(-2)
-     296                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 83,col
+     296                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      297              
      298                      .dwfde $C$DW$CIE, _FILTER_FO_getNumCoeffs
      299              $C$DW$29        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -358,10 +358,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    6
      327              ;* AR5   assigned to _pb0
      328              $C$DW$33        .dwtag  DW_TAG_variable, DW_AT_name("pb0")
      329                      .dwattr $C$DW$33, DW_AT_TI_symbol_name("_pb0")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    7
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    7
 
      330                      .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$42)
      331                      .dwattr $C$DW$33, DW_AT_location[DW_OP_reg14]
@@ -373,10 +373,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    7
      337                      .dwcfi  cfa_offset, -2
      338                      .dwcfi  save_reg_to_mem, 26, 0
      339 00000012 C444          MOVL      XAR6,*-SP[4]          ; [CPU_] |83| 
-     340                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 87,col
+     340                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      341 00000013 06D4          MOVL      ACC,*+XAR4[2]         ; [CPU_] |87| 
      342 00000014 1EC5          MOVL      *+XAR5[0],ACC         ; [CPU_] |87| 
-     343                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 88,col
+     343                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      344 00000015 06E4          MOVL      ACC,*+XAR4[4]         ; [CPU_] |88| 
      345 00000016 1EC6          MOVL      *+XAR6[0],ACC         ; [CPU_] |88| 
      346              $C$DW$35        .dwtag  DW_TAG_TI_branch
@@ -384,7 +384,7 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    7
      348                      .dwattr $C$DW$35, DW_AT_TI_return
      349 00000017 0006          LRETR     ; [CPU_] 
      350                      ; return occurs ; [] 
-     351                      .dwattr $C$DW$28, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/f
+     351                      .dwattr $C$DW$28, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      352                      .dwattr $C$DW$28, DW_AT_TI_end_line(0x5b)
      353                      .dwattr $C$DW$28, DW_AT_TI_end_column(0x01)
      354                      .dwendentry
@@ -399,11 +399,11 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    7
      363                      .dwattr $C$DW$36, DW_AT_high_pc(0x00)
      364                      .dwattr $C$DW$36, DW_AT_TI_symbol_name("_FILTER_FO_getInitialConditions")
      365                      .dwattr $C$DW$36, DW_AT_external
-     366                      .dwattr $C$DW$36, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b
+     366                      .dwattr $C$DW$36, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      367                      .dwattr $C$DW$36, DW_AT_TI_begin_line(0x45)
      368                      .dwattr $C$DW$36, DW_AT_TI_begin_column(0x06)
      369                      .dwattr $C$DW$36, DW_AT_TI_max_frame_size(-2)
-     370                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 70,col
+     370                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      371              
      372                      .dwfde $C$DW$CIE, _FILTER_FO_getInitialConditions
      373              $C$DW$37        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -418,10 +418,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    7
      382                      .dwattr $C$DW$39, DW_AT_TI_symbol_name("_py1")
      383                      .dwattr $C$DW$39, DW_AT_type(*$C$DW$T$33)
      384                      .dwattr $C$DW$39, DW_AT_location[DW_OP_breg20 -4]
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    8
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    8
 
      385              
      386              ;***************************************************************
@@ -452,13 +452,13 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    8
      411                      .dwcfi  cfa_offset, -2
      412                      .dwcfi  save_reg_to_mem, 26, 0
      413 00000018 C444          MOVL      XAR6,*-SP[4]          ; [CPU_] |70| 
-     414                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 74,col
+     414                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      415 00000019 06F4          MOVL      ACC,*+XAR4[6]         ; [CPU_] |74| 
-     416                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 76,col
+     416                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      417 0000001a D008          MOVB      XAR0,#8               ; [CPU_] |76| 
-     418                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 74,col
+     418                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      419 0000001b 1EC5          MOVL      *+XAR5[0],ACC         ; [CPU_] |74| 
-     420                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 76,col
+     420                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      421 0000001c 0694          MOVL      ACC,*+XAR4[AR0]       ; [CPU_] |76| 
      422 0000001d 1EC6          MOVL      *+XAR6[0],ACC         ; [CPU_] |76| 
      423              $C$DW$43        .dwtag  DW_TAG_TI_branch
@@ -466,7 +466,7 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    8
      425                      .dwattr $C$DW$43, DW_AT_TI_return
      426 0000001e 0006          LRETR     ; [CPU_] 
      427                      ; return occurs ; [] 
-     428                      .dwattr $C$DW$36, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/f
+     428                      .dwattr $C$DW$36, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      429                      .dwattr $C$DW$36, DW_AT_TI_end_line(0x4f)
      430                      .dwattr $C$DW$36, DW_AT_TI_end_column(0x01)
      431                      .dwendentry
@@ -478,19 +478,19 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    8
      437              
      438              $C$DW$44        .dwtag  DW_TAG_subprogram, DW_AT_name("FILTER_FO_getDenCoeffs")
      439                      .dwattr $C$DW$44, DW_AT_low_pc(_FILTER_FO_getDenCoeffs)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    9
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE    9
 
      440                      .dwattr $C$DW$44, DW_AT_high_pc(0x00)
      441                      .dwattr $C$DW$44, DW_AT_TI_symbol_name("_FILTER_FO_getDenCoeffs")
      442                      .dwattr $C$DW$44, DW_AT_external
-     443                      .dwattr $C$DW$44, DW_AT_TI_begin_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b
+     443                      .dwattr $C$DW$44, DW_AT_TI_begin_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescope
      444                      .dwattr $C$DW$44, DW_AT_TI_begin_line(0x3a)
      445                      .dwattr $C$DW$44, DW_AT_TI_begin_column(0x06)
      446                      .dwattr $C$DW$44, DW_AT_TI_max_frame_size(-2)
-     447                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 59,col
+     447                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      448              
      449                      .dwfde $C$DW$CIE, _FILTER_FO_getDenCoeffs
      450              $C$DW$45        .dwtag  DW_TAG_formal_parameter, DW_AT_name("handle")
@@ -524,7 +524,7 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    9
      478                      .dwattr $C$DW$48, DW_AT_location[DW_OP_reg14]
      479                      .dwcfi  cfa_offset, -2
      480                      .dwcfi  save_reg_to_mem, 26, 0
-     481                      .dwpsn  file "C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/filter_fo.c",line 63,col
+     481                      .dwpsn  file "C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeController_Hardware/third
      482 0000001f 06C4          MOVL      ACC,*+XAR4[0]         ; [CPU_] |63| 
      483 00000020 1EC5          MOVL      *+XAR5[0],ACC         ; [CPU_] |63| 
      484              $C$DW$49        .dwtag  DW_TAG_TI_branch
@@ -532,16 +532,16 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE    9
      486                      .dwattr $C$DW$49, DW_AT_TI_return
      487 00000021 0006          LRETR     ; [CPU_] 
      488                      ; return occurs ; [] 
-     489                      .dwattr $C$DW$44, DW_AT_TI_end_file("C:/ti/motorware/motorware_1_01_00_16/sw/modules/filter/src/32b/f
+     489                      .dwattr $C$DW$44, DW_AT_TI_end_file("C:/Users/bee25/Documents/Visual Studio 2015/Projects/telescopeCo
      490                      .dwattr $C$DW$44, DW_AT_TI_end_line(0x42)
      491                      .dwattr $C$DW$44, DW_AT_TI_end_column(0x01)
      492                      .dwendentry
      493                      .dwendtag $C$DW$44
      494              
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   10
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE   10
 
      495              
      496              ;***************************************************************
@@ -598,10 +598,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   10
      547              $C$DW$T$25      .dwtag  DW_TAG_typedef, DW_AT_name("FILTER_FO_Handle")
      548                      .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$24)
      549                      .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   11
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE   11
 
      550              $C$DW$55        .dwtag  DW_TAG_TI_far_type
      551                      .dwattr $C$DW$55, DW_AT_type(*$C$DW$T$25)
@@ -658,10 +658,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   11
      602                      .dwattr $C$DW$56, DW_AT_type(*$C$DW$T$33)
      603              $C$DW$T$42      .dwtag  DW_TAG_const_type
      604                      .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$56)
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   12
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE   12
 
      605              $C$DW$57        .dwtag  DW_TAG_TI_far_type
      606                      .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$20)
@@ -718,10 +718,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   12
      657                      .dwcfi  undefined, 24
      658                      .dwcfi  undefined, 25
      659                      .dwcfi  undefined, 26
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   13
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE   13
 
      660                      .dwcfi  same_value, 28
      661                      .dwcfi  undefined, 29
@@ -778,10 +778,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   13
      712              $C$DW$67        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("ST1")
      713                      .dwattr $C$DW$67, DW_AT_location[DW_OP_reg24]
      714              $C$DW$68        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("PC")
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   14
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE   14
 
      715                      .dwattr $C$DW$68, DW_AT_location[DW_OP_reg25]
      716              $C$DW$69        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("RPC")
@@ -838,10 +838,10 @@ C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   14
      767                      .dwattr $C$DW$94, DW_AT_location[DW_OP_reg15]
      768              $C$DW$95        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("AR6")
      769                      .dwattr $C$DW$95, DW_AT_location[DW_OP_reg16]
-TMS320C2000 Assembler PC v6.4.6 Thu Mar 31 18:42:27 2016
+TMS320C2000 Assembler PC v6.4.11 Fri Jan 13 19:54:58 2017
 
 Tools Copyright (c) 1996-2015 Texas Instruments Incorporated
-C:\Users\bee25\AppData\Local\Temp\0288810                            PAGE   15
+C:\Users\bee25\AppData\Local\Temp\2333611                            PAGE   15
 
      770              $C$DW$96        .dwtag  DW_TAG_TI_assign_register, DW_AT_name("XAR6")
      771                      .dwattr $C$DW$96, DW_AT_location[DW_OP_reg17]

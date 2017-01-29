@@ -203,6 +203,7 @@ extern "C" {
 #define Estun_EMJ_04APB22           101
 #define Anaheim_BLY172S             102
 #define Teknic_M2310PLN04K          104
+#define BLDCmotor					105
 
 // IPM motors
 // If user provides separate Ls-d, Ls-q
@@ -217,14 +218,33 @@ extern "C" {
 //! \brief These motor ID settings and motor parameters are then available to be used by the control system
 //! \brief Once your ideal settings and parameters are identified update the motor section here so it is available in the binary code
 //#define USER_MOTOR Estun_EMJ_04APB22
-#define USER_MOTOR Anaheim_BLY172S
+#define USER_MOTOR BLDCmotor
 //#define USER_MOTOR Teknic_M2310PLN04K
 //#define USER_MOTOR Belt_Drive_Washer_IPM
 //#define USER_MOTOR Marathon_5K33GN2A
 //#define USER_MOTOR Anaheim_Salient
 
 
-#if (USER_MOTOR == Estun_EMJ_04APB22)                  // Name must match the motor #define
+#if (USER_MOTOR == BLDCmotor)
+
+#define USER_MOTOR_TYPE                 MOTOR_Type_Pm  // Motor_Type_Pm (All Synchronous: BLDC, PMSM, SMPM, IPM) or Motor_Type_Induction (Asynchronous ACI)
+#define USER_MOTOR_NUM_POLE_PAIRS       (1)            // PAIRS, not total poles. Used to calculate user RPM from rotor Hz only
+#define USER_MOTOR_Rr                   (NULL)         // Induction motors only, else NULL
+#define USER_MOTOR_Rs                   (2.422560691833496)  // 0.029436156  // Identified phase to neutral resistance in a Y equivalent circuit (Ohms, float)
+#define USER_MOTOR_Ls_d                 (0.00021897282567806542)  // For PM, Identified average stator inductance  (Henry, float)
+#define USER_MOTOR_Ls_q                 (0.00021897282567806542)  // For PM, Identified average stator inductance  (Henry, float)
+#define USER_MOTOR_RATED_FLUX           (0.1439032256603241)         // Identified TOTAL flux linkage between the rotor and the stator (V/Hz)
+#define USER_MOTOR_MAGNETIZING_CURRENT  (NULL)         // Induction motors only, else NULL
+#define USER_MOTOR_RES_EST_CURRENT      (1.5)          // During Motor ID, maximum current (Amperes, float) used for Rs estimation, 10-20% rated current
+#define USER_MOTOR_IND_EST_CURRENT      (-1.5)         // During Motor ID, maximum current (negative Amperes, float) used for Ls estimation, use just enough to enable rotation
+#define USER_MOTOR_MAX_CURRENT          (5.0)         // CRITICAL: Used during ID and run-time, sets a limit on the maximum current command output of the provided Speed PI Controller to the Iq controller
+#define USER_MOTOR_FLUX_EST_FREQ_Hz     (30.0)         // During Motor ID, maximum commanded speed (Hz, float), ~10% rated
+#define	USER_MOTOR_MAX_SPEED_KRPM		(2.0)
+#define USER_SYSTEM_INERTIA				(0.02)
+#define USER_SYSTEM_FRICTION			(0.01)
+#define USER_SYSTEM_BANDWIDTH_SCALE		(1.0)
+
+#elif (USER_MOTOR == Estun_EMJ_04APB22)                  // Name must match the motor #define
 #define USER_MOTOR_TYPE                 MOTOR_Type_Pm  // Motor_Type_Pm (All Synchronous: BLDC, PMSM, SMPM, IPM) or Motor_Type_Induction (Asynchronous ACI)
 #define USER_MOTOR_NUM_POLE_PAIRS       (4)            // PAIRS, not total poles. Used to calculate user RPM from rotor Hz only
 #define USER_MOTOR_Rr                   (NULL)         // Induction motors only, else NULL
