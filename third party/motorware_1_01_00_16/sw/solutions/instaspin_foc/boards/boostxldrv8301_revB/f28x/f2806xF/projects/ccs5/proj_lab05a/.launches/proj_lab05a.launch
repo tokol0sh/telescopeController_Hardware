@@ -5,7 +5,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.Texas Instruments XDS100v2 USB Emulator_0/C28xx" value="${build_artifact:proj_lab05a}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.Texas Instruments XDS100v2 USB Emulator_0/C28xx" value="proj_lab05a"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:proj_lab05a}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Emulator_0/C28xx" value="C:/Users\bee25\Documents\Visual Studio 2015\Projects\telescopeController_Hardware\third party\motorware_1_01_00_16\sw\solutions\instaspin_foc\boards\boostxldrv8301_revB\f28x\f2806xF\projects\ccs5\proj_lab05a\Release\proj_lab05a.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Texas Instruments XDS100v2 USB Emulator_0/C28xx" value="C:/Users\tokol0sh\Source\Repos\telescopeController_Hardware\third party\motorware_1_01_00_16\sw\solutions\instaspin_foc\boards\boostxldrv8301_revB\f28x\f2806xF\projects\ccs5\proj_lab05a\Release\proj_lab05a.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/proj_lab05a"/>
 </listAttribute>

@@ -118,7 +118,7 @@ extern "C" {
 //! \brief For higher PWM frequencies (60 KHz+ typical for low inductance, high current ripple motors) it is recommended to use the ePWM hardware
 //! \brief and adjustable ADC SOC to decimate the ADC conversion done interrupt to the control system, or to use the software Que example.
 //! \brief Otherwise you risk missing interrupts and disrupting the timing of the control state machine
-#define USER_PWM_FREQ_kHz                (15.0) //30.0 Example, 8.0 - 30.0 KHz typical; 45-80 KHz may be required for very low inductance, high speed motors
+#define USER_PWM_FREQ_kHz                (45.0) //30.0 Example, 8.0 - 30.0 KHz typical; 45-80 KHz may be required for very low inductance, high speed motors
 
 //! \brief Defines the maximum Voltage vector (Vs) magnitude allowed.  This value sets the maximum magnitude for the output of the
 //! \brief Id and Iq PI current controllers.  The Id and Iq current controller outputs are Vd and Vq.
@@ -231,14 +231,14 @@ extern "C" {
 #define USER_MOTOR_NUM_POLE_PAIRS       (1)            // PAIRS, not total poles. Used to calculate user RPM from rotor Hz only
 #define USER_MOTOR_Rr                   (NULL)         // Induction motors only, else NULL
 #define USER_MOTOR_Rs                   (2.422560691833496)  // 0.029436156  // Identified phase to neutral resistance in a Y equivalent circuit (Ohms, float)
-#define USER_MOTOR_Ls_d                 (0.00021897282567806542)  // For PM, Identified average stator inductance  (Henry, float)
-#define USER_MOTOR_Ls_q                 (0.00021897282567806542)  // For PM, Identified average stator inductance  (Henry, float)
-#define USER_MOTOR_RATED_FLUX           (0.1439032256603241)         // Identified TOTAL flux linkage between the rotor and the stator (V/Hz)
+#define USER_MOTOR_Ls_d                 (0.00008876743959262967)  // For PM, Identified average stator inductance  (Henry, float)
+#define USER_MOTOR_Ls_q                 (0.00008876743959262967)  // For PM, Identified average stator inductance  (Henry, float)
+#define USER_MOTOR_RATED_FLUX           (0.185032256603241)         // Identified TOTAL flux linkage between the rotor and the stator (V/Hz)
 #define USER_MOTOR_MAGNETIZING_CURRENT  (NULL)         // Induction motors only, else NULL
 #define USER_MOTOR_RES_EST_CURRENT      (1.5)          // During Motor ID, maximum current (Amperes, float) used for Rs estimation, 10-20% rated current
 #define USER_MOTOR_IND_EST_CURRENT      (-1.5)         // During Motor ID, maximum current (negative Amperes, float) used for Ls estimation, use just enough to enable rotation
 #define USER_MOTOR_MAX_CURRENT          (5.0)         // CRITICAL: Used during ID and run-time, sets a limit on the maximum current command output of the provided Speed PI Controller to the Iq controller
-#define USER_MOTOR_FLUX_EST_FREQ_Hz     (30.0)         // During Motor ID, maximum commanded speed (Hz, float), ~10% rated
+#define USER_MOTOR_FLUX_EST_FREQ_Hz     (20.0)         // During Motor ID, maximum commanded speed (Hz, float), ~10% rated
 #define	USER_MOTOR_MAX_SPEED_KRPM		(2.0)
 #define USER_SYSTEM_INERTIA				(0.02)
 #define USER_SYSTEM_FRICTION			(0.01)

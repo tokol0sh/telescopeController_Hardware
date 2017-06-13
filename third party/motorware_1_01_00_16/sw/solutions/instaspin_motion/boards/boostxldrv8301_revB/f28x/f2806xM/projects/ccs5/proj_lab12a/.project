@@ -137,6 +137,11 @@
 			<locationURI>MW_INSTALL_DIR/sw/drivers/cpu/src/32b/f28x/f2806x/cpu.c</locationURI>
 		</link>
 		<link>
+			<name>cpu_usage.c</name>
+			<type>1</type>
+			<locationURI>PARENT-17-PROJECT_LOC/ti/motorware/motorware_1_01_00_17/sw/modules/cpu_usage/src/32b/cpu_usage.c</locationURI>
+		</link>
+		<link>
 			<name>ctrlQEP.c</name>
 			<type>1</type>
 			<locationURI>MW_INSTALL_DIR/sw/modules/ctrl/src/32b/ctrlQEP.c</locationURI>
@@ -235,6 +240,11 @@
 			<name>qep.c</name>
 			<type>1</type>
 			<locationURI>MW_INSTALL_DIR/sw/drivers/qep/src/32b/f28x/f2806x/qep.c</locationURI>
+		</link>
+		<link>
+			<name>sci.c</name>
+			<type>1</type>
+			<locationURI>PARENT-17-PROJECT_LOC/ti/motorware/motorware_1_01_00_17/sw/drivers/sci/src/32b/f28x/f2806x/sci.c</locationURI>
 		</link>
 		<link>
 			<name>slip.c</name>
